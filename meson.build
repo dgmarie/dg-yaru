@@ -1,4 +1,4 @@
-project('Yaru',
+project('dg-yaru',
         version: '22.04.4',
         meson_version: '>= 0.59',
         license : ['GPL3', 'CC BY-SA 4.0'],
@@ -13,16 +13,9 @@ sassc = find_program('sassc')
 subdir('common')
 
 components = [
-  'metacity',
   'gnome-shell',
-  'gtk',
   'icons',
-  'gtksourceview',
   'sounds',
-  'sessions',
-  'ubuntu-unity',
-  'xfwm4',
-  'cinnamon-shell',
 ]
 
 enabled_accent_colors = get_option('accent-colors')

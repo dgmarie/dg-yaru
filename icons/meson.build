@@ -1,13 +1,6 @@
-PANEL_ONLY_ICONS_CATEGORIES = [
-  'animations',
-  'panel',
-]
-
 icon_flavors = [
   'default',
   'dark',
-  'mate',
-  'mate-dark',
 ]
 
 foreach accent: enabled_accent_colors
@@ -19,8 +12,6 @@ fullcolor_path = 'src' / 'fullcolor'
 render_bitmaps = find_program(fullcolor_path / 'render-bitmaps.py', required: true)
 generate_symlinks = find_program('src' / 'symlinks' / 'generate-symlinks.sh', required: true)
 generate_index_theme = find_program('src' / 'generate-index-theme.py', required: true)
-accent_color_gtk_version_reference = '3.0'
-uses_panel_icons = get_option('ubuntu-unity') or get_option('mate')
 dark_theme = meson.project_name() + '-dark'
 index_theme = 'index.theme'
 cursor_theme = 'cursor.theme'
@@ -39,11 +30,6 @@ foreach flavour: icon_flavors
   is_accent = enabled_accent_colors.contains(flavour)
   base_flavour = is_dark_flavour ? flavour.split('-dark')[0] : ''
   is_dark_accent = is_dark_flavour and enabled_accent_colors.contains(base_flavour)
-
-  if (is_accent or is_dark_accent) and not get_option('gtk')
-    warning('GTK is not enabled, so we won\'t be able to generate accent colors')
-    continue
-  endif
 
   if (is_accent or is_dark_accent) or get_option(flavour)
     is_flavour = flavour != 'default'
@@ -72,8 +58,29 @@ foreach flavour: icon_flavors
     endif
 
     if is_accent
-      colors_definitions = gtk_yaru_colors_defs['@0@-gtk-@1@'.format(
-        icon_dir, accent_color_gtk_version_reference)]
+      accent_configuration = {
+        'yaru_dark_variant': is_dark ? 'true' : 'false',
+        'yaru_accent_color': accent,
+      }
+      icons_yaru_colors_defs_scss = configure_file(
+        configuration: accent_configuration + {
+          'yaru_theme_entry_point': yaru_colors_defs_scss,
+        },
+        input: accent_colors_definitions_scss,
+        output: '@0@-yaru-colors-defs.scss'.format(icon_dir),
+      )
+      icons_yaru_colors_defs = custom_target(
+        '@0@-gtk'.format(icon_dir),
+        input: icons_yaru_colors_defs_scss,
+        output: '@BASENAME@.css',
+        command: [
+          sassc, '-a',
+          '@INPUT@', '@OUTPUT@',
+        ],
+        depend_files: [
+          yaru_colors_defs_scss,
+        ]
+      )
 
       foreach accent_svg: source_svgs
         category = fs.name(fs.parent(accent_svg))
@@ -83,11 +90,11 @@ foreach flavour: icon_flavors
           output: '@BASENAME@-@0@.svg'.format(flavour),
           command: [
             colorize_dummy_svg,
-            colors_definitions,
+            icons_yaru_colors_defs,
             '--input-file', '@INPUT@',
             '--output-folder', '@OUTDIR@' / flavour / category,
           ],
-          depends: colors_definitions,
+          depends: icons_yaru_colors_defs,
         )
         rendering_deps += accented_svg
       endforeach
@@ -177,46 +184,19 @@ foreach flavour: icon_flavors
     # The part above this line is meant to only contain "target definition"
     # not to install or generate things. Put them below!
 
-    excluded_folders = []
     excluded_files = [
       index_theme,
       cursor_theme,
     ]
 
-    if not uses_panel_icons
-      included_names = []
-      foreach i: range(PANEL_ONLY_ICONS_CATEGORIES.length())
-        included_names += ['-name', PANEL_ONLY_ICONS_CATEGORIES[i]]
-        if i < PANEL_ONLY_ICONS_CATEGORIES.length() - 1
-          included_names += '-or'
-        endif
-      endforeach
-
-      excluded_folders += run_command('find', icon_dir,
-        '-type', 'd',
-        included_names.length() > 0 ? ['('] + included_names + [')'] : [],
-        '-printf', '%P\\n',
-      ).stdout().strip().split('\n')
-
-      if excluded_folders.length() == 1 and excluded_folders[0] == ''
-        excluded_folders = []
-      endif
-    endif
-
     symlinks = []
     if fs.is_dir(icon_dir)
       message('Looking for symlinks in ' + icon_dir)
-
-      find_args = []
-      foreach f: excluded_folders
-        find_args += ['(', '-not', '-path', icon_dir / f / '*', '-prune', ')' ]
-      endforeach
 
       local_links = run_command(
         'find',
         icon_dir,
         '-type', 'l',
-        find_args,
         check: true,
       ).stdout().strip().split('\n')
 
@@ -251,7 +231,6 @@ foreach flavour: icon_flavors
       install_dir: theme_install_dir,
       strip_directory: true,
       exclude_files: excluded_files,
-      exclude_directories: excluded_folders,
     )
 
     foreach i: range(symlinks.length())
@@ -302,11 +281,6 @@ foreach flavour: icon_flavors
           continue
         endif
 
-        category = fs.name(c)
-        if not uses_panel_icons and PANEL_ONLY_ICONS_CATEGORIES.contains(category)
-          continue
-        endif
-
         target = run_command(python, '-c',
           'import os, sys; print(os.path.relpath(sys.argv[1], sys.argv[2]))',
           dark_theme / c,
@@ -326,27 +300,9 @@ foreach flavour: icon_flavors
       endforeach
     endif
 
-    # install cursor thumbnail (cinnamon only)
-    if get_option('cinnamon-shell') and flavour == 'default'
-      install_data(
-        join_paths('src', 'cursors', 'thumbnail.png'),
-        install_dir: join_paths(theme_install_dir, 'cursors')
-      )
-    endif
-
     generate_index_theme_args = []
-    foreach ef: excluded_folders
-      generate_index_theme_args += ['--exclude-directory', ef]
-    endforeach
-
     if is_flavour
       if is_dark_flavour
-        if not fs.is_dir(theme_dir)
-          foreach c: uses_panel_icons ? [] : PANEL_ONLY_ICONS_CATEGORIES
-            generate_index_theme_args += ['--exclude-context', c]
-          endforeach
-        endif
-
         generate_index_theme_args += [
           '--inherits', dark_theme,
           '--source-dir', meson.current_source_dir() / dark_theme,
