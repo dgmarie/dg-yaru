@@ -19,6 +19,6 @@ $slider_size: 16px;
   -slider-handle-border-width: if($variant=='light', 1px, 0); // Yaru change: add border on light theme
   -slider-handle-border-color: if($variant=='light', darken($alt_borders_color, 3%), transparent); // because 0 width - Yaru change: the handle border needs to be darker for the light theme
   -slider-handle-radius: $slider_size * 0.5; // half the size of the size
-
+  color: white;
   height: if($variant == 'light', $slider_size + 2px, $slider_size); // Yaru change: increase height in light theme due to border
 }
