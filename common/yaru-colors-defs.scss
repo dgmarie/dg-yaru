@@ -8,12 +8,12 @@ $variant: if($yaru_is_dark_variant, 'dark', 'light');
 $yaru_colors: (
     bg-color: $bg_color,
     accent-bg-color: $yaru_accent_bg_color,
-    accent-active-color: $progress_bg_color,
-    accent-focused-color: if($variant == 'dark', darken($accent_bg_color, 7%), darken($accent_bg_color, 3%)),
+    accent-active-color: $accent_bg_color,
+    accent-focused-color: $accent_bg_color,
     border-color: $borders_color,
-    disabled-bg-color: mix($bg_color, $fg_color, 80%),
-    switch-bg-color: if($variant == 'dark', lighten($inkstone, 5%), lighten($ash, 20%)),
-    check-bg-color: if($variant == 'dark', lighten($bg_color, 2%), $porcelain),
+    disabled-bg-color: transparentize($bg_color, .5),
+    switch-bg-color: $borders_color,
+    check-bg-color: $borders_color,
 );
 
 $yaru_colors: map-merge($yaru_colors, (
@@ -33,11 +33,11 @@ $yaru_colors: map-merge($yaru_colors, (
 
 * {
 @each $name, $color in $yaru_colors {
-    -yaru-#{$name}: #{$color};
-
     $opaque: opaque-color($color);
-    @if $opaque != $color {
-        -yaru-#{$name}-opaque: $opaque;
+    @if $opaque == $color {
+        -yaru-#{$name}: #{$color};
+    } @else {
+        -yaru-#{$name}: $opaque;
     }
 }
 };

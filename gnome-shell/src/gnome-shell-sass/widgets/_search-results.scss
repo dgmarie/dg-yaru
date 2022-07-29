@@ -23,17 +23,18 @@
 
 // content
 .search-section-content {
-  background-color: $dash_background_color; // Yaru: use same background as dash
-  border-radius: $modal_radius*1.5;
-  border: 1px solid $borders_color_dark; // Yaru: use same border-color as dash
+  background-color: mix($bg_color_dark, white, 92%);
+  border-radius: $base_border_radius * 2;
   color: $osd_fg_color;
   padding: $base_padding*2;
-  margin:0 $base_margin*3;
+  margin: $base_margin*3;
+  border: 1px solid transparentize(black, .92);
+  box-shadow: 0 1px 2px 1px transparentize(black, .98);
 }
 
 %search_section_content_item {
   @include tile_button($osd_fg_color);
-  border-radius: $base_border_radius+3px;
+  border-radius: $base_border_radius+2px;
 }
 
 // "no results" text

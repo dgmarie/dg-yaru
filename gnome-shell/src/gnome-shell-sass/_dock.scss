@@ -361,12 +361,12 @@ $dock_color: $panel_bg_color;
             padding: 0px;
 
             .dash-background {
-                background: transparentize($dock_color, 0.25);
+                background: transparentize($dock_color, 0.2);
                 transition-duration: $panel_transition_duration;
             }
 
             .dash-separator {
-                background: transparentize($osd_fg_color, 0.7);
+                background: borders_color;
             }
         }
 

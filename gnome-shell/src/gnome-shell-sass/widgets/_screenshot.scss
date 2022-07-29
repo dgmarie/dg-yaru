@@ -8,7 +8,7 @@
 
 $screenshot_ui_panel_padding: $base_padding*3;
 $screenshot_ui_shot_cast_margin: 21px;
-$screenshot_ui_panel_border_radius: $modal_radius + $screenshot_ui_shot_cast_margin;
+$screenshot_ui_panel_border_radius: $modal_radius * 1.5;
 $screenshot_ui_shot_cast_spacing: 3px;
 
 $screenshot_ui_button_red: $red; // Yaru: Use our palette's color
@@ -33,7 +33,7 @@ $screenshot_ui_button_red: $red; // Yaru: Use our palette's color
 .screenshot-ui-type-button {
   @extend %osd_button;
   padding: $base_padding * 2 $base_padding * 3 !important;
-  border-radius: $screenshot_ui_panel_border_radius - $screenshot_ui_panel_padding;
+  border-radius: $modal_radius - 2px;
 }
 
 .screenshot-ui-capture-button {
@@ -98,7 +98,7 @@ $screenshot_ui_button_red: $red; // Yaru: Use our palette's color
   &:active { background-color: lighten($active_bg_color,5%);}
   &:checked { background-color: white; color: black;}
 
-  border-radius: $modal_radius - $screenshot_ui_shot_cast_spacing;
+  border-radius: $modal_radius - 2px;
 
   StIcon { icon-size: $base_icon_size;}
 }
@@ -149,7 +149,7 @@ $screenshot_ui_button_red: $red; // Yaru: Use our palette's color
 
 .screenshot-ui-window-selector-window-border {
   transition-duration: 200ms;
-  border-radius: $modal_radius;
+  border-radius: $modal_radius - 2px;
   border: 6px transparent;
 }
 

@@ -2,7 +2,7 @@
 
 // the popover itself
 .popup-menu-boxpointer {
-  -arrow-rise: $base_margin+2px; // distance from the panel & screen edge
+  -arrow-rise: $base_margin + 2px; // distance from the panel & screen edge
 }
 
 // container of the popover menu
@@ -22,7 +22,7 @@
 
   border-radius: $modal_radius - 2px;
   border: 1px solid $borders_edge;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1px 6px 2px transparentize(black, .93);
   background-color: $bg_color;
 }
 
@@ -57,7 +57,7 @@
     color: $active_fg_color;
   }
 
-  &:insensitive {color: transparentize($fg_color,0.5);}
+  &:insensitive {color: scale-color($fg_color, $alpha: -50%);}
 
   // add margin to switches in menu items
   .toggle-switch {
@@ -101,12 +101,12 @@
       border-radius: 0 0 $base_border_radius $base_border_radius;
     }
 
-    &:focus,&:hover { background-color: lighten($hover_bg_color, 10%) !important;}
+    &:focus,&:hover { background-color: $hover_bg_color !important;}
     &:checked {
-      background-color: lighten($checked_bg_color, 10%) !important;
-      &:focus,&:hover { background-color: lighten($checked_bg_color, 8%) !important;}
+      background-color: $checked_bg_color !important;
+      &:focus,&:hover { background-color: $checked_hover_bg_color !important;}
     }
-    &:active { background-color: lighten($active_bg_color, 10%) !important;}
+    &:active { background-color: $checked_active_bg_color !important;}
   }
 
   .popup-menu-section {
@@ -153,7 +153,7 @@
     &:rtl { margin-left: 2.5em;}
 
     .popup-separator-menu-item-separator {
-      background-color: lighten($borders_color, 7%);
+      background-color: $borders_color;
     }
   }
 }

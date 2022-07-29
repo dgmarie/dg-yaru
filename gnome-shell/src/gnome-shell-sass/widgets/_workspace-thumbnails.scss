@@ -24,7 +24,7 @@
 
 // selected indicator
 .workspace-thumbnail-indicator {
-  border: 2px solid $focus_border_color; // Yaru: we detached focus from selected
+  border: 2px solid $selected_borders_color; // Yaru: we detached focus from selected
   border-radius: 3px;
   padding: 0px;
   // background-color: transparentize($selected_bg_color, 0.9);

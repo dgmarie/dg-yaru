@@ -11,35 +11,30 @@
   border: none;
   background-color: transparent;
 
-  $_gdm_bg: $base_color; // Yaru change: use $base_color for dark/light theme switch
+  $_gdm_bg: $system_bg_color; // Yaru change: use $base_color for dark/light theme switch
 
   .modal-dialog-button-box { spacing: 3px; }
   .modal-dialog-button {
     padding: 4px 18px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    background-color: $_gdm_bg; // Yaru change: use $_gdm_bg
-    border-color: $borders_color; // Yaru change: use $borders_color
-    color: $fg_color; // Yaru change: use $fg_color for dark/light theme
+    border: 1px solid transparentize(black, .92);
+    box-shadow: 0 1px 2px 1px transparentize(black, .98);
 
-    $_hover_c: if($variant == 'light', darken($_gdm_bg, 15%), lighten($_gdm_bg, 5%)); // Yaru change: use $_gdm_bg and modify light theme background
+    @include button(normal);
 
-    // &:hover, &:focus { // Yaru: no need to change background on focus thanks to focus ring
+    &:focus {
+      @include button(focus);
+    }
+
     &:hover {
-      background-color: $_hover_c;
-      // border-color: $_hover_c; // Yaru: don't overwrite border on hover
+      @include button(hover);
     }
-    &:focus { // Yaru: add focus ring
-      border-color: $focus_border_color;
-      box-shadow: inset 0 0 0 1px $focus_border_color;
-    }
+
     &:active {
-      $_active_c: if($variant == 'light', darken($_gdm_bg, 25%), darken($_gdm_bg, 5%)); // Yaru: adapt active color
-      box-shadow: none;
-      background-color: $_active_c;
-      color: transparentize($osd_fg_color, 0.3);
+      @include button(active);
     }
+
     &:default {
-      @include button(default, $c:$suggested_bg_color, $tc:$selected_fg_color);
+      @include button(default);
     }
   }
 
@@ -118,8 +113,20 @@
 
 .login-dialog-user-list-item {
   border-radius: $base_border_radius + 4px;
-  padding: 6px;
-  color: darken($osd_fg_color,30%);
+  color: $card_fg_color;
+  background-color: $card_bg_color;
+  border: 1px solid transparentize(black, .92);
+  box-shadow: 0 1px 2px 1px transparentize(black, .98);
+
+  &:hover {
+    background-color: $card_hover_bg_color;
+  }
+
+  &:active {
+    background-color: $card_active_bg_color;
+  }
+  margin: $base_margin * 2;
+  padding: $base_padding * 1.5;
   &:ltr .user-widget { padding-right: 1em; }
   &:rtl .user-widget { padding-left: 1em; }
   .login-dialog-timed-login-indicator {
@@ -174,10 +181,10 @@
 
 .login-dialog {
   StEntry {
-    @if $variant=='dark' {
-      $_gdm_entry_bg: darken($system_bg_color, 3%);
-      background-color: $_gdm_entry_bg;
-      color: $fg_color;
+    border: 1px solid transparentize(black, .92);
+    box-shadow: 0 1px 2px 1px transparentize(black, .98);
+    &:focus {
+      box-shadow: 0 0 0 2px $selected_borders_color inset;
     }
   }
 }
@@ -185,11 +192,13 @@
 // Custom styling for unlock entry
 .unlock-dialog {
   StEntry {
-    border:none !important;
+    border: 1px solid transparentize(black, .92);
+    box-shadow: 0 1px 2px 1px transparentize(black, .98);
+
     &, &:focus { // Yaru change: also style unfocused state
       color: $fg_color_dark; // Yaru change: fix for light theme
       background-color: transparentize($fg_color_dark, 0.9); // Yaru change: ↑↑↑
-      box-shadow: none; // Yaru change: remove box-shadow because of ugly render
+      box-shadow: 0 0 0 2px $selected_borders_color inset;
     }
     
     &:insensitive { // Yaru change: fix for light theme
@@ -212,7 +221,8 @@
   .login-dialog-session-list-button {
     border-color: transparent;
     background-color: transparentize($fg_color_dark, 0.9); // Yaru change: fix for light theme
-    box-shadow: none; // Yaru change: remove shadow cause to transparent bg
+    border: 1px solid transparentize(black, .92);
+    box-shadow: 0 1px 2px 1px transparentize(black, .98);
 
     &,
     &:hover,
@@ -227,7 +237,7 @@
     }
 
     &:active { // Yaru change: ↑↑↑
-      background-color: transparentize($fg_color_dark, 0.80);
+      background-color: transparentize($fg_color_dark, 0.70);
     }
   }
 }

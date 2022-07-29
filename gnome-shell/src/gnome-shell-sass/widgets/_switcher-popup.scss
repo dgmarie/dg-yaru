@@ -16,7 +16,6 @@ $switcher_border_radius: $modal_radius + 8px;
   @extend %osd_panel;
   padding: $switcher_padding;
   border-radius: $switcher_border_radius;
-  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.1);
 
   // container for items in list
   .switcher-list-item-container {

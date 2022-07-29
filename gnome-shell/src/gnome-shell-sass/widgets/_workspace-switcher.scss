@@ -9,6 +9,7 @@ $ws_dot_inactive: $ws_indicator_height / 6;
   margin-bottom: 4em;
   spacing: $base_padding * 2;
   padding: $base_padding * 2 $base_padding * 3;
+  border-radius: $modal_radius;
 }
 
 .ws-switcher-indicator {

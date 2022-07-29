@@ -35,18 +35,20 @@ $base_border_radius: 8px; // Yaru change: sync radius with Gtk4
 // radii of things that display over other things, e.g. popovers
 $modal_radius: $base_border_radius*2; // 24px
 
-// derived hover colors - Yaru: we want the hover bg to be a visible gray for dark and light shell themes
-$hover_bg_color: transparentize($fg_color, 0.9);
+// derived hover colors
+$hover_bg_color: scale-color($fg_color, $alpha: -93%);
 $hover_fg_color: $fg_color;
-$hover_borders_color: lighten($borders_color,if($variant=='light', 5%, 5%));
+$hover_borders_color: $borders_color;
 
 // derived active colors - Yaru: we want the active bg to be a visible gray for dark and light shell themes
-$active_bg_color: transparentize($fg_color, 0.8);
-$active_fg_color: darken($fg_color, if($variant=='light', 5%, 3%));
+$active_bg_color: scale-color($fg_color, $alpha: -84%);
+$active_fg_color: $fg_color;
 
 // derived checked colors
-$checked_bg_color: if($variant=='light', darken($bg_color, 7%), lighten($bg_color, 9%));
-$checked_fg_color: if($variant=='light', darken($fg_color, 7%), lighten($fg_color, 9%));
+$checked_bg_color: scale-color($fg_color, $alpha: -90%);
+$checked_fg_color: $fg_color;
+$checked_hover_bg_color: scale-color($fg_color, $alpha: -87%);
+$checked_active_bg_color: scale-color($fg_color, $alpha: -81%);
 
 // fonts
 $base_font_size: 11;
@@ -69,10 +71,10 @@ stage {
 %osd_panel {
   color: $osd_fg_color;
   background-color: $osd_bg_color;
-  border: 1px solid $borders_color_dark; // Yaru: use our border
-  border-radius: 999px;
   padding: $base_padding*2;
-  box-shadow: 0 3px 9px 1px transparentize(black, 0.5); // Yaru: OSDs need to be visible on dark backgrounds
+  border-radius: $modal_radius*1.5;
+  border: 1px solid $borders_edge_dark;
+  box-shadow: 0 1px 6px 2px transparentize(black, .93);
 }
 
 // Overview panels
@@ -84,7 +86,7 @@ stage {
 
 // icon tiles
 %tile {
-  border-radius: $base_border_radius * 2; // 16px
+  border-radius: $base_border_radius * 2;
   padding: $base_padding;
   spacing: $base_padding;
   border: 2px solid transparent;
@@ -97,8 +99,9 @@ stage {
 %bubble_panel {
   color: $fg_color;
   background-color: $bg_color;
-  border-radius: $base_border_radius*1.25 + 1px;
+  border-radius: $modal_radius - 2px;
   border: 1px solid $borders_edge;
+  box-shadow: 0 1px 6px 2px transparentize(black, .93);
 }
 
 // normal button styling
@@ -119,19 +122,18 @@ stage {
 
 %button_dark { // Yaru change: add dark variant (for light theme)
   @extend %button;
-  @include button(normal, $tc: $fg_color_dark, $c: $bg_color_dark);
-  &:focus { @include button(focus, $tc: $fg_color_dark, $c: $bg_color_dark);}
-  &:hover { @include button(hover, $tc: $fg_color_dark, $c: $bg_color_dark);}
-  &:insensitive { @include button(insensitive, $tc: $fg_color_dark, $c: $bg_color_dark);}
-  &:active { @include button(active, $tc: $fg_color_dark, $c: $bg_color_dark);}
-  &:checked { @include button(checked, $tc: $fg_color_dark, $c: $bg_color_dark);}
+  @include button(normal, $tc: $fg_color_dark);
+  &:focus { @include button(focus, $tc: $fg_color_dark);}
+  &:hover { @include button(hover, $tc: $fg_color_dark);}
+  &:insensitive { @include button(insensitive, $tc: $fg_color_dark);}
+  &:active { @include button(active, $tc: $fg_color_dark);}
+  &:checked { @include button(checked, $tc: $fg_color_dark);}
 }
 
 // buttons in dialogs/notifications
 // lighter in color and have a greater radius
 
-$bubble_button_radius:$base_border_radius*1.25;
-$bubble_buttons_color: $bg_color; // Yaru change: use regular color
+$bubble_button_radius: $modal_radius - 3px;
 
 // buttons in dialogs
 %bubble_button {
@@ -141,11 +143,11 @@ $bubble_buttons_color: $bg_color; // Yaru change: use regular color
   &:ltr {margin-right: 1px;}
   &:rtl {margin-left: 1px;}
 
-  @include button(normal, $c:$bubble_buttons_color);
-  &:insensitive { @include button(insensitive, $c:$bubble_buttons_color);}
-  &:focus { @include button(focus, $c:$bubble_buttons_color);}
-  &:hover { @include button(hover, $c:$bubble_buttons_color);}
-  &:active { @include button(active, $c:$bubble_buttons_color);} // Yaru change: add missing active state
+  @include button(normal);
+  &:insensitive { @include button(insensitive);}
+  &:focus { @include button(focus);}
+  &:hover { @include button(hover);}
+  &:active { @include button(active);} // Yaru change: add missing active state
   
   &:first-child:ltr {
     border-radius: 0 0 0 $bubble_button_radius; 
@@ -177,11 +179,11 @@ $bubble_buttons_color: $bg_color; // Yaru change: use regular color
 // that are undecorated by default and use OSD colors
 %osd_button {
   @include button(undecorated);
-  &:insensitive { @include button(undecorated, $tc:$osd_fg_color, $c:$osd_bg_color);}
-  &:focus { @include button(focus, $tc:$osd_fg_color, $c:$osd_bg_color);}
-  &:hover { @include button(hover, $tc:$osd_fg_color, $c:$osd_bg_color);}
-  &:active { @include button(active, $tc:$osd_fg_color, $c:$osd_bg_color);}
-  &:outlined,&:checked { @include button(checked, $tc:$osd_fg_color, $c:$osd_bg_color);}
+  &:insensitive { @include button(undecorated, $tc:$osd_fg_color);}
+  &:focus { @include button(focus, $tc:$osd_fg_color);}
+  &:hover { @include button(hover, $tc:$osd_fg_color);}
+  &:active { @include button(active, $tc:$osd_fg_color);}
+  &:outlined,&:checked { @include button(checked, $tc:$osd_fg_color);}
 }
 
 /* General Typography */

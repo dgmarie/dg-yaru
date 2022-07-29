@@ -2,21 +2,21 @@
 
 // overall menu
 #calendarArea {
-  padding: $base_padding - 2px;
+	padding: 0;
 }
 
 // Calendar menu side column
 .datemenu-calendar-column {
-  spacing: $base_padding;
-  &:ltr {padding-left: $base_padding;}
-  &:rtl {padding-right: $base_padding;}
-  .datemenu-displays-box {spacing: $base_padding;}
+  spacing: $base_padding - 4px;
+  &:ltr {padding-left: $base_padding - 4px;}
+  &:rtl {padding-right: $base_padding  - 4px;}
+  .datemenu-displays-box {spacing: 0;}
 }
 
 /* today button (the date) */
 .datemenu-today-button {
-  @include card($flat: true);
-  padding: $base_padding * 1.5;
+  @include card;
+  padding: $base_padding * 2;
 
   // weekday label
   .day-label {
@@ -30,15 +30,16 @@
 
   &:insensitive { // Yaru change: fix insensitive state in light theme
     .day-label, .date-label {
-      color: $insensitive_fg_color;
+      color: scale-color($fg_color, $alpha: -50%);
     }
   }
 }
 
 /* Calendar */
 .calendar {
-  @include card(flat);
+  @include card;
   margin-top: 0;
+	padding: $base_padding;
 
   // month header
   .calendar-month-header {
@@ -82,7 +83,7 @@
     &:focus {
       background-color: mix($bg_color, $selected_bg_color, 80%);
       // color: $selected_fg_color; // Yaru change: fix unfocused selected color
-      box-shadow:inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
+      box-shadow:inset 0 0 0 2px transparentize($selected_bg_color, 0.5);
     }
 
     &:active,&:selected {
@@ -107,7 +108,7 @@
   .calendar-work-day {}
   .calendar-nonwork-day {color: $insensitive_fg_color;}
   .calendar-other-month-day {
-    color: transparentize($fg_color, 0.5);
+    color: scale-color($fg_color, $alpha: -50%);
     &.calendar-nonwork-day {
       color: transparentize($insensitive_fg_color, 0.5);
     }

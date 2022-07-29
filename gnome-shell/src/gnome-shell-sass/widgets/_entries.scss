@@ -28,6 +28,6 @@ StEntry {
 
   StLabel.hint-text {
     margin-left: 2px;
-    color: transparentize($fg_color, 0.3);
+    color: scale-color($fg_color, $alpha: -30%);
   }
 }
