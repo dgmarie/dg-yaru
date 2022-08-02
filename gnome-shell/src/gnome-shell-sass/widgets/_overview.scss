@@ -16,7 +16,7 @@
     &:focus { @include entry(focus, $c:$fg_color_dark);}
     &:insensitive { @include entry(insensitive, $c:$fg_color_dark);}
     border: 1px solid transparentize(black, .92);
-    box-shadow: 0 1px 2px 1px transparentize(black, .98);
+    box-shadow: 0 1px 2px 1px transparentize(black, .97);
   }
 }
 
