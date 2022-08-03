@@ -41,7 +41,7 @@
 
   @if $t==normal {
     background-color: scale-color($c, $alpha: -90%);
-    color: scale-color($c, $alpha: -30%);
+    color: $c;
     border: none;
   }
 
@@ -57,7 +57,7 @@
 
   @if $t==insensitive {
     background-color: scale-color($c, $alpha: -95%);
-    color: scale-color($c, $alpha: -65%);
+    color: scale-color($c, $alpha: -50%);
   }
 }
 
