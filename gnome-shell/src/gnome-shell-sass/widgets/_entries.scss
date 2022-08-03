@@ -1,11 +1,11 @@
 /* Entries */
 
+$entry_height: 34px;
+
 StEntry {
-  min-height: 22px; // Yaru change: fix for height shift
-  border-radius: $base_border_radius;
-  padding: 8px;
-  border-width: 1px; // Yaru change: we want bordered entries
-  color: $fg_color;
+  border-radius: $entry_height * 0.5;
+  height: $entry_height;
+  padding: 0 $base_padding+6px;
 
   @include entry(normal);
   &:hover { @include entry(hover);}
@@ -18,12 +18,12 @@ StEntry {
   StIcon.capslock-warning {
     icon-size: 16px;
     warning-color: $warning_color;
-    padding: 0 4px;
+    padding: 0;
   }
 
   StIcon.peek-password {
     icon-size: $base_icon_size;
-    padding: 0 4px;
+    padding: 0;
   }
 
   StLabel.hint-text {

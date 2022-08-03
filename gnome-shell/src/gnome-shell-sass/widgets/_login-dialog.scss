@@ -189,12 +189,10 @@
     height: $large_icon_size;
     border: 1px solid transparentize(black, .92);
     box-shadow: 0 1px 2px 1px transparentize(black, .97);
-    padding: 0 $base_padding+4px;
     @include entry(normal, $c:$fg_color_dark);
     &:hover { @include entry(hover, $c:$fg_color_dark);}
     &:focus { @include entry(focus, $c:$fg_color_dark);}
     &:insensitive { @include entry(insensitive, $c:$fg_color_dark);}
-    color: $fg_color_dark;
     StLabel.hint-text {
       color: transparentize($fg_color_dark, 0.3);
     }
@@ -205,9 +203,7 @@
 .unlock-dialog {
   StEntry {
     border-radius: $large_icon_size * 0.5;
-    color: $fg_color_dark;
     height: $large_icon_size;
-    padding: 0 $base_padding+4px;
     background-color: transparentize($fg_color_dark, 0.9);
 
     &:focus {
