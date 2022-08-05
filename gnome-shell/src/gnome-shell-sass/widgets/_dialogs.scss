@@ -72,7 +72,7 @@
     margin-top: 24px;
     margin-bottom: 14px;
   }
-  .run-dialog-entry { width: 20em; }
+  .run-dialog-entry { width: 18em; }
   .run-dialog-description {
     @extend %caption;
     text-align: center;
@@ -108,7 +108,7 @@
 }
 
 .prompt-dialog-password-entry {
-  width: 20em;
+  width: 18em;
 }
 
 .prompt-dialog-error-label,
