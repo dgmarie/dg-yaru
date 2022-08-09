@@ -53,7 +53,7 @@ $osd_fg_color: #eeeeec;
             }
 
             .dash-separator {
-                background-color: $borders_color;
+                background-color: $borders_color_dark;
                 @if is_horizontal($side) {
                     margin-bottom: 0;
                 } @else {
@@ -366,7 +366,7 @@ $dock_color: $panel_bg_color;
             }
 
             .dash-separator {
-                background: $borders_color;
+                background: $borders_color_dark;
             }
         }
 
