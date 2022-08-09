@@ -1,7 +1,7 @@
 // Search entry
 
 $search_entry_width: 320px;
-$search_entry_height: 34px;
+$search_entry_height: 36px;
 
 %search_entry,
 .search-entry {
@@ -9,7 +9,7 @@ $search_entry_height: 34px;
 
   margin-top: $base_padding * 4; // Yaru change: realign search entry due to fixed panel opacity
   margin-bottom: $base_padding * 2; // Yaru change: realign search entry due to fixed panel opacity
-  padding: $base_padding $base_padding+6px;
+  padding: $base_padding+1px $base_padding+6px;
   width: $search_entry_width;
 
   @include entry(normal);
