@@ -13,7 +13,7 @@ $yaru_colors: (
     border-color: $borders_color,
     disabled-bg-color: transparentize($bg_color, .5),
     switch-bg-color: $borders_color,
-    check-bg-color: $borders_color,
+    check-bg-color: $bg_color,
 );
 
 $yaru_colors: map-merge($yaru_colors, (
