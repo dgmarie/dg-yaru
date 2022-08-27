@@ -1,0 +1,253 @@
+/* Login Dialog */
+
+.login-dialog-banner-view {
+  padding-top: 24px;
+  max-width: 23em;
+}
+
+.login-dialog,
+.unlock-dialog {
+  //reset
+  border: none;
+  background-color: transparent;
+
+  $_gdm_bg: $system_bg_color; // Yaru change: use $base_color for dark/light theme switch
+
+  .modal-dialog-button-box { spacing: 3px; }
+  .modal-dialog-button {
+    padding: 4px 18px;
+    border: 1px solid transparentize(black, .92);
+    box-shadow: 0 1px 2px 1px transparentize(black, .97);
+
+    @include button(normal, $tc: $osd_fg_color);
+
+    &:focus {
+      @include button(focus, $tc: $osd_fg_color);
+    }
+
+    &:hover {
+      @include button(hover, $tc: $osd_fg_color);
+    }
+
+    &:active {
+      @include button(active, $tc: $osd_fg_color);
+    }
+
+    &:default {
+      @include button(default);
+    }
+  }
+
+  .cancel-button,
+  .switch-user-button,
+  .login-dialog-session-list-button {
+    padding: 1px;
+    border-radius: 99px;
+    width: $large_icon_size;
+    height: $large_icon_size;
+    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    // border-color: darken($system_bg_color, 3%);  // Yaru change: don't overwrite button look
+    // background-color: darken($system_bg_color, 3%);  // Yaru change: don't overwrite button look
+
+    StIcon { icon-size: $base_icon_size; }
+  }
+
+  .caps-lock-warning-label,
+  .login-dialog-message { // Yaru: we want all login messages to use OSD fg color
+    color: $osd_fg_color;
+  }
+}
+
+.login-dialog-logo-bin { padding: 24px 0px; }
+.login-dialog-banner { color: $osd_fg_color; }
+.login-dialog-button-box { width: 23em; spacing: 5px; }
+.login-dialog-message { text-align: center; }
+.login-dialog-user-selection-box { padding: 100px 0px; }
+.login-dialog-not-listed-label {
+  padding-left: 2px;
+  .login-dialog-not-listed-button:focus &,
+  .login-dialog-not-listed-button:hover & {
+    color: $osd_fg_color;
+  }
+}
+
+.login-dialog-not-listed-label {
+  @extend %caption;
+  font-weight: bold;
+  color: $osd_fg_color;
+  padding-top: 1em;
+}
+
+.login-dialog-auth-list-view { -st-vfade-offset: 1em; }
+.login-dialog-auth-list {
+  spacing: 6px;
+  margin-left: 2em;
+}
+
+.login-dialog-auth-list-title {
+  margin-left: 2em;
+}
+
+.login-dialog-auth-list-item {
+  border-radius: $base_border_radius + 4px;
+  padding: 6px;
+  color: $osd_fg_color;
+  &:focus, &:selected { background-color: $selected_bg_color; color: $selected_fg_color; }
+}
+
+.login-dialog-auth-list-label {
+  @include fontsize($base_font_size + 2);
+  font-weight: bold;
+  padding-left: 15px;
+
+  &:ltr { padding-left: 14px; text-align: left; }
+  &:rtl { padding-right: 14px; text-align: right; }
+}
+
+.login-dialog-user-list-view { -st-vfade-offset: 1em; }
+.login-dialog-user-list { // Yaru: we want the gray hover to work on GDM, thus the transparentized fg color
+  spacing: 12px;
+  width: 23em;
+  &:expanded .login-dialog-user-list-item:selected { background-color: transparentize($selected_fg_color, 0.9); color: $selected_fg_color; }
+  &:expanded .login-dialog-user-list-item:logged-in { border-right: 2px solid transparentize($selected_fg_color, 0.9); }
+}
+
+.login-dialog-user-list-item {
+  border-radius: $base_border_radius + 4px;
+  color: $osd_fg_color;
+  background-color: mix($system_bg_color, white, 92%);
+  border: 1px solid transparentize(black, .92);
+  box-shadow: 0 1px 2px 1px transparentize(black, .97);
+  padding: 6px;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &:hover {
+    background-color: mix($system_bg_color, white, 89%);
+  }
+
+  &:active {
+    background-color: mix($system_bg_color, white, 84%);
+  }
+  margin: $base_margin * 2;
+  padding: $base_padding * 1.5;
+  &:ltr .user-widget { padding-right: 1em; }
+  &:rtl .user-widget { padding-left: 1em; }
+  .login-dialog-timed-login-indicator {
+    height: 2px;
+    margin-top: 6px;
+    background-color: $osd_fg_color;
+  }
+  &:focus .login-dialog-timed-login-indicator { background-color: $selected_fg_color; }
+}
+
+.user-widget-label {
+  color: $osd_fg_color;
+}
+
+.user-widget.horizontal .user-widget-label {
+  @include fontsize($base_font_size + 2);
+  font-weight: bold;
+  padding-left: 15px;
+
+  &:ltr { padding-left: 14px; text-align: left; }
+  &:rtl { padding-right: 14px; text-align: right; }
+}
+
+.user-widget.vertical .user-widget-label {
+  @include fontsize($base_font_size + 5);
+  text-align: center;
+  font-weight: normal;
+  padding-top: 16px;
+}
+
+.login-dialog-timed-login-indicator {
+  height: 2px;
+  background-color: $osd_fg_color;
+}
+
+.login-dialog-prompt-layout {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  spacing: $base_padding * 2;
+  width: 23em;
+}
+
+.login-dialog-prompt-entry {
+  height: 1.5em;
+}
+
+.login-dialog-prompt-label {
+  color: $osd_fg_color;
+  @include fontsize($base_font_size + 1);
+  padding-top: 1em;
+}
+
+.login-dialog {
+  StEntry {
+    border-radius: $entry_height * 0.5;
+    height: $entry_height;
+    padding: 0 $base_padding+4px;
+    border: 1px solid transparentize(black, .92);
+    box-shadow: 0 1px 2px 1px transparentize(black, .97);
+    @include entry(normal, $c:$osd_fg_color);
+    &:hover { @include entry(hover, $c:$osd_fg_color);}
+    &:focus { @include entry(focus, $c:$osd_fg_color);}
+    &:insensitive { @include entry(insensitive, $c:$osd_fg_color);}
+    StLabel.hint-text {
+      color: transparentize($osd_fg_color, 0.3);
+    }
+  }
+}
+
+// Custom styling for unlock entry
+.unlock-dialog {
+  StEntry {
+    border-radius: $entry_height * 0.5;
+    height: $entry_height;
+    padding: 0 $base_padding+4px;
+    background-color: transparentize($osd_fg_color, 0.9);
+
+    &:focus {
+      color: $osd_fg_color; // Yaru change: fix for light theme
+      background-color: transparentize($osd_fg_color, 0.9);
+    }
+    
+    &:insensitive { // Yaru change: fix for light theme
+      color: transparentize($osd_fg_color, 0.5);
+      background-color: transparentize($osd_fg_color, 0.95);
+    }
+
+    StLabel.hint-text { // Yaru change: fix for light theme
+      color: transparentize($osd_fg_color, 0.3);
+    }
+  }
+
+  .user-icon { // Yaru change: fix for light theme
+    background-color: transparentize($osd_fg_color,0.9);
+    color: $osd_fg_color;
+  }
+
+  .cancel-button,
+  .switch-user-button,
+  .login-dialog-session-list-button {
+    border-color: transparent;
+    background-color: transparentize($osd_fg_color, 0.9); // Yaru change: fix for light theme
+
+    &,
+    &:hover,
+    &:focus,
+    &:active { // Yaru change: fix for light theme
+      color: $osd_fg_color;
+    }
+
+    &:hover,
+    &:focus { // Yaru change: ↑↑↑
+      background-color: transparentize($osd_fg_color, 0.85);
+    }
+
+    &:active { // Yaru change: ↑↑↑
+      background-color: transparentize($osd_fg_color, 0.70);
+    }
+  }
+}

@@ -3,7 +3,7 @@
 
 $variant: if($yaru_is_dark_variant, 'dark', 'light');
 
-@import '../gnome-shell/src/gnome-shell-sass/_colors.scss';
+@import '../gnome-shell/src/gnome-42/gnome-shell-sass/_colors.scss';
 
 $yaru_colors: (
     bg-color: $bg_color,

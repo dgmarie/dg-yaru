@@ -1,0 +1,369 @@
+// Drawing mixins
+
+// generic drawing of more complex things
+
+@function draw_widget_edge($c:$borders_edge) {
+// outer highlight "used" on most widgets
+  @return 0 1px $c;
+}
+
+// provide font size in rem, with px fallback
+@mixin fontsize($size: 24, $base: 16) {
+  font-size: round($size) + pt;
+  //font-size: ($size / $base) * 1rem;
+}
+
+@mixin draw_shadows($shadow1, $shadow2:none, $shadow3:none, $shadow4:none) {
+//
+// Helper function to stack up to 4 box-shadows;
+//
+  @if $shadow4!=none { box-shadow: $shadow1, $shadow2, $shadow3, $shadow4; }
+  @else if $shadow3!=none { box-shadow: $shadow1, $shadow2, $shadow3; }
+  @else if $shadow2!=none { box-shadow: $shadow1, $shadow2; }
+  @else { box-shadow: $shadow1; }
+}
+
+// entries
+
+@mixin entry($t, $fc:$selected_borders_color, $c:$fg_color) { // Yaru: we detached focus from selected
+//
+// Entries drawing function
+//
+// $t: entry type
+// $fc: focus color
+// $c: base entry color, derived from fg_color
+//
+// possible $t values:
+// normal, focus, insensitive
+//
+
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  @if $t==normal {
+    background-color: scale-color($c, $alpha: -90%);
+    color: $c;
+    border: none;
+  }
+
+  @if $t==focus {
+    background-color: scale-color($c, $alpha: -90%);
+    box-shadow: 0 0 0 2px $fc inset; // Yaru change: trick to get 2px border on focus without layout shifting
+    &:hover {}
+  }
+
+  @if $t==hover {
+    background-color: scale-color($c, $alpha: -90%);
+  }
+
+  @if $t==insensitive {
+    background-color: scale-color($c, $alpha: -95%);
+    color: scale-color($c, $alpha: -50%);
+  }
+}
+
+// On-screen Keyboard
+@mixin keyboard_key($t, $c:$osd_bg_color, $tc:$osd_fg_color) {
+// Yaru: FIXME:?! Make keyboard work in both variants
+//
+// Keyboard key drawing function
+//
+// $t:    key type,
+// $c:    base key color for colored* types
+// $tc:   optional text color for colored* types
+//
+// possible $t values:
+// normal, hover, active, insensitive, insensitive-active,
+// backdrop, backdrop-active, backdrop-insensitive, backdrop-insensitive-active,
+// osd, osd-hover, osd-active, osd-insensitive, osd-backdrop, undecorated
+//
+
+  // normal key
+  @if $t==normal {
+    color: $tc;
+    background-color: lighten($c, 3%);
+  }
+
+  // focused key
+  @if $t==focus {
+    color: $tc;
+    background-color: mix(lighten($c, 3%), $selected_bg_color, 90%);
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
+    &:hover {
+      background-color: mix(lighten($c, 8%), $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3);
+    }
+    &:active {
+      background-color: mix(lighten($c, 10%), $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3);
+    }
+  }
+
+  // hover key
+  @else if $t==hover {
+    color: $tc;
+    background-color: if($variant=="light", lighten($c, 1%), lighten($c, 7%)); // Yaru change: Make keyboard work on both variants
+  }
+
+  // active key
+  @else if $t==active {
+    color: $tc;
+    background-color: if($variant=="light", darken($c, 2%), lighten($c, 10%)); // Yaru change: ↑↑↑
+  }
+
+  // checked key
+  @else if $t==checked {
+    color: $tc;
+    background-color: if($variant=="light", darken($c, 5%), lighten($c, 15%)); // Yaru change: ↑↑↑
+  }
+
+  // insensitive key
+  @else if $t==insensitive {
+    color: $insensitive_fg_color;
+    background-color: $insensitive_bg_color;
+  }
+
+  // reset
+  @else if $t==undecorated {
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
+@mixin button($t, $tc:$fg_color) {
+
+$button_color: scale-color($tc, $alpha: -90%);
+$button_hover_color: scale-color($tc, $alpha: -85%);
+$button_active_color: scale-color($tc, $alpha: -70%);
+$button_checked_color: scale-color($tc, $alpha: -70%);
+$button_checked_hover_color: scale-color($tc, $alpha: -65%);
+$button_checked_active_color: scale-color($tc, $alpha: -60%);
+
+//
+// Button drawing function
+//
+// $t:    button type,
+// $tc:    base button colors, derived from fg_color
+//
+// possible $t values:
+// normal, hover, active, insensitive, insensitive-active,
+// backdrop, backdrop-active, backdrop-insensitive, backdrop-insensitive-active,
+// osd, osd-hover, osd-active, osd-insensitive, osd-backdrop, undecorated
+//
+
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  // normal button
+  @if $t==normal {
+    color: $tc;
+    background-color: $button_color;
+  }
+
+  // focused button
+  @if $t==focus {
+    color: $tc;
+    background-color: mix($button_color, $selected_bg_color, 90%);
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
+    &:hover {
+      background-color: mix($button_hover_color, $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3);
+    }
+    &:active {
+      background-color: mix($button_active_color, $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3);
+    }
+  }
+
+  // hover button
+  @else if $t==hover {
+    color: $tc;
+    background-color: $button_hover_color;
+  }
+
+  // active button
+  @else if $t==active {
+    color: $tc;
+    background-color:  $button_active_color;
+  }
+
+  // checked button
+  @else if $t==checked {
+    color: $tc;
+    background-color: $button_checked_color;
+    &:hover { background-color: lighten($button_checked_hover_color, 12%);}
+    &:active { background-color: lighten($button_checked_active_color, 15%);}
+  }
+
+  // insensitive button
+  @else if $t==insensitive {
+    color: scale-color($tc, $alpha: -50%);
+    background-color: scale-color($tc, $alpha: -95%);
+  }
+
+  // default/suggested button
+  @else if $t==default {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
+    &:focus {
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
+    }
+    &:hover, &:focus { 
+      background-color: lighten($selected_bg_color, 5%);
+      color: lighten($selected_fg_color, 5%);
+    }
+    &:active {
+      background-color: darken($selected_bg_color, 7%);
+      color: darken($selected_fg_color, 7%);
+    }
+    &:insensitive {
+      @include button(insensitive);
+      background-color: transparentize($selected_bg_color, .5);
+      color: transparentize($selected_fg_color, .5);
+    }
+  }
+
+  // reset
+  @else if $t==undecorated {
+    background-color: transparent;
+    background-color: none;
+    &:insensitive {
+      @include button(insensitive);
+      background-color: transparent;
+      color: transparentize($selected_fg_color, .5);
+    }
+  }
+}
+
+// tile
+@mixin tile_button($color, $flat: true) {
+  @extend %tile;
+  @if $flat {
+    background-color: transparent;
+  } @else {
+    background-color: transparentize($color, .92);
+    box-shadow: 0 1px 2px 1px transparentize(black, .97);
+  }
+  &:hover { background-color: transparentize($color, .89);}
+  &:active { background-color: transparentize($color, .84);}
+
+  &:selected, &:focus {
+    background-color: transparentize($color, .89);
+    &:hover .overview-icon { background-color: transparentize($color, .84);}
+    &:active .overview-icon { background-color: transparentize($color, .8);}
+  }
+  &:outlined, &:checked {
+    background-color: transparentize($color, .89);
+    &:hover .overview-icon { background-color: transparentize($color, .84);}
+    &:active .overview-icon { background-color: transparentize($color, .8);}
+  }
+  &:drop {
+    border: 2px solid transparentize($selected_bg_color, .2); //already 2px transparent so no jumping
+    background-color: transparentize($selected_bg_color, .8);
+  }
+}
+
+// overview icon, dash, app grid
+@mixin overview_icon($color, $flat: true) {
+  .overview-icon { @extend %tile; }
+  @if $flat {
+    .overview-icon { background-color: transparent;}
+  } @else {
+    .overview-icon {
+      background-color: transparentize($color, .92);
+      box-shadow: 0 1px 2px 1px transparentize(black, .97);
+      transition: background-color 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+  }
+  &:hover .overview-icon { background-color: transparentize($color, .89);}
+  &:active .overview-icon { background-color: transparentize($color, .84);}
+
+  &:selected .overview-icon,
+  &:focus .overview-icon {
+    background-color: transparentize($color, .89);
+    &:hover .overview-icon { background-color: transparentize($color, .84);}
+    &:active .overview-icon { background-color: transparentize($color, .8);}
+  }
+  &:outlined .overview-icon,
+  &:checked .overview-icon {
+    background-color: transparentize($color, .89);
+    &:hover .overview-icon { background-color: transparentize($color, .84);}
+    &:active .overview-icon { background-color: transparentize($color, .8);}
+  }
+  &:drop .overview-icon {
+    border: 2px solid transparentize($selected_bg_color, .2); //already 2px transparent so no jumping
+    background-color: transparentize($selected_bg_color, .8);
+  }
+}
+
+// styling for elements within popovers that look like notifications
+@mixin card {
+  border-radius: $base_border_radius * 1.5;
+  margin: $base_margin * 2;
+  color: $card_fg_color;
+  border: 1px solid transparentize(black, .92);
+  background-color: $card_bg_color;
+  box-shadow: 0 1px 2px 1px transparentize(black, .97) !important; // This needs to apply to the calendar as well
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &:focus {
+    background-color: mix($card_bg_color, $selected_bg_color, 90%);
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
+    &:hover {
+      background-color: mix($card_hover_bg_color, $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+    }
+    &:active {
+      background-color: mix($card_active_bg_color, $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+    }
+  }
+
+  &:hover {
+    background-color: $card_hover_bg_color;
+  }
+
+  &:active {
+    background-color: $card_active_bg_color;
+  }
+}
+
+@mixin osd_card {
+  border-radius: $base_border_radius * 1.5;
+  margin: $base_margin * 2;
+  color: $osd_fg_color;
+  border: 1px solid transparentize(black, .92);
+  background-color: $osd_card_bg_color;
+  box-shadow: 0 1px 2px 1px transparentize(black, .97) !important; // This needs to apply to the calendar as well
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+// styling for notifications
+@mixin notification {
+  margin: $base_margin * 2;
+  color: $fg_color;
+  border-radius: $modal_radius;
+  border: 1px solid $borders_edge;
+  background-color: $bg_color;
+  box-shadow: 0 1px 6px 2px transparentize(black, .93) !important;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &:focus {
+    background-color: mix($bg_color, $selected_bg_color, 90%);
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
+    &:hover {
+      background-color: mix(mix($bg_color, $fg_color, 97%), $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+    }
+    &:active {
+      background-color: mix(mix($bg_color, $fg_color, 92%), $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+    }
+  }
+
+  &:hover {
+    background-color: mix($bg_color, $fg_color, 97%);
+  }
+
+  &:active {
+    background-color: mix($bg_color, $fg_color, 92%);
+  }
+}

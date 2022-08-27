@@ -41,86 +41,16 @@ while getopts 'hab:d:' OPT; do
             ;;
     esac
 done
-# CLInt  GENERATED_CODE: end
 
-wget_check=`which wget | wc -l`
-[ $wget_check == 0 ] && echo "install wget" && exit 1
+pushd /tmp
+git clone --branch ${_branch} --depth 1 https://gitlab.gnome.org/GNOME/gnome-shell.git
+popd
 
+rm -rf ${_destination}
+mkdir -p ${_destination} ${_destination}/data
+cp -a /tmp/gnome-shell/data/theme ${_destination}
+cp -a /tmp/gnome-shell/data/gnome-shell-theme.gresource.xml ${_destination}/data/
+cp -a /tmp/gnome-shell/data/gnome-shell-icons.gresource.xml ${_destination}/data/
+cp -a /tmp/gnome-shell/data/icons ${_destination}/data/
 
-_branch=${_branch:=master}
-data=https://gitlab.gnome.org/GNOME/gnome-shell/raw/${_branch}/data
-root=${data}/theme
-
-[ ! -d ${_destination} ] && echo ${_destination} folder does not exists && exit 1
-[ ! -d ${_destination}/gnome-shell-sass ] && mkdir ${_destination}/gnome-shell-sass
-[ ! -d ${_destination}/gnome-shell-sass/widgets] && mkdir ${_destination}/gnome-shell-sass/widgets
-[ ! -d ${_destination}/data ] && mkdir ${_destination}/data
-
-files=(
-  gnome-shell-sass/widgets/_a11y.scss
-  gnome-shell-sass/widgets/_app-grid.scss
-  gnome-shell-sass/widgets/_base.scss
-  gnome-shell-sass/widgets/_buttons.scss
-  gnome-shell-sass/widgets/_calendar.scss
-  gnome-shell-sass/widgets/_check-box.scss
-  gnome-shell-sass/widgets/_corner-ripple.scss
-  gnome-shell-sass/widgets/_dash.scss
-  gnome-shell-sass/widgets/_dialogs.scss
-  gnome-shell-sass/widgets/_entries.scss
-  gnome-shell-sass/widgets/_hotplug.scss
-  gnome-shell-sass/widgets/_ibus-popup.scss
-  gnome-shell-sass/widgets/_keyboard.scss
-  gnome-shell-sass/widgets/_login-dialog.scss
-  gnome-shell-sass/widgets/_looking-glass.scss
-  gnome-shell-sass/widgets/_message-list.scss
-  gnome-shell-sass/widgets/_misc.scss
-  gnome-shell-sass/widgets/_network-dialog.scss
-  gnome-shell-sass/widgets/_notifications.scss
-  gnome-shell-sass/widgets/_osd.scss
-  gnome-shell-sass/widgets/_overview.scss
-  gnome-shell-sass/widgets/_panel.scss
-  gnome-shell-sass/widgets/_popovers.scss
-  gnome-shell-sass/widgets/_screen-shield.scss
-  gnome-shell-sass/widgets/_scrollbars.scss
-  gnome-shell-sass/widgets/_search-entry.scss
-  gnome-shell-sass/widgets/_search-results.scss
-  gnome-shell-sass/widgets/_slider.scss
-  gnome-shell-sass/widgets/_switcher-popup.scss
-  gnome-shell-sass/widgets/_switches.scss
-  gnome-shell-sass/widgets/_tiled-previews.scss
-  gnome-shell-sass/widgets/_window-picker.scss
-  gnome-shell-sass/widgets/_workspace-switcher.scss
-  gnome-shell-sass/widgets/_workspace-thumbnails.scss
-  gnome-shell-sass/_colors.scss
-  gnome-shell-sass/_common.scss
-  gnome-shell-sass/COPYING
-  gnome-shell-sass/_drawing.scss
-  gnome-shell-sass/gnome-shell-sass.doap
-  gnome-shell-sass/_high-contrast-colors.scss
-  gnome-shell-sass/NEWS
-  gnome-shell-sass/README.md
-  gnome-shell-high-contrast.scss
-  gnome-shell.scss
-  meson.build
-  pad-osd.css
-  README.md
-)
-
-gresource_files=(
-  gnome-shell-theme.gresource.xml
-)
-
-set -e
-for i in ${files[@]}; do
-    wget ${root}/${i} -O ${_destination}/${i}
-done
-
-for i in ${gresource_files[@]}; do
-    gsource=${_destination}/data/${i}
-    wget ${data}/${i} -O $gsource
-    files=$($(dirname $0)/gresources-xml-parser.py --filter '*.css' $gsource)
-
-    for i in ${files}; do
-      wget ${root}/${i} -O ${_destination}/${i}
-    done
-done
+rm -rf /tmp/gnome-shell
