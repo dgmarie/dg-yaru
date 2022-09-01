@@ -65,6 +65,8 @@
   @extend %bubble_panel;
   padding: $base_padding*2.75;
   margin: 0 $base_padding*2.75;
+  
+  .popup-menu-item > StIcon { -st-icon-style: symbolic; }
 
   & .header {
     spacing-rows: 0.5 * $base_padding;
