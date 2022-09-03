@@ -4,7 +4,6 @@ Do not edit icon assets directly (i.e. tweaking those in the "Yaru" folder with 
 
  - [fullcolor](./fullcolor) contains the source files and render scripts for all full-color icons.
  - [scalable](./scalable) contains the source files and render scripts for all symbolic icons.
- - [cursors](./cursors) contains the source files and render scripts for the cursor theme.
  - [symlinks](./symlinks) contains the data lits and generation scripts to create symbolic links the icon theme.
 
 ## Resources

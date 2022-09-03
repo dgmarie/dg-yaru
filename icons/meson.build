@@ -14,7 +14,6 @@ generate_symlinks = find_program('src' / 'symlinks' / 'generate-symlinks.sh', re
 generate_index_theme = find_program('src' / 'generate-index-theme.py', required: true)
 dark_theme = meson.project_name() + '-dark'
 index_theme = 'index.theme'
-cursor_theme = 'cursor.theme'
 render_targets = []
 render_accented_targets = []
 render_and_symlink_targets = []
@@ -186,7 +185,6 @@ foreach flavour: icon_flavors
 
     excluded_files = [
       index_theme,
-      cursor_theme,
     ]
 
     symlinks = []
@@ -329,21 +327,6 @@ foreach flavour: icon_flavors
       install_dir: theme_install_dir,
       rename: index_theme,
     )
-
-    if fs.is_file(icon_dir / cursor_theme)
-      install_data(
-        configure_file(
-          input: icon_dir / cursor_theme,
-          output: flavour + '-@0@'.format(cursor_theme),
-          configuration: {
-            'ProjectName': meson.project_name(),
-            'ThemeName': theme_name,
-          },
-        ),
-        install_dir: theme_install_dir,
-        rename: cursor_theme,
-      )
-    endif
 
     # Cleanup empty directories, as per excluded files
     meson.add_install_script('bash', '-c',
