@@ -11,7 +11,6 @@ endforeach
 fullcolor_path = 'src' / 'fullcolor'
 render_bitmaps = find_program(fullcolor_path / 'render-bitmaps.py', required: true)
 generate_symlinks = find_program('src' / 'symlinks' / 'generate-symlinks.sh', required: true)
-create_symlinks = find_program('src' / 'symlinks' / 'create-symlinks.sh', required: true)
 generate_index_theme = find_program('src' / 'generate-index-theme.py', required: true)
 dark_theme = meson.project_name() + '-dark'
 index_theme = 'index.theme'
@@ -247,11 +246,15 @@ foreach flavour: icon_flavors
         ).stdout().strip()
       endif
 
-      # Save time by only creating necessary symlinks
-      old_target = run_command('readlink', '-f', '@0@/@1@'.format(symlink_dir, fs.name(symlinks[i]))).stdout().strip()
-      # Can't use install_symlink() because python doesn't replace regular files with symlinks
-      if not old_target.endswith(target.strip('../'))
-        meson.add_install_script(create_symlinks, fs.name(symlinks[i]), symlink_dir, target)
+      if meson.version().version_compare('>= 0.61')
+        install_symlink(fs.name(symlinks[i]),
+          install_dir: symlink_dir,
+          pointing_to: target,
+        )
+      else
+        meson.add_install_script('bash', '-c',
+          'mkdir -p "${DESTDIR}/@1@" && ln -svf @2@ ${DESTDIR}/@1@/@0@'.format(
+            fs.name(symlinks[i]), symlink_dir, target))
       endif
     endforeach
 
@@ -282,11 +285,15 @@ foreach flavour: icon_flavors
           icon_dir / fs.parent(c)
         ).stdout().strip()
 
-        # Save time by only creating necessary symlinks
-        old_target = run_command('readlink', '-f', '@0@/@1@'.format(theme_install_dir / fs.parent(c), category)).stdout().strip()
-
-        if not old_target.contains(target.strip('../'))
-          meson.add_install_script(create_symlinks, category / fs.parent(c), symlink_dir, target)
+        if meson.version().version_compare('>= 0.61')
+          install_symlink(category,
+            install_dir: theme_install_dir / fs.parent(c),
+            pointing_to: target,
+          )
+        else
+          meson.add_install_script('bash', '-c',
+            'mkdir -p "${DESTDIR}/@2@"; ln -svf @1@ ${DESTDIR}/@2@/@0@'.format(
+                category, target, theme_install_dir / fs.parent(c)))
         endif
       endforeach
     endif
