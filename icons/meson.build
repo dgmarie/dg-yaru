@@ -247,10 +247,13 @@ foreach flavour: icon_flavors
       endif
 
       if meson.version().version_compare('>= 0.61')
-        install_symlink(fs.name(symlinks[i]),
+        # install symlinks to a tmpfile then move them to allow overwriting non-symlink files
+        install_symlink(fs.name(symlinks[i]) + '.tmp',
           install_dir: symlink_dir,
           pointing_to: target,
         )
+        # this slows things down a bit, there might be a better way to do it
+        meson.add_install_script('mv', '-f', symlink_dir / fs.name(symlinks[i]) + '.tmp', symlink_dir / fs.name(symlinks[i]))
       else
         meson.add_install_script('bash', '-c',
           'mkdir -p "${DESTDIR}/@1@" && ln -svf @2@ ${DESTDIR}/@1@/@0@'.format(
