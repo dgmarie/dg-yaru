@@ -253,7 +253,9 @@ foreach flavour: icon_flavors
           pointing_to: target,
         )
         # this slows things down a bit, there might be a better way to do it
-        meson.add_install_script('mv', '-f', symlink_dir / fs.name(symlinks[i]) + '.tmp', symlink_dir / fs.name(symlinks[i]))
+        meson.add_install_script('bash', '-c',
+          'mv -f "${DESTDIR}/@1@/@0@.tmp" "${DESTDIR}/@1@/@0@"'.format(
+            fs.name(symlinks[i]), symlink_dir))
       else
         meson.add_install_script('bash', '-c',
           'mkdir -p "${DESTDIR}/@1@" && ln -svf @2@ ${DESTDIR}/@1@/@0@'.format(
