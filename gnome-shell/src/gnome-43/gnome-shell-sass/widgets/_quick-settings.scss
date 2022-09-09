@@ -67,7 +67,7 @@
 .quick-toggle-menu {
   @extend %bubble_panel;
   padding: $base_padding*2.75;
-  margin: 0 $base_padding*2.75;
+  margin: $base_padding*2.75 $base_padding*2.75 0;
   
   .popup-menu-item > StIcon { -st-icon-style: symbolic; }
 
