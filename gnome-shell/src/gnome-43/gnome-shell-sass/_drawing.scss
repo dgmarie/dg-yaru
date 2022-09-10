@@ -162,14 +162,14 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   @if $t==focus {
     color: $tc;
     background-color: mix($button_color, $selected_bg_color, 90%);
-    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
     &:hover {
       background-color: mix($button_hover_color, $selected_bg_color, 90%);
-      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
     }
     &:active {
       background-color: mix($button_active_color, $selected_bg_color, 90%);
-      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
     }
   }
 
