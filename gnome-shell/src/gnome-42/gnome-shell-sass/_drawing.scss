@@ -208,11 +208,11 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
     }
     &:hover, &:focus { 
       background-color: lighten($selected_bg_color, 5%);
-      color: lighten($selected_fg_color, 5%);
+      color: $selected_fg_color;
     }
     &:active {
-      background-color: darken($selected_bg_color, 7%);
-      color: darken($selected_fg_color, 7%);
+      background-color: lighten($selected_bg_color, 10%);
+      color: $selected_fg_color;
     }
     &:insensitive {
       @include button(insensitive);
