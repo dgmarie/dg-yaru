@@ -30,7 +30,7 @@
   padding: $base_padding*1.5 $base_padding*2;
   border-radius: $base_border_radius*1.5;
   spacing: $base_padding;
-  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 150ms;
   background-color: transparent;
 
   &:ltr {padding-left: $base_padding;}

@@ -37,7 +37,7 @@
 // normal, focus, insensitive
 //
 
-  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 150ms;
 
   @if $t==normal {
     background-color: scale-color($c, $alpha: -90%);
@@ -150,7 +150,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
 // osd, osd-hover, osd-active, osd-insensitive, osd-backdrop, undecorated
 //
 
-  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 150ms;
 
   // normal button
   @if $t==normal {
@@ -270,7 +270,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
     .overview-icon {
       background-color: transparentize($color, .92);
       box-shadow: 0 1px 3px 0 transparentize(black, .94);
-      transition: background-color 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition-duration: 150ms;
     }
   }
   &:hover .overview-icon { background-color: transparentize($color, .89);}
@@ -301,7 +301,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   color: $card_fg_color;
   background-color: $card_bg_color;
   box-shadow: 0 1px 3px 0 transparentize(black, .94) !important; // This needs to apply to the calendar as well
-  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 150ms;
 
   &:focus {
     background-color: mix($card_bg_color, $selected_bg_color, 90%);
@@ -331,7 +331,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   color: $osd_fg_color;
   background-color: $osd_card_bg_color;
   box-shadow: 0 1px 2px 1px transparentize(black, .97) !important;
-  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 150ms;
 }
 
 // styling for notifications
@@ -342,7 +342,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   border: 1px solid $borders_edge;
   background-color: $bg_color;
   box-shadow: 0 1px 9px 3px transparentize(black, .92) !important;
-  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 150ms;
 
   &:focus {
     background-color: mix($bg_color, $selected_bg_color, 90%);

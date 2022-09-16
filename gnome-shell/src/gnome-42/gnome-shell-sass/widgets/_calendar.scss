@@ -62,6 +62,7 @@
       width: 32px;
       margin: 2px;
       border-radius: $base_border_radius - 2px;
+      transition-duration: 150ms;
       &:hover, &:focus {background-color: $hover_bg_color;}
       &:active {background-color: $active_bg_color;}
     }
@@ -76,6 +77,7 @@
     height: $calendar_day_size !important;
     width: $calendar_day_size !important;
     border-radius: 99px;
+    transition-duration: 150ms;
     @extend %numeric;
     @extend %smaller;
     
