@@ -137,7 +137,7 @@ foreach flavour: icon_flavors
       depends: rendering_deps,
     )
 
-    # Sadly we can't use a run target as dependncy, thus the duplication
+    # Sadly we can't use a run target as dependency, thus the duplication
     generate_symlinks_command = [
       generate_symlinks,
       '--variant', flavour,
@@ -183,124 +183,8 @@ foreach flavour: icon_flavors
     # The part above this line is meant to only contain "target definition"
     # not to install or generate things. Put them below!
 
-    excluded_files = [
-      index_theme,
-    ]
-
-    symlinks = []
     if fs.is_dir(icon_dir)
-      message('Looking for symlinks in ' + icon_dir)
-
-      local_links = run_command(
-        'find',
-        icon_dir,
-        '-type', 'l',
-        check: true,
-      ).stdout().strip().split('\n')
-
-      if local_links.length() == 1 and local_links[0] == ''
-        local_links = []
-      endif
-
-      if local_links.length() > 0
-        links_targets = run_command(
-          'realpath', '-e',
-          '--relative-to=' + meson.current_source_dir() / icon_dir,
-          local_links,
-          check: true,
-        ).stdout().strip().split('\n')
-        assert(local_links.length() == links_targets.length())
-      endif
-
-      foreach i: range(local_links.length())
-        link_paths = local_links[i].split('/')
-        link_subdirs = []
-        foreach j: range(link_paths.length() - 1)
-          link_subdirs += link_paths[j+1]
-        endforeach
-        sub_link = '/'.join(link_subdirs)
-        symlinks += sub_link
-      endforeach
-
-      excluded_files += symlinks
-    endif
-
-    install_subdir(icon_dir,
-      install_dir: theme_install_dir,
-      strip_directory: true,
-      exclude_files: excluded_files,
-    )
-
-    foreach i: range(symlinks.length())
-      link_path = fs.parent(symlinks[i])
-      symlink_dir = theme_install_dir / link_path
-      target = links_targets[i]
-
-      if link_path == fs.parent(target)
-        target = fs.name(target)
-      else
-        target = run_command(python, '-c',
-          'import os, sys; print(os.path.relpath(sys.argv[1], sys.argv[2]))',
-          target,
-          link_path
-        ).stdout().strip()
-      endif
-
-      if meson.version().version_compare('>= 0.61')
-        # install symlinks to a tmpfile then move them to allow overwriting non-symlink files
-        install_symlink(fs.name(symlinks[i]) + '.tmp',
-          install_dir: symlink_dir,
-          pointing_to: target,
-        )
-        # this slows things down a bit, there might be a better way to do it
-        meson.add_install_script('bash', '-c',
-          'mv -f "${DESTDIR}/@1@/@0@.tmp" "${DESTDIR}/@1@/@0@"'.format(
-            fs.name(symlinks[i]), symlink_dir))
-      else
-        meson.add_install_script('bash', '-c',
-          'mkdir -p "${DESTDIR}/@1@" && ln -svf @2@ ${DESTDIR}/@1@/@0@'.format(
-            fs.name(symlinks[i]), symlink_dir, target))
-      endif
-    endforeach
-
-    if is_dark_flavour
-      assert(get_option('dark'), 'Dark flavour @0@ enabled, but we have no dark parent'.format(flavour))
-      # Since we don't have a specific dark theme, we are just re-using
-      # the default dark theme as fallback, while the base flavour theme
-      # is still inherited as primary.
-      dark_categories = run_command(
-        'find',
-        dark_theme,
-        '!', '-path', dark_theme,
-        '-type', 'd',
-        '-mindepth', '2',
-        '-maxdepth', '2',
-        '-printf', '%P\\n',
-      ).stdout().strip()
-      dark_categories = dark_categories != '' ? dark_categories.split('\n') : []
-
-      foreach c: dark_categories
-        if fs.is_dir(icon_dir / c)
-          continue
-        endif
-
-        target = run_command(python, '-c',
-          'import os, sys; print(os.path.relpath(sys.argv[1], sys.argv[2]))',
-          dark_theme / c,
-          icon_dir / fs.parent(c)
-        ).stdout().strip()
-
-        if meson.version().version_compare('>= 0.61')
-          install_symlink(category,
-            install_dir: theme_install_dir / fs.parent(c),
-            pointing_to: target,
-          )
-        else
-          meson.add_install_script('bash', '-c',
-            'mkdir -p "${DESTDIR}/@2@"; ln -svf @1@ ${DESTDIR}/@2@/@0@'.format(
-                category, target, theme_install_dir / fs.parent(c)))
-        endif
-      endforeach
+      meson.add_install_script('rsync', '-l', '-r', '--exclude=' + index_theme, meson.current_source_dir() / icon_dir + '/', '${DESTDIR}' / theme_install_dir)
     endif
 
     generate_index_theme_args = []

@@ -149,7 +149,8 @@ linker () {
 				exit 1
 			fi
 			if [ -z "$_dry_run" ]; then
-				ln -sf "$target" "$link_name"
+			  echo $target
+				ln -rsf "$target" "$link_name"
 			fi
 			generated_links["$link_name"]="$target"
 		elif [ $VARIANT = "default" ] &&
