@@ -184,7 +184,8 @@ foreach flavour: icon_flavors
     # not to install or generate things. Put them below!
 
     if fs.is_dir(icon_dir)
-      meson.add_install_script('rsync', '-l', '-r', '--exclude=' + index_theme, meson.current_source_dir() / icon_dir + '/', '${DESTDIR}' / theme_install_dir)
+      meson.add_install_script('bash', '-c',
+        'rsync -lr --exclude=@0@ @1@/ ${DESTDIR}/@2@'.format(index_theme, meson.current_source_dir() / icon_dir, theme_install_dir))
     endif
 
     generate_index_theme_args = []
