@@ -4,6 +4,7 @@
 
 $base_color: if($variant=='light', #ffffff, lighten($jet, 4%));
 $bg_color: if($variant=='light', #FAFAFA, lighten($jet, 2%));
+$fg_color_light: transparentize(black, 0.2);
 $fg_color: if($variant=='light', transparentize(black, 0.2), white);
 
 $selected_fg_color: $accent_fg_color;

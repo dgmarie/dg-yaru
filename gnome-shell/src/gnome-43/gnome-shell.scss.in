@@ -60,6 +60,7 @@ $UPSTREAM_VARIANTS: ['dark', 'light'];
 @import "gnome-shell-sass/_common";
 @import "gnome-shell-sass/_widgets";
 @import "gnome-shell-sass/_dock";
+@import "gnome-shell-sass/_blur-my-shell";
 
 @if $high_contrast {
     //force symbolic icons
