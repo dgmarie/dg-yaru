@@ -1,6 +1,6 @@
 .quick-settings {
   padding: $base_padding*3;
-  border-radius: $modal_radius*1.5;
+  border-radius: $modal_radius*2;
 
   .icon-button, .button {
     padding: $base_padding*1.75;
@@ -8,8 +8,8 @@
 }
 
 .quick-settings-grid {
-  spacing-rows: $base_padding*2.5;
-  spacing-columns: $base_padding*2.5;
+  spacing-rows: $base_padding*2;
+  spacing-columns: $base_padding*2;
 }
 
 .quick-toggle {
