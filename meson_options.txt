@@ -6,6 +6,7 @@ option('gnome-shell-default-variant', type: 'string', value: 'light', descriptio
 option('gnome-shell-gresource', type: 'boolean', value: false, description: 'build gnome-shell component in gresources')
 option('gnome-shell-user-themes-support', type: 'feature', value: 'enabled', description: 'install gnome-shell uncompressed CSS themes as User Themes expects')
 option('gdm-default-variant', type: 'string', value: 'dark', description:'default variant to be used in GDM')
+option('gtksourceview', type: 'boolean', value: true, description:'build gtksourceview component')
 option('sounds', type: 'boolean', value: true, description:'build sounds component')
 
 option('default', type: 'boolean', value: true, description:'build Yaru default flavour')

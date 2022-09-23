@@ -15,6 +15,7 @@ subdir('common')
 components = [
   'gnome-shell',
   'icons',
+  'gtksourceview',
   'cursors',
   'sounds',
 ]
