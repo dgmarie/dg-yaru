@@ -17,6 +17,7 @@
   .modal-dialog-button {
     padding: 4px 18px;
     box-shadow: 0 1px 3px 0 transparentize(black, .94);
+    border: none !important;
 
     @include button(normal, $tc: $osd_fg_color);
 
