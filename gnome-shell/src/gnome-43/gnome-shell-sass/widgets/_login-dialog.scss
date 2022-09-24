@@ -31,7 +31,10 @@
     &:active {
       @include button(active, $tc: $osd_fg_color);
     }
-
+    &:insensitive {
+      @include button(insensitive, $tc: $osd_fg_color);
+      box-shadow: none;
+    }
     &:default {
       @include button(default);
     }
