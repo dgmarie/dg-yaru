@@ -62,7 +62,7 @@
 }
 
 // On-screen Keyboard
-@mixin keyboard_key($t, $c:$osd_bg_color, $tc:$osd_fg_color) {
+@mixin keyboard_key($t, $tc:$osd_fg_color) {
 // Yaru: FIXME:?! Make keyboard work in both variants
 //
 // Keyboard key drawing function
@@ -77,23 +77,29 @@
 // osd, osd-hover, osd-active, osd-insensitive, osd-backdrop, undecorated
 //
 
+  $key_color: scale-color($tc, $alpha: -90%);
+  $key_hover_color: scale-color($tc, $alpha: -85%);
+  $key_active_color: scale-color($tc, $alpha: -70%);
+  $key_checked_color: scale-color($tc, $alpha: -70%);
+  $key_insensitive_color: scale-color($tc, $alpha: -95%);
+
   // normal key
   @if $t==normal {
     color: $tc;
-    background-color: lighten($c, 3%);
+    background-color: $key_color;
   }
 
   // focused key
   @if $t==focus {
     color: $tc;
-    background-color: mix(lighten($c, 3%), $selected_bg_color, 90%);
+    background-color: mix($key_color, $selected_bg_color, 90%);
     box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
     &:hover {
-      background-color: mix(lighten($c, 8%), $selected_bg_color, 90%);
+      background-color: mix($key_hover_color, $selected_bg_color, 90%);
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3);
     }
     &:active {
-      background-color: mix(lighten($c, 10%), $selected_bg_color, 90%);
+      background-color: mix($key_active_color, $selected_bg_color, 90%);
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3);
     }
   }
@@ -101,25 +107,47 @@
   // hover key
   @else if $t==hover {
     color: $tc;
-    background-color: if($variant=="light", lighten($c, 1%), lighten($c, 7%)); // Yaru change: Make keyboard work on both variants
+    background-color: $key_hover_color;
   }
 
   // active key
   @else if $t==active {
     color: $tc;
-    background-color: if($variant=="light", darken($c, 2%), lighten($c, 10%)); // Yaru change: ↑↑↑
+    background-color: $key_active_color;
   }
 
   // checked key
   @else if $t==checked {
     color: $tc;
-    background-color: if($variant=="light", darken($c, 5%), lighten($c, 15%)); // Yaru change: ↑↑↑
+    background-color: $key_checked_color;
+  }
+
+  // default key
+  @else if $t==default {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
+    &:focus {
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
+    }
+    &:hover, &:focus {
+      background-color: lighten($selected_bg_color, 5%);
+      color: $selected_fg_color;
+    }
+    &:active {
+      background-color: lighten($selected_bg_color, 10%);
+      color: $selected_fg_color;
+    }
+    &:insensitive {
+      @include button(insensitive);
+      background-color: transparentize($selected_bg_color, .5);
+      color: transparentize($selected_fg_color, .5);
+    }
   }
 
   // insensitive key
   @else if $t==insensitive {
     color: $insensitive_fg_color;
-    background-color: $insensitive_bg_color;
+    background-color: $key_insensitive_color;
   }
 
   // reset
@@ -240,7 +268,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
     background-color: transparent;
   } @else {
     background-color: transparentize($color, .92);
-    box-shadow: 0 1px 3px 0 transparentize(black, .94);
+    box-shadow: 0 1px 3px 0 transparentize(black, .95);
   }
   &:hover { background-color: transparentize($color, .89);}
   &:active { background-color: transparentize($color, .84);}
@@ -270,7 +298,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   } @else {
     .overview-icon {
       background-color: transparentize($color, .92);
-      box-shadow: 0 1px 3px 0 transparentize(black, .94);
+      box-shadow: 0 1px 3px 0 transparentize(black, .95);
     }
   }
   &:hover .overview-icon { background-color: transparentize($color, .89);}
@@ -300,7 +328,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   margin: $base_margin * 2;
   color: $card_fg_color;
   background-color: $card_bg_color;
-  box-shadow: 0 1px 3px 0 transparentize(black, .94) !important; // This needs to apply to the calendar as well
+  box-shadow: 0 1px 3px 0 transparentize(black, .95) !important; // This needs to apply to the calendar as well
   transition-duration: 150ms;
 
   &:focus {
@@ -330,7 +358,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   margin: $base_margin * 2;
   color: $osd_fg_color;
   background-color: $osd_card_bg_color;
-  box-shadow: 0 1px 3px 0 transparentize(black, .94) !important;
+  box-shadow: 0 1px 3px 0 transparentize(black, .95) !important;
   transition-duration: 150ms;
 }
 
@@ -341,7 +369,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   border-radius: $modal_radius;
   border: 1px solid $borders_edge;
   background-color: $bg_color;
-  box-shadow: 0 1px 9px 3px transparentize(black, .92) !important;
+  box-shadow: 0 1px 9px 3px transparentize(black, .93) !important;
   transition-duration: 150ms;
 
   &:focus {

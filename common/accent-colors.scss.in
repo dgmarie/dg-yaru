@@ -1,25 +1,29 @@
 @function get_accent_color($accent_color, $is_dark: false) {
     $color: null;
     @if $accent_color == 'default' {
-        $color: #E95420;
+        $color: #ed5b28;
     } @else if $accent_color == 'bark' {
-        $color: #787859;
+        $color: #8d6b4c;
     } @else if $accent_color == 'sage' {
-        $color: #657B69;
+        $color: #737d5a;
     } @else if $accent_color == 'olive' {
-        $color: #4B8501;
+        $color: #518e3c;
     } @else if $accent_color == 'viridian' {
-        $color: #03875B;
+        $color: #1fa36a;
     } @else if $accent_color == 'prussiangreen' {
-        $color: #308280;
+        $color: #27b397;
+    } @else if $accent_color == 'lightblue' {
+        $color: #5298ce;
     } @else if $accent_color == 'blue' {
-        $color: #0073E5;
+        $color: #465acb;
     } @else if $accent_color == 'purple' {
-        $color: #7764D8;
+        $color: #9851c4;
     } @else if $accent_color == 'magenta' {
-        $color: #B34CB3;
+        $color: #c752c7;
+    } @else if $accent_color == 'pink' {
+        $color: #e86ba9;
     } @else if $accent_color == 'red' {
-        $color: #DA3450;
+        $color: #df4242;
     } @else {
         @error('No known accent color defined!');
     }
@@ -31,6 +35,7 @@ $yaru_is_dark_variant: @yaru_dark_variant@;
 $yaru_accent_bg_color: get_accent_color('@yaru_accent_color@', $yaru_is_dark_variant);
 $accent_bg_color: $yaru_accent_bg_color;
 $accent_color: $yaru_accent_bg_color;
+
 @debug("Accent color is " + $yaru_accent_bg_color);
 
 @import '@yaru_theme_entry_point@'

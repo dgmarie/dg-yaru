@@ -58,19 +58,19 @@ foreach flavour: icon_flavors
 
     if is_accent
       accent_configuration = {
-        'yaru_dark_variant': is_dark ? 'true' : 'false',
-        'yaru_accent_color': accent,
+        'yaru_dark_variant': is_dark ? base_flavour : flavour,
+        'yaru_accent_color': flavour,
       }
-      icons_yaru_colors_defs_scss = configure_file(
+      icons_accent_colors_scss = configure_file(
         configuration: accent_configuration + {
           'yaru_theme_entry_point': yaru_colors_defs_scss,
         },
         input: accent_colors_definitions_scss,
-        output: '@0@-yaru-colors-defs.scss'.format(icon_dir),
+        output: '@0@-accent-colors.scss'.format(icon_dir),
       )
-      icons_yaru_colors_defs = custom_target(
-        '@0@-gtk'.format(icon_dir),
-        input: icons_yaru_colors_defs_scss,
+      icons_accent_colors = custom_target(
+        '@0@-accent-colors'.format(icon_dir),
+        input: icons_accent_colors_scss,
         output: '@BASENAME@.css',
         command: [
           sassc, '-a',
@@ -89,11 +89,11 @@ foreach flavour: icon_flavors
           output: '@BASENAME@-@0@.svg'.format(flavour),
           command: [
             colorize_dummy_svg,
-            icons_yaru_colors_defs,
+            icons_accent_colors,
             '--input-file', '@INPUT@',
             '--output-folder', '@OUTDIR@' / flavour / category,
           ],
-          depends: icons_yaru_colors_defs,
+          depends: icons_accent_colors,
         )
         rendering_deps += accented_svg
       endforeach
