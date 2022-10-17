@@ -412,6 +412,7 @@ $dock_color: $panel_bg_color;
             .dash-background {
                 background: transparentize($dock_color, 0.2);
                 transition-duration: $panel_transition_duration;
+                box-shadow: none;
             }
 
             .dash-separator {

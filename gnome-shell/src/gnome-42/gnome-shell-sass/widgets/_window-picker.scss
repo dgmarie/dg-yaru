@@ -28,7 +28,7 @@ $window_close_button_padding: 3px;
 .window-close {
   background-color: $window_close_button_color;
   color: $osd_fg_color;
-  box-shadow: 0 1px 3px 0 transparentize(black, .95);
+  box-shadow: 0 1px 3px 0 transparentize(black, .94);
   border-radius: 99px;
   padding: $window_close_button_padding;
   height: $window_close_button_size;

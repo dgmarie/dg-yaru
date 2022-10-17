@@ -27,7 +27,7 @@ $screenshot_ui_button_red: $red; // Yaru: Use our palette's color
   @extend .window-close; // copy window close button
   padding: $base_padding; // but with more padding
   margin-top: 12px;
-  box-shadow: 0 1px 3px 0 transparentize(black, .95);
+  box-shadow: 0 1px 3px 0 transparentize(black, .94);
   &.left { margin-left: 12px;}
   &.right { margin-right: 12px;}
 }
@@ -129,7 +129,7 @@ $screenshot_ui_button_red: $red; // Yaru: Use our palette's color
 .screenshot-ui-area-selector-handle {
   border-radius: 99px;
   background-color: white;
-  box-shadow: 0 1px 3px 0 transparentize(black, .95);
+  box-shadow: 0 1px 3px 0 transparentize(black, .94);
   width: 24px;
   height: 24px;
 }

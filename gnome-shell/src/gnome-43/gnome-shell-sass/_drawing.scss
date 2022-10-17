@@ -268,7 +268,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
     background-color: transparent;
   } @else {
     background-color: transparentize($color, .92);
-    box-shadow: 0 1px 3px 0 transparentize(black, .95);
+    box-shadow: 0 1px 3px 0 transparentize(black, .94);
   }
   &:hover { background-color: transparentize($color, .89);}
   &:active { background-color: transparentize($color, .84);}
@@ -298,7 +298,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   } @else {
     .overview-icon {
       background-color: transparentize($color, .92);
-      box-shadow: 0 1px 3px 0 transparentize(black, .95);
+      box-shadow: 0 1px 3px 0 transparentize(black, .94);
     }
   }
   &:hover .overview-icon { background-color: transparentize($color, .89);}
@@ -328,7 +328,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   margin: $base_margin * 2;
   color: $card_fg_color;
   background-color: $card_bg_color;
-  box-shadow: 0 1px 3px 0 transparentize(black, .95) !important; // This needs to apply to the calendar as well
+  box-shadow: 0 1px 3px 0 transparentize(black, .94) !important; // This needs to apply to the calendar as well
   transition-duration: 150ms;
 
   &:focus {
@@ -358,7 +358,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   margin: $base_margin * 2;
   color: $osd_fg_color;
   background-color: $osd_card_bg_color;
-  box-shadow: 0 1px 3px 0 transparentize(black, .95) !important;
+  box-shadow: 0 1px 3px 0 transparentize(black, .94) !important;
   transition-duration: 150ms;
 }
 
@@ -369,7 +369,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   border-radius: $modal_radius;
   border: 1px solid $borders_edge;
   background-color: $bg_color;
-  box-shadow: 0 1px 9px 3px transparentize(black, .93) !important;
+  box-shadow: 0 1px 7px 2px transparentize(black, .92) !important;
   transition-duration: 150ms;
 
   &:focus {
