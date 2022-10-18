@@ -30,7 +30,7 @@ $base_padding: 6px;
 $base_margin: 4px;
 
 // border radii
-$base_border_radius: 8px; // Yaru change: sync radius with Gtk4
+$base_border_radius: 8px;
 
 // radii of things that display over other things, e.g. popovers
 $modal_radius: $base_border_radius*2; // 24px
@@ -57,7 +57,7 @@ stage {
   color: $osd_fg_color;
   background-color: $osd_bg_color;
   padding: $base_padding*2;
-  border-radius: $modal_radius*1.5;
+  border-radius: 999px;
   border: 1px solid $osd_outer_borders_color;
   box-shadow: 0 1px 7px 2px transparentize(black, .92);
 }
