@@ -84,7 +84,7 @@ stage {
 %bubble_panel {
   color: $fg_color;
   background-color: $bg_color;
-  border-radius: $modal_radius;
+  border-radius: $modal_radius*1.25;
   border: 1px solid $borders_edge;
   box-shadow: 0 1px 7px 2px transparentize(black, .92);
 }
@@ -118,7 +118,7 @@ stage {
 // buttons in dialogs/notifications
 // lighter in color and have a greater radius
 
-$bubble_button_radius: $modal_radius - 1px;
+$bubble_button_radius: $modal_radius * 1.25 - 1px;
 
 // buttons in dialogs
 %bubble_button {
