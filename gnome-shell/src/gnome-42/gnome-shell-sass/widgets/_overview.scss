@@ -15,7 +15,7 @@
     &:hover { @include entry(hover, $c:$osd_fg_color);}
     &:focus { @include entry(focus, $c:$osd_fg_color);}
     &:insensitive { @include entry(insensitive, $c:$osd_fg_color);}
-    box-shadow: 0 1px 3px 0 transparentize(black, .94);
+    box-shadow: 0 1px 3px 0 transparentize(black, .945);
   }
 }
 
