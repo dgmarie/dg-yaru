@@ -9,7 +9,7 @@
   color: $osd_fg_color;
   padding: $base_padding;
   spacing: $base_padding;
-  box-shadow: 0 1px 7px 2px transparentize(black, .92);
+  box-shadow: 0 1px 16px 0 transparentize(black, .90);
 
   & > #Toolbar {
     border: none;

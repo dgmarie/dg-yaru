@@ -37,7 +37,7 @@ $dash_border_radius: $modal_radius + $dash_padding;
   border: 1px solid $osd_outer_borders_color; // Yaru: add border
   spacing: $base_padding;
   margin-bottom: $dash_padding;
-  box-shadow: 0 1px 7px 2px transparentize(black, .92);
+  box-shadow: 0 1px 16px 0 transparentize(black, .90);
 }
 
 // items on the dash

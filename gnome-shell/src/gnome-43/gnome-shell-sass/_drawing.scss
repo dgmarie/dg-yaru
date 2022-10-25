@@ -369,7 +369,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   border-radius: $modal_radius;
   border: 1px solid $borders_edge;
   background-color: $bg_color;
-  box-shadow: 0 1px 7px 2px transparentize(black, .92) !important;
+  box-shadow: 0 1px 16px 0 transparentize(black, .89) !important;
   transition-duration: 150ms;
 
   &:focus {

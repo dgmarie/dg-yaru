@@ -21,7 +21,7 @@
   padding: $base_padding + 4px;
   border-radius: $modal_radius*1.25;
   border: 1px solid $borders_edge;
-  box-shadow: 0 1px 6px 2px transparentize(black, .93);
+  box-shadow: 0 1px 16px 0 transparentize(black, .90);
   background-color: $bg_color;
 }
 

@@ -64,7 +64,7 @@ stage {
   padding: $base_padding*2;
   border-radius: 999px;
   border: 1px solid $osd_outer_borders_color;
-  box-shadow: 0 1px 7px 2px transparentize(black, .92);
+  box-shadow: 0 1px 16px 0 transparentize(black, .89);
 }
 
 // Overview panels
@@ -91,7 +91,7 @@ stage {
   background-color: $bg_color;
   border-radius: $modal_radius*1.25;
   border: 1px solid $borders_edge;
-  box-shadow: 0 1px 7px 2px transparentize(black, .92);
+  box-shadow: 0 1px 16px 0 transparentize(black, .89);
 }
 
 // normal button styling
