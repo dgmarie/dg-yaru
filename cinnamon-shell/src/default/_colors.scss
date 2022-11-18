@@ -1,0 +1,110 @@
+// When color definition differs for dark and light variant,
+// it gets @if ed depending on $variant
+@import 'palette';
+
+$base_color: if($variant=='light', #fcfcfc, lighten($jet, 3.75%));
+$bg_color: if($variant=='light', #f7f7f7, lighten($jet, 2%));
+$fg_color: if($variant=='light', transparentize(black, 0.2), white);
+
+$selected_fg_color: $accent_fg_color;
+$selected_bg_color: $accent_bg_color;
+$selected_borders_color: transparentize($selected_bg_color, .4);
+
+$borders_color: scale-color($fg_color, $alpha: -85%);
+$alt_borders_color: if($variant=='light', darken($bg_color, 24%), darken($bg_color, 10%));
+$borders_color_dark: $borders_color;
+$borders_edge: if($variant=='light', transparentize(white, 0.2), transparentize($fg_color, 0.93));
+
+$link_color: if($variant=='light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 20%));
+$link_visited_color: if($variant=='light', darken($selected_bg_color, 20%), lighten($selected_bg_color, 10%));
+$top_hilight: $borders_edge;
+
+$warning_color: $yellow;
+$error_color: $red;
+$success_color: lighten($green, 5%);
+$destructive_color: if($variant=='light', $red, darken($red, 10%));
+
+$osd_fg_color: white;
+$osd_text_color: white;
+$osd_bg_color: lighten($jet, 2%);
+$osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
+$osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
+$osd_borders_color: scale-color($osd_fg_color, $alpha: -85%);
+$osd_outer_borders_color: transparentize(white, 0.93);
+
+$shadow_color: transparentize(black, 0.9);
+$system_bg_color: lighten($jet, 3.75%); // Lighten than dash but darken than bg-color
+
+// buttons
+$button_color: scale-color($fg_color, $alpha: -90%);
+$button_hover_color: scale-color($fg_color, $alpha: -85%);
+$button_active_color: scale-color($fg_color, $alpha: -70%);
+$osd_button_color: scale-color($osd_fg_color, $alpha: -90%);
+$osd_button_hover_color: scale-color($osd_fg_color, $alpha: -85%);
+$osd_button_active_color: scale-color($osd_fg_color, $alpha: -70%);
+
+// cards
+$card_bg_color: if($variant == 'light', #ffffff, mix($bg_color, white, 92%));
+$card_hover_bg_color: if($variant == 'light', mix(white, $fg_color, 97%), mix($bg_color, white, 89%));
+$card_active_bg_color: if($variant == 'light', mix(white, $fg_color, 92%), mix($bg_color, white, 84%));
+$card_fg_color: if($variant == 'light', #323232, #ffffff);
+
+$osd_card_bg_color: mix($osd_bg_color, white, 92%);
+
+//insensitive state derived colors
+$insensitive_fg_color: scale-color($fg_color, $alpha: -50%);
+$insensitive_bg_color: mix($bg_color, $base_color, 60%);
+$insensitive_borders_color: $borders_color;
+
+$hover_fg_color: $fg_color;
+$active_fg_color: $fg_color;
+
+$panel_bg_color: $jet;
+$panel_fg_color: #ffffff;
+$dash_background_color: lighten($jet, 2%);
+$panel-alpha-value: 0.6;
+$panel_opaque_value: 0.0;
+
+$dash-alpha-value: 0.6;
+$dash-opaque-alpha-value: 0.0;
+
+// derived hover colors
+$hover_bg_color: scale-color($fg_color, $alpha: -93%);
+$hover_fg_color: $fg_color;
+
+// derived active colors
+$active_bg_color: scale-color($fg_color, $alpha: -84%);
+$active_fg_color: $fg_color;
+
+// derived checked colors
+$checked_bg_color: scale-color($fg_color, $alpha: -90%);
+$checked_fg_color: $fg_color;
+$checked_hover_bg_color: scale-color($fg_color, $alpha: -87%);
+$checked_active_bg_color: scale-color($fg_color, $alpha: -81%);
+
+// Yaru: color variables imported from Mint's cinnamon theme
+// which are not in gnome-shell but are necessary to generate
+// yaru cinnamon theme. We might modify/remove them later after
+// all the yaru specific styles have been included in _tweaks.scss
+
+// Yaru: we already have fg color defined in gnome-shell, we prefer to use them
+// $text_color: if($variant == 'light', #202020, #D3D3D3);
+$text_color: $fg_color;
+
+$separator_color: $borders_color;
+
+$tooltip_bg_color: transparentize(black, 0.2);
+$tooltip_fg_color: #ffffff;
+$tooltip_border_color: transparentize(white, 0.9);
+
+$osd_entry_bg: transparentize($osd_fg_color, 0.9);
+
+// Yaru: we are imitating gnome-shell panel
+// which uses white-ish fg on dark bg
+// for both light and dark mode
+$panel_bg: $panel_bg_color;
+$panel_fg: $panel_fg_color;
+// $panel_bg: $bg_color;
+// $panel_fg: $fg_color;
+
+$entry_bg: scale-color($fg_color, $alpha: -90%);

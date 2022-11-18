@@ -1,4 +1,4 @@
-project('dg-yaru',
+project('qualia',
         version: '1.0',
         meson_version: '>= 0.59',
         license : ['GPL3', 'CC BY-SA 4.0'],
@@ -9,15 +9,20 @@ gnome = import('gnome')
 
 python = find_program('python3')
 sassc = find_program('sassc')
+rsync = find_program('rsync')
 
 subdir('common')
 
 components = [
+  'cinnamon-shell',
+  'metacity',
   'gnome-shell',
   'icons',
   'gtksourceview',
   'cursors',
   'sounds',
+  'ubuntu-unity',
+  'xfwm4',
 ]
 
 enabled_accent_colors = get_option('accent-colors')

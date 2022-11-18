@@ -1,7 +1,7 @@
 ## Build and install themes from source
 
 ## Dependencies
-- Arch based distros: `sudo pacman -S sassc git ninja meson`
+- Arch based distros: `sudo pacman -S sassc git ninja meson rsync`
 
 - Debian based distros: `sudo apt install sassc git ninja-build meson`
 
@@ -15,8 +15,8 @@ git clone https://github.com/dgmarie/dg-yaru.git
 cd dg-yaru
 # Initialize build system (only required once per repo)
 meson build
-# Specify what version of GNOME Shell you are using
-meson configure build -Dgnome-shell-version=42
+# Take a look at the configuration and modify it if needed
+meson configure build 
 # Build and install
 sudo ninja -C build install
 ```

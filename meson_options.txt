@@ -7,10 +7,15 @@ option('gnome-shell-gresource', type: 'boolean', value: false, description: 'bui
 option('gnome-shell-user-themes-support', type: 'feature', value: 'enabled', description: 'install gnome-shell uncompressed CSS themes as User Themes expects')
 option('gdm-default-variant', type: 'string', value: 'dark', description:'default variant to be used in GDM')
 option('gtksourceview', type: 'boolean', value: true, description:'build gtksourceview component')
+option('metacity', type: 'boolean', value: true, description:'build metacity component')
 option('sounds', type: 'boolean', value: true, description:'build sounds component')
+option('cinnamon-shell', type: 'boolean', value: false, description:'build cinnamon component')
 
-option('default', type: 'boolean', value: true, description:'build Yaru default flavour')
-option('dark', type: 'boolean', value: true, description:'build Yaru dark flavour')
+option('default', type: 'boolean', value: true, description:'build qualia default flavour')
+option('dark', type: 'boolean', value: true, description:'build qualia dark flavour')
+option('panel-icons', type: 'boolean', value: true, description:'install panel icons (Mate and Unity)')
+option('xfwm4', type: 'boolean', value: false, description:'build qualia with xfwm4 assets')
+option('ubuntu-unity', type: 'boolean', value: false, description:'build qualia with Unity assets')
 
 # We use the dark flat above to do the dark variants of them
 option('accent-colors',

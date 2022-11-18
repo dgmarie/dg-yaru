@@ -1,3 +1,8 @@
+PANEL_ONLY_ICONS_CATEGORIES = [
+  'animations',
+  'panel',
+]
+
 icon_flavors = [
   'default',
   'dark',
@@ -12,6 +17,7 @@ fullcolor_path = 'src' / 'fullcolor'
 render_bitmaps = find_program(fullcolor_path / 'render-bitmaps.py', required: true)
 generate_symlinks = find_program('src' / 'symlinks' / 'generate-symlinks.sh', required: true)
 generate_index_theme = find_program('src' / 'generate-index-theme.py', required: true)
+uses_panel_icons = get_option('panel-icons')
 dark_theme = meson.project_name() + '-dark'
 index_theme = 'index.theme'
 render_targets = []
@@ -183,9 +189,36 @@ foreach flavour: icon_flavors
     # The part above this line is meant to only contain "target definition"
     # not to install or generate things. Put them below!
 
+    excluded_folders = []
+    excluded_files = [
+      index_theme,
+    ]
+
+    if not uses_panel_icons
+      included_names = []
+      foreach i: range(PANEL_ONLY_ICONS_CATEGORIES.length())
+        included_names += ['-name', PANEL_ONLY_ICONS_CATEGORIES[i]]
+        if i < PANEL_ONLY_ICONS_CATEGORIES.length() - 1
+          included_names += '-or'
+        endif
+      endforeach
+
+      excluded_folders += run_command('find', icon_dir,
+        '-type', 'd',
+        included_names.length() > 0 ? ['('] + included_names + [')'] : [],
+        '-printf', '%P\\n',
+      ).stdout().strip().split('\n')
+
+      if excluded_folders.length() == 1 and excluded_folders[0] == ''
+        excluded_folders = []
+      endif
+    endif
+
+    exclude = ','.join(excluded_folders + excluded_files)
+    
     if fs.is_dir(icon_dir)
       meson.add_install_script('bash', '-c',
-        'rsync -lr --exclude=@0@ @1@/ ${DESTDIR}/@2@'.format(index_theme, meson.current_source_dir() / icon_dir, theme_install_dir))
+        'rsync -lr --exclude={@0@} "@1@/" "${DESTDIR}/@2@"'.format(exclude, meson.current_source_dir() / icon_dir, theme_install_dir))
     endif
 
     generate_index_theme_args = []
@@ -208,7 +241,7 @@ foreach flavour: icon_flavors
         output: flavour + '-@0@'.format(index_theme),
         command: [
           generate_index_theme,
-          icon_dir,
+          theme_name,
           '--source-dir', meson.current_source_dir() / icon_dir,
           '--output-dir', '@OUTDIR@',
           '--output-name', '@OUTPUT@',

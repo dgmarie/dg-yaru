@@ -184,6 +184,7 @@ foreach variant: variants
         'HighContrast': high_contrast ? 'true' : 'false',
         'Colors': (high_contrast ? 'high-contrast-' : '') + 'colors',
         'ColorableAssets': '@0@'.format(colorable_assets_names),
+        'dir': meson.current_source_dir(),
       },
     )
 

@@ -1,0 +1,166 @@
+// Drawing mixins
+
+// Entries
+
+@mixin entry($t, $dark:false) {
+//
+// Entries drawing function
+//
+  border: none;
+  box-shadow: none;
+  transition-duration: 150ms;
+
+  @if $t==normal {
+    color: $text_color;
+    background-color: $entry_bg;
+  }
+
+  @if $t==focus {
+    color: $text_color;
+    background-color: $entry_bg;
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
+  }
+
+  @if $t==insensitive {
+    color: scale-color($text_color, $alpha: -50%);
+    background-color: scale-color($entry_bg, $alpha: -50%);
+  }
+
+  @if $t==osd {
+    color: $osd_fg_color;
+    background-color: $osd_entry_bg;
+  }
+
+  @if $t==osd-focus {
+    color: $osd_fg_color;
+    background-color: $osd_entry_bg;
+    box-shadow: inset 0 0 0 2px $selected_bg_color;
+  }
+
+  @if $t==osd-insensitive {
+    color: scale-color($osd_fg_color, $alpha: -50%);
+    background-color: scale-color($osd_entry_bg, $alpha: -50%);
+  }
+}
+
+// Buttons
+
+@mixin button($t) {
+//
+// Button drawing function
+//
+  border: none;
+  box-shadow: none;
+  transition-duration: 150ms;
+
+  @if $t==normal {
+  //
+  // normal button
+  //
+    color: $fg_color;
+    background-color: $button_color;
+  }
+
+  @else if $t==focus {
+  //
+  // focused button
+  //
+    color: $fg_color;
+    background-color: $button_color;
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
+  }
+
+  @else if $t==focus-hover {
+  //
+  // focused button
+  //
+    color: $fg_color;
+    background-color: $button_hover_color;
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+  }
+
+  @else if $t==hover {
+  //
+  // hovered button
+  //
+    color: $fg_color;
+    background-color: $button_hover_color;
+  }
+
+  @else if $t==active {
+  //
+  // pushed button
+  //
+    color: $fg_color;
+    background-color: $button_active_color;
+  }
+
+  @else if $t==insensitive {
+  //
+  // insensitive button
+  //
+    color: scale-color($text_color, $alpha: -50%);
+    background-color: scale-color($button_color, $alpha: -50%);
+  }
+
+  @else if $t==osd {
+  //
+  // normal osd button
+  //
+    color: $osd_fg_color;
+    background-color: $osd_button_color;
+  }
+
+  @else if $t==osd-hover {
+  //
+  // active osd button
+  //
+    color: $osd_fg_color;
+    background-color: $osd_button_hover_color;
+  }
+
+  @else if $t==osd-active {
+  //
+  // active osd button
+  //
+    color: $selected_fg_color;
+    background-color: $osd_button_active_color;
+  }
+
+  @else if $t==osd-insensitive {
+  //
+  // insensitive osd button
+  //
+    color: scale-color($osd_fg_color, $alpha: -50%);
+    background-color: scale-color($osd_button_color, $alpha: -50%);
+  }
+}
+
+@mixin card {
+  border-radius: 12px;
+  color: $card_fg_color;
+  background-color: $card_bg_color;
+  box-shadow: 0 1px 3px 2px transparentize(black, .945) !important; // This needs to apply to the calendar as well
+  transition-duration: 150ms;
+
+  &:focus {
+    background-color: mix($card_bg_color, $selected_bg_color, 90%);
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
+    &:hover {
+      background-color: mix($card_hover_bg_color, $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+    }
+    &:active {
+      background-color: mix($card_active_bg_color, $selected_bg_color, 90%);
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+    }
+  }
+
+  &:hover {
+    background-color: $card_hover_bg_color;
+  }
+
+  &:active {
+    background-color: $card_active_bg_color;
+  }
+}

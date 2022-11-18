@@ -48,7 +48,6 @@
   @if $t==focus {
     background-color: scale-color($c, $alpha: -90%);
     box-shadow: 0 0 0 2px $fc inset; // Yaru change: trick to get 2px border on focus without layout shifting
-    &:hover {}
   }
 
   @if $t==hover {
