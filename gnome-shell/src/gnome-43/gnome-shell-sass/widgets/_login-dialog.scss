@@ -16,8 +16,6 @@
   .modal-dialog-button-box { spacing: 3px; }
   .modal-dialog-button {
     padding: 4px 18px;
-    box-shadow: 0 1px 3px 0 transparentize(black, .945);
-    border: none !important;
 
     @include button(normal, $tc: $osd_fg_color);
 
@@ -34,7 +32,6 @@
     }
     &:insensitive {
       @include button(insensitive, $tc: $osd_fg_color);
-      box-shadow: none;
     }
     &:default {
       @include button(default);
@@ -120,16 +117,20 @@
   border-radius: $base_border_radius + 4px;
   color: $osd_fg_color;
   background-color: mix($system_bg_color, white, 92%);
-  box-shadow: 0 1px 3px 0 transparentize(black, .945);
+  box-shadow: 0 1px 4px 0 transparentize(black, .965);
+  border: 1px solid mix(mix($system_bg_color, white, 92%), $osd_fg_color, 95%);
   padding: 6px;
   transition-duration: 150ms;
+  border: 1px solid $button_border;
 
   &:hover {
     background-color: mix($system_bg_color, white, 89%);
+    border-color: mix(mix($system_bg_color, white, 89%), $osd_fg_color, 95%);
   }
 
   &:active {
     background-color: mix($system_bg_color, white, 84%);
+    border-color: mix(mix($system_bg_color, white, 84%), $osd_fg_color, 95%);
   }
   margin: $base_margin * 2;
   padding: $base_padding * 1.5;
@@ -190,7 +191,6 @@
     border-radius: $entry_height * 0.5;
     height: $entry_height;
     padding: 0 $base_padding+4px;
-    box-shadow: 0 1px 3px 0 transparentize(black, .945);
     @include entry(normal, $c:$osd_fg_color);
     &:hover { @include entry(hover, $c:$osd_fg_color);}
     &:focus { @include entry(focus, $c:$osd_fg_color);}

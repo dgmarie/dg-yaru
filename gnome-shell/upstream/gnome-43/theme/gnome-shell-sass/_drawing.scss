@@ -278,7 +278,6 @@
 
 // overview icon, dash, app grid
 @mixin overview_icon($color, $flat: true) {
-  transition-duration: 400ms;
   .overview-icon { @extend %tile; }
   @if $flat {
     .overview-icon { background-color: transparent;}
@@ -287,6 +286,8 @@
   }
   &:hover .overview-icon { background-color: transparentize($color, .9);}
 
+  &.running .overview-icon,
+  &.focused .overview-icon,
   &:selected .overview-icon,
   &:focus .overview-icon {
     background-color: transparentize($color, .87);

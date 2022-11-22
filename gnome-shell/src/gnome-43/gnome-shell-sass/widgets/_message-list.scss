@@ -119,9 +119,10 @@
     background-color: transparent;
     border-radius: 99px;
     padding: $base_padding - 1px;
+    border: 1px solid transparent;
     margin: 1px;
-    &:hover {background-color: scale-color($fg_color, $alpha: -93%);}
-    &:active {background-color: scale-color($fg_color, $alpha: -84%);}
+    &:hover {background-color: scale-color($fg_color, $alpha: -93%); border-color: $button_border;}
+    &:active {background-color: scale-color($fg_color, $alpha: -84%); border-color: $button_border;}
 
     & StIcon { icon-size: $base_icon_size; }
   }

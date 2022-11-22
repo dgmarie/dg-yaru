@@ -17,10 +17,11 @@
   min-width: 12em;
   max-width: 12em;
   min-height: 44px;
-  border: none;
   transition-duration: 150ms;
+  border: none !important;
+  box-shadow: inset 0 0 0 1px $button_border;
 
-  &:checked { @include button(default); }
+  &:checked { @include button(default); border: none !important; box-shadow: inset 0 0 0 1px $selected_button_border;}
 
   & > StBoxLayout { spacing: $base_padding; }
 
@@ -43,8 +44,8 @@
     background-color: scale-color($fg_color, $alpha: -90%);
     padding: $base_padding $base_padding*1.75;
 
-    &:ltr { border-radius: 0 99px 99px 0; }
-    &:rtl { border-radius: 99px 0 0 99px; }
+    &:ltr { border-radius: 0 99px 99px 0; border-left: 1px solid $button_border; }
+    &:rtl { border-radius: 99px 0 0 99px; border-right: 1px solid $button_border; }
   }
   &:checked .quick-toggle-arrow {
     background-color: scale-color($selected_fg_color, $alpha: -90%);
@@ -63,7 +64,7 @@
     border-radius: 99px;
   }
   .quick-toggle-icon { icon-size: $base_icon_size; }
-  .icon-button { background-color: transparent; }
+  .icon-button { background-color: transparent; border-color: transparent; }
 }
 
 .quick-toggle-menu {
@@ -83,6 +84,7 @@
       border-radius: 999px;
       padding: 1.5 * $base_padding;
       background-color: scale-color($fg_color, $alpha: -90%);
+      box-shadow: inset 0 0 0 1px $button_border;
 
       &.active {
         background-color: $selected_bg_color;

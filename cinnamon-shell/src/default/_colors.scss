@@ -10,6 +10,8 @@ $selected_fg_color: $accent_fg_color;
 $selected_bg_color: $accent_bg_color;
 $selected_borders_color: transparentize($selected_bg_color, .4);
 
+$button_border: scale-color($fg_color, $alpha: -95%);
+$selected_button_border: scale-color($selected_fg_color, $alpha: -95%);
 $borders_color: scale-color($fg_color, $alpha: -85%);
 $alt_borders_color: if($variant=='light', darken($bg_color, 24%), darken($bg_color, 10%));
 $borders_color_dark: $borders_color;
@@ -31,6 +33,7 @@ $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_col
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
 $osd_borders_color: scale-color($osd_fg_color, $alpha: -85%);
 $osd_outer_borders_color: transparentize(white, 0.93);
+$osd_button_border: scale-color($osd_fg_color, $alpha: -95%);
 
 $shadow_color: transparentize(black, 0.9);
 $system_bg_color: lighten($jet, 3.75%); // Lighten than dash but darken than bg-color
@@ -42,14 +45,6 @@ $button_active_color: scale-color($fg_color, $alpha: -70%);
 $osd_button_color: scale-color($osd_fg_color, $alpha: -90%);
 $osd_button_hover_color: scale-color($osd_fg_color, $alpha: -85%);
 $osd_button_active_color: scale-color($osd_fg_color, $alpha: -70%);
-
-// cards
-$card_bg_color: if($variant == 'light', #ffffff, mix($bg_color, white, 92%));
-$card_hover_bg_color: if($variant == 'light', mix(white, $fg_color, 97%), mix($bg_color, white, 89%));
-$card_active_bg_color: if($variant == 'light', mix(white, $fg_color, 92%), mix($bg_color, white, 84%));
-$card_fg_color: if($variant == 'light', #323232, #ffffff);
-
-$osd_card_bg_color: mix($osd_bg_color, white, 92%);
 
 //insensitive state derived colors
 $insensitive_fg_color: scale-color($fg_color, $alpha: -50%);
@@ -70,14 +65,17 @@ $dash-opaque-alpha-value: 0.0;
 
 // derived hover colors
 $hover_bg_color: scale-color($fg_color, $alpha: -93%);
+$osd_hover_bg_color: scale-color($osd_fg_color, $alpha: -93%);
 $hover_fg_color: $fg_color;
 
 // derived active colors
 $active_bg_color: scale-color($fg_color, $alpha: -84%);
+$osd_active_bg_color: scale-color($osd_fg_color, $alpha: -84%);
 $active_fg_color: $fg_color;
 
 // derived checked colors
 $checked_bg_color: scale-color($fg_color, $alpha: -90%);
+$osd_checked_bg_color: scale-color($osd_fg_color, $alpha: -90%);
 $checked_fg_color: $fg_color;
 $checked_hover_bg_color: scale-color($fg_color, $alpha: -87%);
 $checked_active_bg_color: scale-color($fg_color, $alpha: -81%);

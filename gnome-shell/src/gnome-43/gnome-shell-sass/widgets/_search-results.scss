@@ -29,7 +29,8 @@
   padding: $base_padding*2;
   margin: $base_margin*3;
   border-color: transparent;
-  box-shadow: 0 1px 3px 0 transparentize(black, .945);
+  border: 1px solid mix(mix($system_bg_color, white, 92%), $osd_fg_color, 95%);
+  box-shadow: 0 1px 4px 0 transparentize(black, .965);
 }
 
 %search_section_content_item {

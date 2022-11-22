@@ -7,7 +7,7 @@
 // Entries drawing function
 //
   border: none;
-  box-shadow: none;
+  box-shadow: inset 0 0 0 1px $button_border;
   transition-duration: 150ms;
 
   @if $t==normal {
@@ -50,7 +50,7 @@
 // Button drawing function
 //
   border: none;
-  box-shadow: none;
+  box-shadow: inset 0 0 0 1px $button_border;
   transition-duration: 150ms;
 
   @if $t==normal {
@@ -137,30 +137,45 @@
 }
 
 @mixin card {
+  $card_bg_color: if($variant == 'light', #ffffff, mix($bg_color, white, 92%));
+  $card_hover_bg_color: if($variant == 'light', mix(white, $fg_color, 97%), mix($bg_color, white, 89%));
+  $card_active_bg_color: if($variant == 'light', mix(white, $fg_color, 92%), mix($bg_color, white, 84%));
+  $card_fg_color: if($variant == 'light', #323232, #ffffff);
+  $card_focus_bg_color: mix($card_bg_color, $selected_bg_color, 90%);
+  $card_focus_hover_bg_color: mix($card_hover_bg_color, $selected_bg_color, 90%);
+  $card_focus_active_bg_color: mix($card_active_bg_color, $selected_bg_color, 90%);
+
   border-radius: 12px;
   color: $card_fg_color;
   background-color: $card_bg_color;
-  box-shadow: 0 1px 3px 2px transparentize(black, .945) !important; // This needs to apply to the calendar as well
+  box-shadow: 0 1px 3px 2px transparentize(black, .96) !important; // This needs to apply to the calendar as well
   transition-duration: 150ms;
+  // Border needs to be opaque because it becomes outset when there's a box shadow and idk how to fix it
+  border: 1px solid mix($card_bg_color, $card_fg_color, 92%) !important;
 
   &:focus {
-    background-color: mix($card_bg_color, $selected_bg_color, 90%);
+    background-color: $card_focus_bg_color;
     box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
+    border-color: mix($card_focus_bg_color, $card_fg_color, 92%) !important;
     &:hover {
-      background-color: mix($card_hover_bg_color, $selected_bg_color, 90%);
+      background-color: $card_focus_hover_bg_color;
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+      border-color: mix($card_focus_hover_bg_color, $card_fg_color, 92%) !important;
     }
     &:active {
-      background-color: mix($card_active_bg_color, $selected_bg_color, 90%);
+      background-color: $card_focus_active_bg_color;
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+      border-color: mix($card_focus_active_bg_color, $card_fg_color, 92%) !important;
     }
   }
 
   &:hover {
     background-color: $card_hover_bg_color;
+    border-color: mix($card_hover_bg_color, $card_fg_color, 92%) !important;
   }
 
   &:active {
     background-color: $card_active_bg_color;
+    border-color: mix($card_active_bg_color, $card_fg_color, 92%) !important;
   }
 }

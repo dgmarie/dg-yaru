@@ -38,11 +38,11 @@
 //
 
   transition-duration: 150ms;
+  border: 1px solid $button_border;
 
   @if $t==normal {
     background-color: scale-color($c, $alpha: -90%);
     color: $c;
-    border: none;
   }
 
   @if $t==focus {
@@ -81,6 +81,8 @@
   $key_active_color: scale-color($tc, $alpha: -70%);
   $key_checked_color: scale-color($tc, $alpha: -70%);
   $key_insensitive_color: scale-color($tc, $alpha: -95%);
+
+  border: 1px solid $button_border;
 
   // normal key
   @if $t==normal {
@@ -179,6 +181,8 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
 
   transition-duration: 150ms;
 
+  border: 1px solid $button_border;
+
   // normal button
   @if $t==normal {
     color: $tc;
@@ -230,6 +234,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   @else if $t==default {
     background-color: $selected_bg_color;
     color: $selected_fg_color;
+    border: 1px solid $selected_button_border;
     &:focus {
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
     }
@@ -252,6 +257,7 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   @else if $t==undecorated {
     background-color: transparent;
     background-color: none;
+    border-color: transparent;
     &:insensitive {
       @include button(insensitive);
       background-color: transparent;
@@ -265,24 +271,28 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   @extend %tile;
   @if $flat {
     background-color: transparent;
+    box-shadow: none;
   } @else {
     background-color: transparentize($color, .92);
-    box-shadow: 0 1px 3px 0 transparentize(black, .945);
+    box-shadow: inset 0 0 0 1px $osd_button_border;
   }
-  &:hover { background-color: transparentize($color, .89);}
-  &:active { background-color: transparentize($color, .84);}
+  &:hover { background-color: transparentize($color, .89); box-shadow: inset 0 0 0 1px $osd_button_border;}
+  &:active { background-color: transparentize($color, .84); box-shadow: inset 0 0 0 1px $osd_button_border;}
 
   &:selected, &:focus {
     background-color: transparentize($color, .89);
+    box-shadow: inset 0 0 0 1px $osd_button_border;
     &:hover .overview-icon { background-color: transparentize($color, .84);}
     &:active .overview-icon { background-color: transparentize($color, .8);}
   }
   &:outlined, &:checked {
     background-color: transparentize($color, .89);
+    box-shadow: inset 0 0 0 1px $osd_button_border;
     &:hover .overview-icon { background-color: transparentize($color, .84);}
     &:active .overview-icon { background-color: transparentize($color, .8);}
   }
   &:drop {
+    box-shadow: inset 0 0 0 1px $osd_button_border;
     border: 2px solid transparentize($selected_bg_color, .2); //already 2px transparent so no jumping
     background-color: transparentize($selected_bg_color, .8);
   }
@@ -293,29 +303,33 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
   .overview-icon { @extend %tile; }
   transition-duration: 150ms;
   @if $flat {
-    .overview-icon { background-color: transparent;}
+    .overview-icon { background-color: transparent; box-shadow: none; }
   } @else {
     .overview-icon {
       background-color: transparentize($color, .92);
-      box-shadow: 0 1px 3px 0 transparentize(black, .945);
+      box-shadow: inset 0 0 0 1px $osd_button_border;
     }
   }
-  &:hover .overview-icon { background-color: transparentize($color, .89);}
-  &:active .overview-icon { background-color: transparentize($color, .84);}
+  &:hover .overview-icon { background-color: transparentize($color, .89); box-shadow: inset 0 0 0 1px $osd_button_border;}
+  &:active .overview-icon { background-color: transparentize($color, .84); box-shadow: inset 0 0 0 1px $osd_button_border;}
 
+  &.focused .overview-icon,
   &:selected .overview-icon,
   &:focus .overview-icon {
     background-color: transparentize($color, .89);
+    box-shadow: inset 0 0 0 1px $osd_button_border;
     &:hover .overview-icon { background-color: transparentize($color, .84);}
     &:active .overview-icon { background-color: transparentize($color, .8);}
   }
   &:outlined .overview-icon,
   &:checked .overview-icon {
     background-color: transparentize($color, .89);
+    box-shadow: inset 0 0 0 1px $osd_button_border;
     &:hover .overview-icon { background-color: transparentize($color, .84);}
     &:active .overview-icon { background-color: transparentize($color, .8);}
   }
   &:drop .overview-icon {
+    box-shadow: inset 0 0 0 1px $osd_button_border;
     border: 2px solid transparentize($selected_bg_color, .2); //already 2px transparent so no jumping
     background-color: transparentize($selected_bg_color, .8);
   }
@@ -323,42 +337,59 @@ $button_checked_active_color: scale-color($tc, $alpha: -60%);
 
 // styling for elements within popovers that look like notifications
 @mixin card {
+  $card_bg_color: if($variant == 'light', #ffffff, mix($bg_color, white, 92%));
+  $card_hover_bg_color: if($variant == 'light', mix(white, $fg_color, 97%), mix($bg_color, white, 89%));
+  $card_active_bg_color: if($variant == 'light', mix(white, $fg_color, 92%), mix($bg_color, white, 84%));
+  $card_fg_color: if($variant == 'light', #323232, #ffffff);
+  $card_focus_bg_color: mix($card_bg_color, $selected_bg_color, 90%);
+  $card_focus_hover_bg_color: mix($card_hover_bg_color, $selected_bg_color, 90%);
+  $card_focus_active_bg_color: mix($card_active_bg_color, $selected_bg_color, 90%);
+
   border-radius: $base_border_radius * 1.5;
   margin: $base_margin * 2;
   color: $card_fg_color;
   background-color: $card_bg_color;
-  box-shadow: 0 1px 3px 0 transparentize(black, .945) !important; // This needs to apply to the calendar as well
+  box-shadow: 0 1px 4px 0 transparentize(black, .965) !important; // This needs to apply to the calendar as well
   transition-duration: 150ms;
+  // Border needs to be opaque because it becomes outset when there's a box shadow and idk how to fix it
+  border: 1px solid mix($card_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
 
   &:focus {
-    background-color: mix($card_bg_color, $selected_bg_color, 90%);
+    background-color: $card_focus_bg_color;
     box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
+    border-color: mix($card_focus_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
     &:hover {
-      background-color: mix($card_hover_bg_color, $selected_bg_color, 90%);
+      background-color: $card_focus_hover_bg_color;
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+      border-color: mix($card_focus_hover_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
     }
     &:active {
-      background-color: mix($card_active_bg_color, $selected_bg_color, 90%);
+      background-color: $card_focus_active_bg_color;
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+      border-color: mix($card_focus_active_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
     }
   }
 
   &:hover {
     background-color: $card_hover_bg_color;
+    border-color: mix($card_hover_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
   }
 
   &:active {
     background-color: $card_active_bg_color;
+    border-color: mix($card_active_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
   }
 }
 
 @mixin osd_card {
+  $osd_card_bg_color: mix($osd_bg_color, white, 92%);
   border-radius: $base_border_radius * 1.5;
   margin: $base_margin * 2;
   color: $osd_fg_color;
   background-color: $osd_card_bg_color;
-  box-shadow: 0 1px 3px 0 transparentize(black, .945) !important;
+  box-shadow: 0 1px 3px 0 transparentize(black, .96) !important;
   transition-duration: 150ms;
+  border: 1px solid mix($osd_card_bg_color, $osd_fg_color, if($variant=='light', 90%, 95%)) !important;
 }
 
 // styling for notifications

@@ -9,13 +9,12 @@
   StLabel.hint-text {
     color: transparentize($osd_fg_color, 0.3);
   }
-  %search_entry,
   .search-entry {
     @include entry(normal, $c:$osd_fg_color);
     &:hover { @include entry(hover, $c:$osd_fg_color);}
     &:focus { @include entry(focus, $c:$osd_fg_color);}
     &:insensitive { @include entry(insensitive, $c:$osd_fg_color);}
-    box-shadow: 0 1px 3px 0 transparentize(black, .945);
+    box-shadow: inset 0 0 0 1px $osd_button_border;
   }
 }
 
