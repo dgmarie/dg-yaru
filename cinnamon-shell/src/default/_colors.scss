@@ -11,7 +11,7 @@ $selected_bg_color: $accent_bg_color;
 $selected_borders_color: transparentize($selected_bg_color, .4);
 
 $button_border: scale-color($fg_color, $alpha: -95%);
-$selected_button_border: scale-color($selected_fg_color, $alpha: -95%);
+$selected_button_border: scale-color($selected_fg_color, $alpha: -85%);
 $borders_color: scale-color($fg_color, $alpha: -85%);
 $borders_color_dark: $borders_color;
 $borders_edge: if($variant=='light', transparentize(black, .92), transparentize(white, .90));
