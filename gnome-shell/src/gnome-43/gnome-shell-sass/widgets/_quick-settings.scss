@@ -44,11 +44,14 @@
     background-color: scale-color($fg_color, $alpha: -90%);
     padding: $base_padding $base_padding*1.75;
 
-    &:ltr { border-radius: 0 99px 99px 0; border-left: 1px solid $element_border; }
-    &:rtl { border-radius: 99px 0 0 99px; border-right: 1px solid $element_border; }
+    &:ltr { border-radius: 0 99px 99px 0; box-shadow: inset 1px 0 0 0 $element_border; }
+    &:rtl { border-radius: 99px 0 0 99px; box-shadow: inset -1px 0 0 0 $element_border; }
   }
   &:checked .quick-toggle-arrow {
     background-color: scale-color($selected_fg_color, $alpha: -90%);
+    border-color: $selected_element_border;
+    &:ltr { box-shadow: inset 1px 0 0 0 $selected_element_border; }
+    &:rtl { box-shadow: inset -1px 0 0 0 $selected_element_border; }
   }
 }
 
