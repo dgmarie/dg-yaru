@@ -121,7 +121,7 @@
   border: 1px solid mix(mix($system_bg_color, white, 92%), $osd_fg_color, 95%);
   padding: 6px;
   transition-duration: 150ms;
-  border: 1px solid $button_border;
+  border: 1px solid $element_border;
 
   &:hover {
     background-color: mix($system_bg_color, white, 89%);

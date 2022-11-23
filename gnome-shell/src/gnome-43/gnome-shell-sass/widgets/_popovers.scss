@@ -36,11 +36,11 @@
   &:ltr {padding-left: $base_padding;}
   &:rtl {padding-right: $base_padding;}
 
-  &:focus,&:hover { border-color: $button_border; background-color: $hover_bg_color !important; color: $hover_fg_color !important;}
+  &:focus,&:hover { border-color: $element_border; background-color: $hover_bg_color !important; color: $hover_fg_color !important;}
 
   &:checked {
     margin-bottom: 0;
-    border-color: $button_border;
+    border-color: $element_border;
     box-shadow: none;
     border-radius: $base_border_radius*1.5 $base_border_radius*1.5 0 0;
     background-color: $checked_bg_color !important;
@@ -49,7 +49,7 @@
     &:active { background-color: $checked_active_bg_color !important;}
   }
 
-  &:active { border-color: $button_border; background-color: $active_bg_color !important; color: $active_fg_color !important;}
+  &:active { border-color: $element_border; background-color: $active_bg_color !important; color: $active_fg_color !important;}
 
   &:insensitive {color: scale-color($fg_color, $alpha: -50%);}
 
@@ -90,7 +90,7 @@
   .popup-menu-item {
     border-radius: 0;
     margin: 0;
-    border: 1px solid $button_border;
+    border: 1px solid $element_border;
     border-top-width: 0;
 
     &:last-child {
