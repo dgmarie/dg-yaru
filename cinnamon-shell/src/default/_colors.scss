@@ -13,9 +13,8 @@ $selected_borders_color: transparentize($selected_bg_color, .4);
 $button_border: scale-color($fg_color, $alpha: -95%);
 $selected_button_border: scale-color($selected_fg_color, $alpha: -95%);
 $borders_color: scale-color($fg_color, $alpha: -85%);
-$alt_borders_color: if($variant=='light', darken($bg_color, 24%), darken($bg_color, 10%));
 $borders_color_dark: $borders_color;
-$borders_edge: if($variant=='light', transparentize(white, 0.2), transparentize($fg_color, 0.93));
+$borders_edge: if($variant=='light', transparentize(black, .92), transparentize(white, .90));
 
 $link_color: if($variant=='light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 20%));
 $link_visited_color: if($variant=='light', darken($selected_bg_color, 20%), lighten($selected_bg_color, 10%));
@@ -32,7 +31,7 @@ $osd_bg_color: lighten($jet, 2%);
 $osd_insensitive_bg_color: transparentize(mix($osd_fg_color, opacify($osd_bg_color, 1), 10%), 0.5);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 50%);
 $osd_borders_color: scale-color($osd_fg_color, $alpha: -85%);
-$osd_outer_borders_color: transparentize(white, 0.93);
+$osd_outer_borders_color: transparentize(white, 0.90);
 $osd_button_border: scale-color($osd_fg_color, $alpha: -95%);
 
 $shadow_color: transparentize(black, 0.9);

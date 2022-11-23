@@ -13,8 +13,8 @@
 	<constant name="C_titlebar_unfocused" value="#292929" />
 	<constant name="C_titlebar_border_focused" value="#151515" />
 	<constant name="C_titlebar_border_unfocused" value="#1a1a1a" />
-	<constant name="C_border_focused" value="#303030" />
-	<constant name="C_border_unfocused" value="#383838" />
+	<constant name="C_border_focused" value="#373737" />
+	<constant name="C_border_unfocused" value="#3e3e3e" />
 	<constant name="C_title_focused" value="#ffffff" />
 	<constant name="C_title_unfocused" value="#949494" />
 
