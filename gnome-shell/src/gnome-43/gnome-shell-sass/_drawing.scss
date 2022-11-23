@@ -62,7 +62,7 @@
 }
 
 // On-screen Keyboard
-@mixin keyboard_key($t, $tc:$osd_fg_color) {
+@mixin keyboard_key($t, $c:$osd_bg_color, $tc:$osd_fg_color, $flat: false) {
 // Yaru: FIXME:?! Make keyboard work in both variants
 //
 // Keyboard key drawing function
@@ -90,6 +90,9 @@
   @if $t==normal {
     color: $tc;
     background-color: $key_color;
+    @if $flat {
+      background-color: transparent;
+    }
   }
 
   // focused key
@@ -160,7 +163,7 @@
   }
 }
 
-@mixin button($t, $tc:$fg_color) {
+@mixin button($t, $tc:$fg_color, $flat: false) {
 
 $button_color: scale-color($tc, $alpha: -90%);
 $button_hover_color: scale-color($tc, $alpha: -85%);
@@ -190,6 +193,9 @@ $button_border: scale-color($tc, $alpha: -95%);
   @if $t==normal {
     color: $tc;
     background-color: $button_color;
+    @if $flat {
+      background-color: transparent;
+    }
   }
 
   // focused button
