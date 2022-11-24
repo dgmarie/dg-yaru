@@ -23,8 +23,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="6.0416209"
-     inkscape:cx="56.11077"
-     inkscape:cy="48.993475"
+     inkscape:cx="198.70495"
+     inkscape:cy="113.38017"
      inkscape:window-width="1504"
      inkscape:window-height="792"
      inkscape:window-x="53"
@@ -3532,7 +3532,7 @@
        height="16"
        fill="#939393"
        id="rect347"
-       style="opacity:1;fill:#e8e8e8;fill-opacity:1" />
+       style="opacity:1;fill:#d8d8d8;fill-opacity:1" />
   </g>
   <g
      id="left-inactive"
@@ -3572,7 +3572,7 @@
        height="16"
        fill="#939393"
        id="rect356"
-       style="opacity:1;fill:#e8e8e8;fill-opacity:1" />
+       style="opacity:1;fill:#d8d8d8;fill-opacity:1" />
   </g>
   <g
      id="bottom-left-active"
@@ -3581,7 +3581,7 @@
        d="m 97,730.36 -1,-1.2e-4 v 9.0001 h 1 v 1 l 9,-1.2e-4 v -0.99988 h -9 z"
        fill="#939393"
        id="path359"
-       style="opacity:1;fill:#e8e8e8;fill-opacity:1" />
+       style="opacity:1;fill:#d8d8d8;fill-opacity:1" />
   </g>
   <g
      id="bottom-left-inactive"
@@ -3608,7 +3608,7 @@
        d="m 97,730.36 -1,-1.2e-4 v 9.0001 h 1 v 1 l 9,-1.2e-4 v -0.99988 h -9 z"
        fill="#939393"
        id="path368"
-       style="opacity:1;fill:#e8e8e8;fill-opacity:1" />
+       style="opacity:1;fill:#d8d8d8;fill-opacity:1" />
   </g>
   <g
      id="bottom-active"
@@ -3621,7 +3621,7 @@
        height="16"
        fill="#939393"
        id="rect371"
-       style="opacity:1;fill:#e8e8e8;fill-opacity:1" />
+       style="opacity:1;fill:#d8d8d8;fill-opacity:1" />
   </g>
   <g
      id="bottom-inactive"
