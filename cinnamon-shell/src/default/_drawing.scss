@@ -148,7 +148,7 @@
   border-radius: 12px;
   color: $card_fg_color;
   background-color: $card_bg_color;
-  box-shadow: 0 1px 3px 2px transparentize(black, .96) !important; // This needs to apply to the calendar as well
+  box-shadow: 0 1px 4px 1px transparentize(black, .965) !important; // This needs to apply to the calendar as well
   transition-duration: 150ms;
   // Border needs to be opaque because it becomes outset when there's a box shadow and idk how to fix it
   border: 1px solid mix($card_bg_color, $card_fg_color, 92%) !important;
