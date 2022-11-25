@@ -60,6 +60,7 @@ $panel_transition_duration: 250ms; // same as the overview transition duration
       // we want to exclude the do-not-disturb indicator from the background
       &.clock-display {
         box-shadow: none;
+        background-color: transparent;
 
         .clock {
           background-color: $osd_checked_bg_color;
