@@ -2,7 +2,7 @@
 
 # qualia theme (forked from [yaru](https://github.com/ubuntu/yaru))
 
-This theme is supposed to be used with [qualia GTK theme](https://github.com/dgsasha/dg-gnome-theme).
+This theme is supposed to be used with [qualia GTK theme](https://github.com/dgsasha/qualia-gtk-theme).
 
 ## Installing
 See [CONTRIBUTING](.github/CONTRIBUTING.md)
