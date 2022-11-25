@@ -57,6 +57,7 @@
 
 .quick-slider {
   & > StBoxLayout { spacing: $base_padding; }
+  padding: 0;
 
   .slider-bin {
     &:focus {@include button(focus);}
