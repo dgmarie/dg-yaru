@@ -8,8 +8,6 @@
 // Calendar menu side column
 .datemenu-calendar-column {
   spacing: $base_padding - 4px;
-  &:ltr {padding-left: $base_padding - 4px;}
-  &:rtl {padding-right: $base_padding  - 4px;}
   .datemenu-displays-box {spacing: 0;}
 }
 

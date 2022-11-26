@@ -26,15 +26,12 @@
 .message-list-sections {
   spacing: 0;
   margin: 0;
-  // to account for scrollbar
-  &:ltr {margin-right: $base_margin - 2px; }
-  &:rtl {margin-left: $base_margin - 2px;}
 }
 
 .message-list-section,
 .message-list-section-list {
-  spacing: 0;
-  margin-bottom: $base_margin * 2.5;
+  spacing: $base-margin - 4px;
+  margin-bottom: 0;
 }
 
 // do-not-disturb + clear button
