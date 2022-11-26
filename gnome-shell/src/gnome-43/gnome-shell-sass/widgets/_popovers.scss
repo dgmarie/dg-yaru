@@ -76,11 +76,11 @@
 .popup-menu-arrow {
 }
 
-
 // popover submenus
 .popup-sub-menu {
   background-color: $checked_bg_color;
   border-radius: 0 0 $base_border_radius*1.5 $base_border_radius*1.5;
+  border: 1px solid $element_border;
 
   .popup-menu-ornament {
     min-width: $base_icon_size !important;
@@ -90,8 +90,7 @@
   .popup-menu-item {
     border-radius: 0;
     margin: 0;
-    border: 1px solid $element_border;
-    border-top-width: 0;
+    border: none;
 
     &:last-child {
       border-radius: 0 0 $base_border_radius*1.5 $base_border_radius*1.5;

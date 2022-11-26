@@ -92,6 +92,7 @@
     background-color: $key_color;
     @if $flat {
       background-color: transparent;
+      border-color: transparent;
     }
   }
 
@@ -160,6 +161,7 @@
   @else if $t==undecorated {
     background-color: transparent;
     background-image: none;
+    border-color: transparent;
   }
 }
 
@@ -195,6 +197,7 @@ $button_border: scale-color($tc, $alpha: -95%);
     background-color: $button_color;
     @if $flat {
       background-color: transparent;
+      border-color: transparent;
     }
   }
 
@@ -270,6 +273,7 @@ $button_border: scale-color($tc, $alpha: -95%);
     &:insensitive {
       @include button(insensitive);
       background-color: transparent;
+      border-color: transparent;
       color: transparentize($selected_fg_color, .5);
     }
   }

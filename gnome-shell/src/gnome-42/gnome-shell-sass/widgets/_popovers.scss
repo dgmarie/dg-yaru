@@ -36,7 +36,7 @@
   &:ltr {padding-left: $base_padding;}
   &:rtl {padding-right: $base_padding;}
 
-  &:focus,&:hover { background-color: $hover_bg_color !important; color: $hover_fg_color !important;}
+  &:focus,&:hover { border-color: $element_border; background-color: $hover_bg_color !important; color: $hover_fg_color !important;}
 
   &:checked {
     margin-bottom: 0;
@@ -91,8 +91,7 @@
   .popup-menu-item {
     border-radius: 0;
     margin: 0;
-    border: 1px solid $element_border;
-    border-top-width: 0;
+    border: none;
 
     &:last-child {
       border-radius: 0 0 $base_border_radius*1.5 $base_border_radius*1.5;
