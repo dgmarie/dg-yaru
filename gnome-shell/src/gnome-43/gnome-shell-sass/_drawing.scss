@@ -205,14 +205,23 @@ $button_border: scale-color($tc, $alpha: -95%);
   @if $t==focus {
     color: $tc;
     background-color: mix($button_color, $selected_bg_color, 90%);
+    @if $flat {
+      background-color: transparent;
+    }
     box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
     &:hover {
       background-color: mix($button_hover_color, $selected_bg_color, 90%);
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+      @if $flat {
+        background-color: mix($hover_bg_color, $selected_bg_color, 90%);
+      }
     }
     &:active {
       background-color: mix($button_active_color, $selected_bg_color, 90%);
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
+      @if $flat {
+        background-color: mix($active_bg_color, $selected_bg_color, 90%);
+      }
     }
   }
 
@@ -220,20 +229,39 @@ $button_border: scale-color($tc, $alpha: -95%);
   @else if $t==hover {
     color: $tc;
     background-color: $button_hover_color;
+    @if $flat {
+      background-color: $hover_bg_color;
+    }
   }
 
   // active button
   @else if $t==active {
     color: $tc;
     background-color:  $button_active_color;
+    @if $flat {
+      background-color: $active_bg_color;
+    }
   }
 
   // checked button
   @else if $t==checked {
     color: $tc;
     background-color: $button_checked_color;
-    &:hover { background-color: lighten($button_checked_hover_color, 12%);}
-    &:active { background-color: lighten($button_checked_active_color, 15%);}
+    @if $flat {
+      background-color: $checked_bg_color;
+    }
+    &:hover {
+      background-color: lighten($button_checked_hover_color, 12%);
+      @if $flat {
+        background-color: $checked_hover_bg_color;
+      }
+    }
+    &:active {
+      background-color: lighten($button_checked_active_color, 15%);
+      @if $flat {
+        background-color: $checked_active_bg_color;
+      }
+    }
   }
 
   // insensitive button

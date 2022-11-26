@@ -103,6 +103,15 @@ stage {
   &:insensitive { @include button(insensitive);}
   &:active { @include button(active);}
   &:checked { @include button(checked);}
+
+  &.flat {
+    @include button(normal, $flat:true);
+    &:focus { @include button(focus, $flat:true);}
+    &:hover { @include button(hover, $flat:true);}
+    &:insensitive { @include button(insensitive, $flat:true);}
+    &:active { @include button(active, $flat:true);}
+    &:checked { @include button(checked, $flat:true);}
+  }
 }
 
 %button_dark { // Yaru change: add dark variant (for light theme)
@@ -113,6 +122,15 @@ stage {
   &:insensitive { @include button(insensitive, $tc: $osd_fg_color);}
   &:active { @include button(active, $tc: $osd_fg_color);}
   &:checked { @include button(checked, $tc: $osd_fg_color);}
+
+  &.flat {
+    @include button(normal, $flat:true, $tc: $osd_fg_color);
+    &:focus { @include button(focus, $flat:true, $tc: $osd_fg_color);}
+    &:hover { @include button(hover, $flat:true, $tc: $osd_fg_color);}
+    &:insensitive { @include button(insensitive, $flat:true, $tc: $osd_fg_color);}
+    &:active { @include button(active, $flat:true, $tc: $osd_fg_color);}
+    &:checked { @include button(checked, $flat:true, $tc: $osd_fg_color);}
+  }
 }
 
 // buttons in dialogs/notifications
@@ -123,19 +141,24 @@ $bubble_button_radius: $modal_radius * 1.25 - 1px;
 // buttons in dialogs
 %bubble_button {
   padding: $base_padding * 2;
+  border-color: $borders_color !important;
+  border-bottom: none !important;
+  border-right: none !important;
+
   // font-weight: bold !important; // Yaru change: use normal font weight
 
   &:ltr {margin-right: 1px;}
   &:rtl {margin-left: 1px;}
 
-  @include button(normal);
-  &:insensitive { @include button(insensitive);}
-  &:focus { @include button(focus);}
-  &:hover { @include button(hover);}
-  &:active { @include button(active);} // Yaru change: add missing active state
+  @include button(normal, $flat: true);
+  &:insensitive { @include button(insensitive, $flat: true);}
+  &:focus { @include button(focus, $flat: true);}
+  &:hover { @include button(hover, $flat: true);}
+  &:active { @include button(active, $flat: true);} // Yaru change: add missing active state
   
   &:first-child:ltr {
     border-radius: 0 0 0 $bubble_button_radius; 
+    border-left: none !important;
   }
 
   &:last-child:ltr {
