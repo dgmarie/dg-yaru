@@ -147,9 +147,6 @@ $bubble_button_radius: $modal_radius * 1.25 - 1px;
 
   // font-weight: bold !important; // Yaru change: use normal font weight
 
-  &:ltr {margin-right: 1px;}
-  &:rtl {margin-left: 1px;}
-
   @include button(normal, $flat: true);
   &:insensitive { @include button(insensitive, $flat: true);}
   &:focus { @include button(focus, $flat: true);}
@@ -159,6 +156,7 @@ $bubble_button_radius: $modal_radius * 1.25 - 1px;
   &:first-child:ltr {
     border-radius: 0 0 0 $bubble_button_radius; 
     border-left: none !important;
+    margin-right: 0 !important;
   }
 
   &:last-child:ltr {
