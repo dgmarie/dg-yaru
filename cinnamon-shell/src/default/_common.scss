@@ -2226,6 +2226,27 @@ StScrollBar {
 }
 
 //
+// Cornerbar Applet
+//
+.applet-cornerbar {
+  width: 8px;
+  background-color: transparentize($osd_fg_color, 0.9);
+  box-shadow: inset 0 0 0 1px $osd_button_border;
+
+  &-box {
+    padding: 4px 4px;
+
+    &:hover {
+      background-color: transparentize($osd_fg_color, 0.85);
+    }
+  }
+
+  &.vertical {
+    height: 8px;
+  }
+}
+
+//
 // Desklets (desklet.js)
 //
 .desklet {
