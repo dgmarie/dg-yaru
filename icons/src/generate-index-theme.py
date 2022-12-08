@@ -45,7 +45,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('theme_name')
     parser.add_argument('--inherits', action='append',
-        default=['hicolor', 'Humanity'])
+        default=['hicolor', 'Humanity', 'Mint-Y'])
     parser.add_argument(
         '--comment', default='A desktop adaptation of the Ubuntu mobile icons.')
     parser.add_argument('--source-dir', default=None)

@@ -115,9 +115,17 @@ foreach variant: variants
     endif
   endforeach
 
+  if is_custom_accent
+    thumbnail_file = 'thumbnail-@0@.png'.format(variant_base_name)
+  else
+    thumbnail_file = 'thumbnail.png'
+  endif
+
   # Install thumbnail image
-  install_data(join_paths(flavour, 'thumbnail.png'),
-    install_dir: theme_dir
+  install_data(
+    'thumbnails' / thumbnail_file,
+    install_dir: theme_dir,
+    rename: 'thumbnail.png'
   )
 endforeach
 

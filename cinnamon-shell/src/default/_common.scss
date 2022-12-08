@@ -457,6 +457,7 @@ StScrollBar {
   width: 32px;
   /* Set the symbolic foreground color for icons, and importantly, the system tray applet icons */
   color: $fg_color;
+  box-shadow: none;
   &Left {
     spacing: 4px;
 
@@ -589,22 +590,6 @@ StScrollBar {
     background-color: transparentize($panel_bg, 0.01);
     font-size: 1em;
     padding: 0;
-  }
-
-  &-top {
-    box-shadow: 0 1px $osd_outer_borders_color;
-  }
-
-  &-bottom {
-    box-shadow: 0 -1px $osd_outer_borders_color;
-  }
-
-  &-left {
-    box-shadow: 1px 0 $osd_outer_borders_color;
-  }
-
-  &-right {
-    box-shadow: -1px 0 $osd_outer_borders_color;
   }
 
   &-dummy {
