@@ -123,7 +123,7 @@ foreach variant: variants
 
   # Install thumbnail image
   install_data(
-    'thumbnails' / thumbnail_file,
+    meson.current_source_dir() / 'thumbnails' / thumbnail_file,
     install_dir: theme_dir,
     rename: 'thumbnail.png'
   )
