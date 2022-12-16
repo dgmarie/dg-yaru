@@ -1,2 +1,6 @@
 ../actions/document-open-recent.png folder-recent.png
+../categories/system-component-application.png org.xfce.panel.showdesktop.launcher
+../categories/preferences-system-time.png org.xfce.panel.clock.launcher
 folder.png inode-directory.png
+folder.png org.xfce.panel.directorymenu.png
+user-desktop.png org.xfce.panel.showdesktop.png
