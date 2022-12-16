@@ -1,3 +1,4 @@
+../status/avatar-default.png mugshot.png
 accessories-text-editor.png gedit.png
 accessories-text-editor.png org.gnome.Gedit.png
 accessories-text-editor.png org.gnome.gedit.png
@@ -43,6 +44,8 @@ error-app.png apport.png
 extensions.png org.gnome.Extensions.png
 extensions.png org.gnome.Shell.Extensions.png
 filemanager-app.png file-manager.png
+filemanager-app.png org.xfce.filemanager.png
+filemanager-app.png xfce-filemanager.png
 filemanager-app.png system-file-manager.png
 filemanager-app.png nautilus.png
 filemanager-app.png org.gnome.Nautilus.png
@@ -76,6 +79,8 @@ mail-app.png internet-mail.png
 maps-app.png gnome-maps.png
 maps-app.png org.gnome.Maps.png
 mail-app.png emblem-mail.png
+mail-app.png xfce-mail.png
+mail-app.png org.xfce.mailreader.png
 mediaplayer-app.png io.github.celluloid_player.Celluloid.png
 mediaplayer-app.png multimedia-video-player.png
 mediaplayer-app.png org.gnome.Totem.png
@@ -88,6 +93,7 @@ music-app.png gnome-music.png
 music-app.png multimedia-audio-player.png
 music-app.png org.gnome.Music.png
 notes-app.png bijiben.png
+notes-app.png xfce4-notes-plugin.png
 org.gnome.SoundRecorder.png audio-recorder.png
 packages-app.png gnome-mime-application-x-deb.png
 packages-app.png system-software-install.png
@@ -100,8 +106,13 @@ rhythmbox.png org.gnome.Rhythmbox3.png
 root-terminal-app.png gksu-root-terminal.png
 screenshot-app.png applets-screenshooter.png
 screenshot-app.png gnome-screenshot.png
+screenshot-app.png plugin-screenshot.png
 scanner.png org.gnome.SimpleScan.png
 session-properties.png mate-session-properties.png
+session-properties.png org.xfce.session.png
+session-properties.png preferences-system-session.png
+session-properties.png xfce-session.png
+session-properties.png cs-startup-programs.png
 shotwell.png org.gnome.Shotwell.png
 software-properties.png software-properties-gtk.png
 software-store.png software-center.png
@@ -120,11 +131,17 @@ system-settings.png gnome-control-center.png
 system-settings.png preferences-desktop.png
 system-settings.png preferences-system.png
 system-settings.png org.gnome.Settings.png
+system-settings.png org.xfce.settings.manager.png
 terminal-app.png bash.png
 terminal-app.png gnome-terminal.png
 terminal-app.png terminal.png
+terminal-app.png Terminal.png
 terminal-app.png utilities-terminal.png
 terminal-app.png org.gnome.Terminal.png
+terminal-app.png xfce-terminal.png
+terminal-app.png org.xfce.terminal.png
+terminal-app.png org.xfce.terminalemulator.png
+terminal-app.png org.xfce.terminal-settings.png
 to-do-app.png org.gnome.Todo.png
 to-do-app.png org.gnome.Software.Work.png
 to-do-app.png user-bookmarks.png
@@ -133,6 +150,8 @@ tweaks-app.png gnome-tweak-tool.png
 tweaks-app.png org.gnome.tweaks.png
 tweaks-app.png org.gnome.Tweaks.png
 tweaks-app.png unity-tweak-tool.png
+tweaks-app.png xfce4-settings.png
+tweaks-app.png org.xfce.settings.editor.png
 usage-app.png psensor.png
 usage-app.png org.gnome.Usage.png
 usage-app.png gnome-usage.png
@@ -142,4 +161,5 @@ weather-app.png org.gnome.Weather.png
 webbrowser-app.png internet-web-browser.png
 webbrowser-app.png org.gnome.Epiphany.png
 webbrowser-app.png web-browser.png
+webbrowser-app.png org.xfce.webbrowser.png
 workspace-switcher-left-top.png workspace-switcher-top-left.png

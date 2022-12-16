@@ -92,7 +92,7 @@ CONTEXTS=("actions" "apps" "devices" "categories" "mimetypes" "places" "phosh" "
 OPTIONAL_CONTEXTS=("panel" "animations")
 SIZES=("16x16" "24x24" "32x32" "48x48" "256x256" "16x16@2x" "24x24@2x" "32x32@2x" "48x48@2x" "256x256@2x")
 OPTIONAL_SIZES=("8x8" "8x8@2x" "22x22")
-VARIANTS=("default" "dark" "mate")
+VARIANTS=("default" "dark")
 
 CONTEXTS+=("${OPTIONAL_CONTEXTS[@]}")
 SIZES+=("${OPTIONAL_SIZES[@]}")
