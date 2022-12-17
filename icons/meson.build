@@ -221,6 +221,44 @@ foreach flavour: icon_flavors
         'rsync -lr --exclude={@0@} "@1@/" "${DESTDIR}/@2@"'.format(exclude, meson.current_source_dir() / icon_dir, theme_install_dir))
     endif
 
+    if is_dark_flavour
+      assert(get_option('dark'), 'Dark flavour @0@ enabled, but we have no dark parent'.format(flavour))
+      # Since we don't have a specific dark theme, we are just re-using
+      # the default dark theme as fallback, while the base flavour theme
+      # is still inherited as primary.
+      dark_categories = run_command(
+        'find',
+        'Yaru-dark',
+        '!', '-path', 'Yaru-dark',
+        '-type', 'd',
+        '-mindepth', '2',
+        '-maxdepth', '2',
+        '-printf', '%P\\n',
+      ).stdout().strip()
+      dark_categories = dark_categories != '' ? dark_categories.split('\n') : []
+
+      foreach c: dark_categories
+        if fs.is_dir(icon_dir / c)
+          continue
+        endif
+
+        category = fs.name(c)
+        if not uses_panel_icons and PANEL_ONLY_ICONS_CATEGORIES.contains(category)
+          continue
+        endif
+
+        target = run_command(python, '-c',
+          'import os, sys; print(os.path.relpath(sys.argv[1], sys.argv[2]))',
+          'Yaru-dark' / c,
+          icon_dir / fs.parent(c)
+        ).stdout().strip()
+
+        meson.add_install_script('bash', '-c',
+          'mkdir -p "${DESTDIR}/@2@"; ln -svf @1@ ${DESTDIR}/@2@/@0@'.format(
+              category, target, theme_install_dir / fs.parent(c)))
+      endforeach
+    endif
+
     generate_index_theme_args = []
     if is_flavour
       if is_dark_flavour
@@ -231,9 +269,9 @@ foreach flavour: icon_flavors
       endif
 
       inherited_flavour = base_flavour != '' ? '-' + base_flavour : ''
-        generate_index_theme_args += [
-          '--inherits', meson.project_name() + inherited_flavour
-        ]
+      generate_index_theme_args += [
+        '--inherits', meson.project_name() + inherited_flavour
+      ]
     endif
 
     install_data(

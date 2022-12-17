@@ -11,4 +11,8 @@ foreach flavour: flavours
 
   unity_assets_dest = join_paths(theme_dir, 'unity')
   install_data(unity_asset_data, install_dir: unity_assets_dest)
+  foreach accent: enabled_accent_colors
+    dest = join_paths(get_option('prefix'), get_option('datadir'), 'themes', meson.project_name() + '-' + accent + suffix)
+    meson.add_install_script('symlink.sh', get_option('prefix') / theme_dir, dest, 'unity')
+  endforeach
 endforeach

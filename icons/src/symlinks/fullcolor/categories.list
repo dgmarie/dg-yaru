@@ -11,6 +11,7 @@
 ../devices/input-mouse.png org.xfce.settings.mouse.png
 ../devices/input-mouse.png cs-mouse.png
 ../devices/printer.png cs-printer.png
+../devices/printer.png printers.png
 ../places/user-desktop.png cs-desktop.png
 ../status/avatar-default.png preferences-desktop-user.png
 ../status/avatar-default.png cs-user.png
