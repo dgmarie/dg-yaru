@@ -249,7 +249,7 @@ foreach flavour: icon_flavors
 
         target = run_command(python, '-c',
           'import os, sys; print(os.path.relpath(sys.argv[1], sys.argv[2]))',
-          'Yaru-dark' / c,
+          dark_theme / c,
           icon_dir / fs.parent(c)
         ).stdout().strip()
 
