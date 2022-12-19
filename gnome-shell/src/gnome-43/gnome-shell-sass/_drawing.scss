@@ -49,6 +49,7 @@
   @if $t==focus {
     background-color: scale-color($c, $alpha: -90%);
     box-shadow: 0 0 0 2px $fc inset; // Yaru change: trick to get 2px border on focus without layout shifting
+    border-color: transparent;
   }
 
   @if $t==hover {
@@ -101,9 +102,9 @@
     color: $tc;
     background-color: mix($key_color, $selected_bg_color, 90%);
     box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4);
+    border-color: transparent;
     @if $flat {
       background-color: transparent;
-      border-color: transparent;
     }
     &:hover {
       background-color: mix($key_hover_color, $selected_bg_color, 90%);
@@ -227,11 +228,11 @@ $button_border: scale-color($tc, $alpha: -95%);
   @if $t==focus {
     color: $tc;
     background-color: mix($button_color, $selected_bg_color, 90%);
+    border-color: transparent;
+    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
     @if $flat {
       background-color: transparent;
-      border-color: transparent;
     }
-    box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
     &:hover {
       background-color: mix($button_hover_color, $selected_bg_color, 90%);
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
@@ -424,16 +425,16 @@ $button_border: scale-color($tc, $alpha: -95%);
   &:focus {
     background-color: $card_focus_bg_color;
     box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
-    border-color: mix($card_focus_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
+    border-color: transparent !important;
     &:hover {
       background-color: $card_focus_hover_bg_color;
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
-      border-color: mix($card_focus_hover_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
+      border-color: transparent !important;
     }
     &:active {
       background-color: $card_focus_active_bg_color;
       box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.3) !important;
-      border-color: mix($card_focus_active_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
+      border-color: transparent !important;
     }
   }
 

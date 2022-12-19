@@ -209,6 +209,7 @@
     padding: 0 $base_padding+4px;
     background-color: transparentize($osd_fg_color, 0.9);
     box-shadow: none !important;
+    border: 1px solid $element_border !important;
 
     &:focus {
       color: $osd_fg_color; // Yaru change: fix for light theme
@@ -230,16 +231,10 @@
     color: $osd_fg_color;
   }
 
-  .modal-dialog-button {
-    box-shadow: none !important;
-  }
-
   .cancel-button,
   .switch-user-button,
   .login-dialog-session-list-button {
-    border-color: transparent;
     background-color: transparentize($osd_fg_color, 0.9); // Yaru change: fix for light theme
-    box-shadow: none !important;
 
     &,
     &:hover,
