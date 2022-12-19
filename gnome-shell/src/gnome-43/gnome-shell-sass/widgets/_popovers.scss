@@ -28,6 +28,8 @@
 // menu items
 .popup-menu-item {
   padding: $base_padding*1.25 $base_padding*1.75;
+  margin-top: 1px;
+  margin-bottom: 1px;
   border-radius: $base_border_radius*1.5;
   spacing: $base_padding;
   transition-duration: 150ms;
@@ -110,10 +112,12 @@
 
   .popup-menu-section {
     .popup-menu-item:last-child {
-      &:hover,&:focus { border-radius: 0;}
+      border-radius: 0;
+      border-bottom: none;
     }
     &:last-child .popup-menu-item:last-child {
       border-radius: 0 0 $base_border_radius*1.5 $base_border_radius*1.5;
+      border-bottom: solid;
     }
   }
 }
@@ -130,8 +134,9 @@
 
 // separator
 .popup-separator-menu-item {
-  margin: 6px 0;
+  margin: 5px 0;
   padding:0 !important;
+  border: 0 !important;
   &:ltr { margin-right: $base_margin;}
   &:rtl { margin-left: $base_margin;}
 
