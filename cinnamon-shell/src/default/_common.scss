@@ -2204,11 +2204,10 @@ StScrollBar {
 
   &-box {
     padding: 4px 4px;
-    background-color: transparentize($osd_fg_color, 0.95);
-    box-shadow: inset 0 0 0 1px transparentize($osd_fg_color, 0.975);
+    background-color: transparentize($osd_fg_color, 0.97);
   
     &:hover {
-      background-color: transparentize($osd_fg_color, 0.9);
+      background-color: transparentize($osd_fg_color, 0.93);
       box-shadow: inset 0 0 0 1px transparentize($osd_fg_color, 0.95);
     }
   }
