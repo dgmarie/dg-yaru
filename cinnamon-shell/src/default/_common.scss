@@ -2099,7 +2099,7 @@ StScrollBar {
   &-separator {
     padding: 1px 4px;
 
-    &.vertical { padding: 4px 1px; }
+    &.vertical { padding: 4px 1px;}
   }
 
   &-separator-line {
@@ -2115,21 +2115,20 @@ StScrollBar {
   &-box {
     padding-left: 4px;
     padding-right: 4px;
-    spacing: 4px;
     color: $panel_fg;
     text-shadow: none;
     transition-duration: 100;
     text-align: center;
     border-radius: 8px;
     background-color: transparent;
-    margin: 0;
+    margin: 3px;
 
     &.vertical {
       padding-left: 0px;
       padding-right: 0px;
-      padding-top: 3px;
-      padding-bottom: 3px;
-      margin: 3px 0;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      margin: 3px;
     }
 
     &:hover {
