@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="c" x="-.15867" y="-.15867" width="1.3173" height="1.3173" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="2.86"/>
+  </filter>
+  <filter id="b" x="-.073334" y="-.073334" width="1.1467" height="1.1467" color-interpolation-filters="sRGB">
+   <feGaussianBlur stdDeviation="1.3"/>
+  </filter>
+  <clipPath id="clipPath1005">
+   <path d="m427.33 22.027v69.334h69.334v-69.334zm20.852 9.0127h27.627c6.5591 0 11.84 5.2804 11.84 11.84v27.627c0 6.5591-5.2804 11.84-11.84 11.84h-27.627c-6.5591 0-11.84-5.2804-11.84-11.84v-27.627c0-6.5591 5.2804-11.84 11.84-11.84z" fill="#f0f" stroke-opacity=".070588"/>
+  </clipPath>
+  <clipPath id="clipPath1009">
+   <path d="m427.33 22.027v69.334h69.334v-69.334zm20.852 9.0127h27.627c6.5591 0 11.84 5.2804 11.84 11.84v27.627c0 6.5591-5.2804 11.84-11.84 11.84h-27.627c-6.5591 0-11.84-5.2804-11.84-11.84v-27.627c0-6.5591 5.2804-11.84 11.84-11.84z" fill="#f0f" stroke-opacity=".070588"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(-977.14 -1069.5)">
+  <g transform="translate(.14286 529.51)" fill="none">
+   <rect transform="matrix(2.8846,0,0,2.8846,-255.69,476.46)" x="436" y="30.693" width="52" height="52" ry="12" clip-path="url(#clipPath1009)" color="#000000" filter="url(#c)" stroke="#fff" stroke-width="2.7733"/>
+   <rect transform="matrix(2.8846,0,0,2.8846,-255.69,476.46)" x="436" y="30.693" width="52" height="52" ry="12" clip-path="url(#clipPath1005)" color="#000000" filter="url(#b)" stroke="#fff" stroke-width="1.3867"/>
+   <rect x="977" y="540" width="200" height="200" color="#000000" opacity=".31645"/>
+  </g>
+ </g>
+</svg>

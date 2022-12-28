@@ -17,6 +17,8 @@ option('panel-icons', type: 'boolean', value: true, description:'install panel i
 option('xfwm4', type: 'boolean', value: false, description:'build qualia with xfwm4 assets')
 option('ubuntu-unity', type: 'boolean', value: false, description:'build qualia with Unity assets')
 
+option('window-controls', type: 'array', choices : ['symbolic', 'macos'])
+
 # We use the dark flat above to do the dark variants of them
 option('accent-colors',
     type: 'array',

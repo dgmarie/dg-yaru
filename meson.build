@@ -26,6 +26,7 @@ components = [
 ]
 
 enabled_accent_colors = get_option('accent-colors')
+window_controls = get_option('window-controls')
 
 foreach component: components
   if not get_option(component)

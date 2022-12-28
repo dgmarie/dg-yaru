@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath948">
+   <circle cx="12" cy="12" r="11" d="M 23,12 A 11,11 0 0 1 12,23 11,11 0 0 1 1,12 11,11 0 0 1 12,1 11,11 0 0 1 23,12 Z" display="none" fill="#fff" opacity=".1" stroke-width="0"/>
+   <path class="powerclip" d="m-5-5h34v34h-34zm28 17a11 11 0 0 0-11-11 11 11 0 0 0-11 11 11 11 0 0 0 11 11 11 11 0 0 0 11-11z" fill="#fff" opacity=".1" stroke-width="0"/>
+  </clipPath>
+ </defs>
+ <g fill="#000" opacity="0.8">
+  <circle cx="12" cy="12" r="12" opacity=".1" stroke-width="0"/>
+  <path d="m24 12a12 12 0 0 1-12 12 12 12 0 0 1-12-12 12 12 0 0 1 12-12 12 12 0 0 1 12 12z" clip-path="url(#clipPath948)" opacity=".05" stroke-width="0"/>
+  <circle cx="12" cy="12" r="4" stroke-width=".99967"/>
+ </g>
+</svg>
