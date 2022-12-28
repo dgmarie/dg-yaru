@@ -7,6 +7,9 @@
    id="svg491"
    sodipodi:docname="assets.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="assets.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -22,14 +25,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="2.1167526"
-     inkscape:cx="51.257762"
-     inkscape:cy="105.11384"
-     inkscape:window-width="2560"
-     inkscape:window-height="1376"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:zoom="11.196396"
+     inkscape:cx="76.98906"
+     inkscape:cy="16.031945"
+     inkscape:window-width="1573"
+     inkscape:window-height="1352"
+     inkscape:window-x="53"
+     inkscape:window-y="48"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg491"
      showguides="true" />
   <defs
@@ -4469,8 +4472,9 @@
        transform="translate(66)" />
   </g>
   <g
-     id="maximize-pressed"
-     transform="translate(22,-530.35999)">
+     id="hide-pressed"
+     transform="translate(22,-530.35999)"
+     inkscape:label="hide-pressed">
     <use
        transform="translate(66,33)"
        width="100%"
@@ -4491,8 +4495,9 @@
        transform="translate(66)" />
   </g>
   <g
-     id="hide-pressed"
-     transform="translate(22,-513.35999)">
+     id="maximize-pressed"
+     transform="translate(22,-513.35999)"
+     inkscape:label="maximize-pressed">
     <use
        transform="translate(66,66)"
        width="100%"
@@ -4575,9 +4580,9 @@
        style="opacity:0.5" />
   </g>
   <g
-     id="maximize-inactive"
+     id="hide-inactive"
      transform="translate(-48.20734,-537.9787)"
-     inkscape:label="maximize-inactive">
+     inkscape:label="hide-inactive">
     <use
        x="0"
        y="0"
@@ -4599,8 +4604,9 @@
        style="opacity:0.5" />
   </g>
   <g
-     id="hide-prelight"
-     transform="translate(10,-513.35999)">
+     id="maximize-prelight"
+     transform="translate(10,-513.35999)"
+     inkscape:label="maximize-prelight">
     <use
        transform="translate(33,66)"
        width="100%"
@@ -4621,8 +4627,9 @@
        transform="translate(33.000027)" />
   </g>
   <g
-     id="maximize-prelight"
-     transform="translate(10,-530.35999)">
+     id="hide-prelight"
+     transform="translate(10,-530.35999)"
+     inkscape:label="hide-prelight">
     <use
        transform="translate(33,33)"
        width="100%"
@@ -4689,16 +4696,17 @@
          inkscape:path-effect="#path-effect3800-7-5"
          transform="translate(36.594224,36.44353)" />
     </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect4628"
+       id="use8365"
+       transform="translate(33)" />
   </g>
-  <use
-     x="0"
-     y="0"
-     xlink:href="#rect4628"
-     id="use8365"
-     transform="translate(43,-547.36)" />
   <g
-     id="hide-active"
-     transform="translate(-2,-513.35999)">
+     id="maximize-active"
+     transform="translate(-2,-513.35999)"
+     inkscape:label="maximize-active">
     <use
        transform="translate(0,66)"
        width="100%"
@@ -4717,8 +4725,9 @@
        d="M 20.99999,637.35999 21,638.36 l 10e-6,6.00001 -2e-5,0.99998 h 1 l 6.00001,2e-5 h 1.00001 l -10e-6,-1 -10e-6,-7.00002 z M 22,638.36 l 5.99999,-10e-6 10e-6,6.00001 -5.99999,10e-6 z" />
   </g>
   <g
-     id="maximize-active"
-     transform="translate(-2,-530.35999)">
+     id="hide-active"
+     transform="translate(-2,-530.35999)"
+     inkscape:label="hide-active">
     <use
        transform="translate(0,33)"
        width="100%"
@@ -5043,88 +5052,10 @@
        id="use9636-8"
        transform="translate(66,65.999879)" />
   </g>
-  <use
-     id="top-right-active"
-     transform="matrix(-1,0,0,1,58,0)"
-     width="100%"
-     height="100%"
-     xlink:href="#top-left-active"
-     x="0"
-     y="0" />
   <g
-     id="top-left-active"
-     transform="translate(5,-512.36)"
-     inkscape:label="top-left-active">
-    <path
-       id="path14533"
-       clip-path="none"
-       style="fill:#212121;fill-opacity:1;paint-order:stroke fill markers"
-       d="m 14,178 v 1 h -3 v 1 H 9 v 1 H 8 v 1 H 7 v 1 H 6 v 1 H 5 v 2 H 4 v 2 H 3 v 27 h 1 15 v -36 -1 h -4 z"
-       transform="translate(-5,594.36)" />
-    <rect
-       style="opacity:0.36;fill:#000000;fill-opacity:1;stroke-width:0.635787"
-       id="rect12039-2"
-       width="16"
-       height="1"
-       x="-2"
-       y="808.35999" />
-    <path
-       transform="translate(-5,547.36)"
-       d="m 14,225 v 1 h 5 v -1 h -4 z m 0,1 h -3 v 1 h 3 z m -3,1 H 9 v 1 h 2 z m -2,1 H 8 v 1 h 1 z m -1,1 H 7 v 1 h 1 z m -1,1 H 6 v 1 h 1 z m -1,1 H 5 v 2 h 1 v -1 z m -1,2 H 4 v 2 h 1 v -1 z m -1,2 H 3 v 27 h 1 z"
-       fill="#939393"
-       stroke-linecap="round"
-       stroke-linejoin="round"
-       stroke-width="9.2376"
-       style="display:inline;opacity:0.1;fill:#ffffff;fill-opacity:1;paint-order:stroke fill markers"
-       id="path486"
-       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccc" />
-    <g
-       id="g1567"
-       transform="translate(-5,512.36)" />
-  </g>
-  <g
-     id="top-left-inactive"
-     transform="translate(23,-512.36)"
-     inkscape:label="top-left-inactive">
-    <path
-       id="path14533-6"
-       clip-path="none"
-       style="fill:#292929;fill-opacity:1;paint-order:stroke fill markers"
-       d="m 14,178 v 1 h -3 v 1 H 9 v 1 H 8 v 1 H 7 v 1 H 6 v 1 H 5 v 2 H 4 v 2 H 3 v 27 h 1 15 v -36 -1 h -4 z"
-       transform="translate(-5,594.36)" />
-    <rect
-       style="opacity:0.36;fill:#000000;fill-opacity:1;stroke-width:0.635787"
-       id="rect12039-6"
-       width="16"
-       height="1"
-       x="-2"
-       y="808.35999" />
-    <path
-       transform="translate(-5,547.36)"
-       d="m 14,225 v 1 h 5 v -1 h -4 z m 0,1 h -3 v 1 h 3 z m -3,1 H 9 v 1 h 2 z m -2,1 H 8 v 1 h 1 z m -1,1 H 7 v 1 h 1 z m -1,1 H 6 v 1 h 1 z m -1,1 H 5 v 2 h 1 v -1 z m -1,2 H 4 v 2 h 1 v -1 z m -1,2 H 3 v 27 h 1 z"
-       fill="#939393"
-       stroke-linecap="round"
-       stroke-linejoin="round"
-       stroke-width="9.2376"
-       style="display:inline;opacity:0.1;fill:#ffffff;fill-opacity:1;paint-order:stroke fill markers"
-       id="path486-7"
-       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccc" />
-  </g>
-  <g
-     id="top-right-inactive"
-     transform="matrix(-1,0,0,1,71,-512.36)"
-     inkscape:label="top-right-inactive">
-    <use
-       x="0"
-       y="0"
-       xlink:href="#top-left-inactive"
-       id="use2724"
-       transform="translate(-23,512.36)" />
-  </g>
-  <g
-     id="hide-inactive"
+     id="maximize-inactive"
      transform="translate(-48.20734,-437.9787)"
-     inkscape:label="hide-inactive">
+     inkscape:label="maximize-inactive">
     <use
        x="0"
        y="0"
@@ -5750,5 +5681,83 @@
        xlink:href="#g4206-8"
        id="use3462-2"
        transform="translate(-148.33453,-405.71977)" />
+  </g>
+  <use
+     id="top-right-active"
+     transform="matrix(-1,0,0,1,62,0)"
+     width="100%"
+     height="100%"
+     xlink:href="#top-left-active"
+     x="0"
+     y="0" />
+  <g
+     id="top-left-active"
+     transform="translate(7.0000006,-516.36)"
+     inkscape:label="top-left-active">
+    <path
+       id="path14533"
+       clip-path="none"
+       style="fill:#212121;fill-opacity:1;paint-order:stroke fill markers"
+       d="m 14,178 v 1 h -3 v 1 H 9 v 1 H 8 v 1 H 7 v 1 H 6 v 1 H 5 v 2 H 4 v 2 H 3 v 27 h 1 15 v -36 -1 h -4 z"
+       transform="translate(-5,594.36)" />
+    <rect
+       style="opacity:0.36;fill:#000000;fill-opacity:1;stroke-width:0.635787"
+       id="rect12039-2"
+       width="16"
+       height="1"
+       x="-2"
+       y="808.35999" />
+    <path
+       transform="translate(-5,547.36)"
+       d="m 14,225 v 1 h 5 v -1 h -4 z m 0,1 h -3 v 1 h 3 z m -3,1 H 9 v 1 h 2 z m -2,1 H 8 v 1 h 1 z m -1,1 H 7 v 1 h 1 z m -1,1 H 6 v 1 h 1 z m -1,1 H 5 v 2 h 1 v -1 z m -1,2 H 4 v 2 h 1 v -1 z m -1,2 H 3 v 27 h 1 z"
+       fill="#939393"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="9.2376"
+       style="display:inline;opacity:0.1;fill:#ffffff;fill-opacity:1;paint-order:stroke fill markers"
+       id="path486"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccc" />
+    <g
+       id="g1567"
+       transform="translate(-5,512.36)" />
+  </g>
+  <g
+     id="top-left-inactive"
+     transform="translate(25,-516.36)"
+     inkscape:label="top-left-inactive">
+    <path
+       id="path14533-6"
+       clip-path="none"
+       style="fill:#292929;fill-opacity:1;paint-order:stroke fill markers"
+       d="m 14,178 v 1 h -3 v 1 H 9 v 1 H 8 v 1 H 7 v 1 H 6 v 1 H 5 v 2 H 4 v 2 H 3 v 27 h 1 15 v -36 -1 h -4 z"
+       transform="translate(-5,594.36)" />
+    <rect
+       style="opacity:0.36;fill:#000000;fill-opacity:1;stroke-width:0.635787"
+       id="rect12039-6"
+       width="16"
+       height="1"
+       x="-2"
+       y="808.35999" />
+    <path
+       transform="translate(-5,547.36)"
+       d="m 14,225 v 1 h 5 v -1 h -4 z m 0,1 h -3 v 1 h 3 z m -3,1 H 9 v 1 h 2 z m -2,1 H 8 v 1 h 1 z m -1,1 H 7 v 1 h 1 z m -1,1 H 6 v 1 h 1 z m -1,1 H 5 v 2 h 1 v -1 z m -1,2 H 4 v 2 h 1 v -1 z m -1,2 H 3 v 27 h 1 z"
+       fill="#939393"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="9.2376"
+       style="display:inline;opacity:0.1;fill:#ffffff;fill-opacity:1;paint-order:stroke fill markers"
+       id="path486-7"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+  <g
+     id="top-right-inactive"
+     transform="matrix(-1,0,0,1,73,-516.36)"
+     inkscape:label="top-right-inactive">
+    <use
+       x="0"
+       y="0"
+       xlink:href="#top-left-inactive"
+       id="use2724"
+       transform="translate(-25,516.36)" />
   </g>
 </svg>

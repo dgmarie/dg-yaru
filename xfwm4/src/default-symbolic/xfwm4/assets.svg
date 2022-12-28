@@ -23,14 +23,14 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="9.1104687"
-     inkscape:cx="169.91442"
-     inkscape:cy="245.70635"
+     inkscape:cx="72.334368"
+     inkscape:cy="21.349066"
      inkscape:window-width="1569"
      inkscape:window-height="1352"
      inkscape:window-x="53"
      inkscape:window-y="48"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg491"
+     inkscape:current-layer="close-prelight"
      showguides="true" />
   <defs
      id="defs9">
@@ -4469,8 +4469,9 @@
        transform="translate(66)" />
   </g>
   <g
-     id="maximize-pressed"
-     transform="translate(22,-530.35999)">
+     id="hide-pressed"
+     transform="translate(22,-530.35999)"
+     inkscape:label="hide-pressed">
     <use
        transform="translate(66,33)"
        width="100%"
@@ -4491,8 +4492,9 @@
        transform="translate(66)" />
   </g>
   <g
-     id="hide-pressed"
-     transform="translate(22,-513.35999)">
+     id="maximize-pressed"
+     transform="translate(22,-513.35999)"
+     inkscape:label="maximize-pressed">
     <use
        transform="translate(66,66)"
        width="100%"
@@ -4575,9 +4577,9 @@
        style="opacity:0.5" />
   </g>
   <g
-     id="maximize-inactive"
+     id="hide-inactive"
      transform="translate(-48.20734,-537.9787)"
-     inkscape:label="maximize-inactive">
+     inkscape:label="hide-inactive">
     <use
        x="0"
        y="0"
@@ -4599,8 +4601,9 @@
        style="opacity:0.5" />
   </g>
   <g
-     id="hide-prelight"
-     transform="translate(10,-513.35999)">
+     id="maximize-prelight"
+     transform="translate(10,-513.35999)"
+     inkscape:label="maximize-prelight">
     <use
        transform="translate(33,66)"
        width="100%"
@@ -4621,8 +4624,9 @@
        transform="translate(33.000027)" />
   </g>
   <g
-     id="maximize-prelight"
-     transform="translate(10,-530.35999)">
+     id="hide-prelight"
+     transform="translate(10,-530.35999)"
+     inkscape:label="hide-prelight">
     <use
        transform="translate(33,33)"
        width="100%"
@@ -4689,16 +4693,17 @@
          inkscape:path-effect="#path-effect3800-7-5"
          transform="translate(36.594224,36.44353)" />
     </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect4628"
+       id="use8365"
+       transform="translate(33)" />
   </g>
-  <use
-     x="0"
-     y="0"
-     xlink:href="#rect4628"
-     id="use8365"
-     transform="translate(43,-547.36)" />
   <g
-     id="hide-active"
-     transform="translate(-2,-513.35999)">
+     id="maximize-active"
+     transform="translate(-2,-513.35999)"
+     inkscape:label="maximize-active">
     <use
        transform="translate(0,66)"
        width="100%"
@@ -4713,12 +4718,13 @@
        transform="translate(0,65.99999)" />
     <path
        id="rect5257"
-       style="display:inline;fill:#000000;fill-opacity:1;stroke-width:0.666675;opacity:0.8"
+       style="display:inline;opacity:0.8;fill:#000000;fill-opacity:1;stroke-width:0.666675"
        d="M 20.99999,637.35999 21,638.36 l 10e-6,6.00001 -2e-5,0.99998 h 1 l 6.00001,2e-5 h 1.00001 l -10e-6,-1 -10e-6,-7.00002 z M 22,638.36 l 5.99999,-10e-6 10e-6,6.00001 -5.99999,10e-6 z" />
   </g>
   <g
-     id="maximize-active"
-     transform="translate(-2,-530.35999)">
+     id="hide-active"
+     transform="translate(-2,-530.35999)"
+     inkscape:label="hide-active">
     <use
        transform="translate(0,33)"
        width="100%"
@@ -5122,9 +5128,9 @@
        transform="translate(-23,512.36)" />
   </g>
   <g
-     id="hide-inactive"
+     id="maximize-inactive"
      transform="translate(-48.20734,-437.9787)"
-     inkscape:label="hide-inactive">
+     inkscape:label="maximize-inactive">
     <use
        x="0"
        y="0"
