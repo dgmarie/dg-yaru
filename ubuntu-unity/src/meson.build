@@ -3,9 +3,10 @@ foreach flavour: flavours
     suffix = flavour == 'default' ? '-@0@'.format(variant) : '-@0@-@1@'.format(flavour, variant)
     theme_name = meson.project_name() + suffix
     theme_dir = join_paths(get_option('datadir'), 'themes', theme_name)
-    
+    full_variant = flavour + '-' + variant
+
     # install unity assets
-    unity_asset_dir = join_paths(flavour + '-' + variant, 'unity')
+    unity_asset_dir = join_paths(full_variant, 'unity')
     unity_asset_data = run_command(
       'find', unity_asset_dir, '-name', '*.svg'
       ).stdout().strip().split('\n')

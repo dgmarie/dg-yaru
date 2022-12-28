@@ -4,6 +4,7 @@ foreach flavour: flavours
     suffix = flavour == 'default' ? '-@0@'.format(variant) : '-@0@-@1@'.format(flavour, variant)
       theme_name = meson.project_name() + suffix + scale
       theme_dir = join_paths(get_option('datadir'), 'themes', theme_name)
+      full_variant = flavour + '-' + variant
 
       conf_data = configuration_data()
       if scale == '-xhdpi'
@@ -13,7 +14,7 @@ foreach flavour: flavours
       else
         conf_data.set('offset', '14')
       endif
-      xfwm4_sources_dir = join_paths(flavour + '-' + variant, 'xfwm4')
+      xfwm4_sources_dir = join_paths(full_variant, 'xfwm4')
       xfwm4_sources_dest = join_paths(theme_dir, 'xfwm4')
 
       themerc = configure_file(
