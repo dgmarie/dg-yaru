@@ -3,7 +3,7 @@
 $notification_banner_height: 64px;
 $notification_banner_width: 34em;
 $notification_banner_radius: $modal_radius - 2px;
-
+$notification_button_radius: $modal_radius - 1px;
 // Banner notifications
 .notification-banner {
   min-height: $notification_banner_height;
@@ -16,6 +16,21 @@ $notification_banner_radius: $modal_radius - 2px;
 
   .notification-button {
     @extend %bubble_button;
+    &:first-child:ltr {
+      border-radius: 0 0 0 $notification_button_radius;
+    }
+    &:last-child:ltr {
+      border-radius: 0 0 $notification_button_radius 0;
+    }
+    &:first-child:rtl {
+      border-radius: 0 0 $notification_button_radius 0;
+    }
+    &:last-child:rtl {
+      border-radius: 0 0 0 $notification_button_radius;
+    }
+    &:first-child:last-child {
+      border-radius: 0 0 $notification_button_radius $notification_button_radius !important;
+    }
   }
 }
 

@@ -141,7 +141,7 @@ stage {
 // buttons in dialogs/notifications
 // lighter in color and have a greater radius
 
-$bubble_button_radius: $modal_radius;
+$bubble_button_radius: $modal_radius*1.25 - 1px;
 
 // buttons in dialogs
 %bubble_button {
