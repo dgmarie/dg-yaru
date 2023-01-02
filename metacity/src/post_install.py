@@ -13,8 +13,10 @@ with suppress(IndexError):
 PREFIX = environ.get('MESON_INSTALL_DESTDIR_PREFIX', '/usr')
 themes_dir = path.join(PREFIX, data_dir, 'themes')
 
-if flavour == 'default':
-    flavour_name = project_name
+if flavour == 'default-macos':
+    flavour_name = f"{project_name}-macos"
+elif flavour == 'default-symbolic':
+    flavour_name = f"{project_name}-symbolic"
 else:
     flavour_name = "{project}-{flavour}".format(project=project_name, flavour=flavour)
 
