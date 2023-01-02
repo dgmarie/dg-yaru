@@ -53,6 +53,13 @@ do
     ln -srfv $ASSETS_DIR/title-1-inactive.png $ASSETS_DIR/title-$num-inactive.png
   done
 
+  for state in 'prelight' 'pressed'
+  do
+    for button in 'menu' 'shade' 'shade-toggled' 'stick' 'stick-toggled'
+    do
+      ln -srfv "${ASSETS_DIR}/${button}-active.png" "${ASSETS_DIR}/${button}-${state}.png"
+    done
+  done
 # End scale loop
 done
 

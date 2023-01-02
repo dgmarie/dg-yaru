@@ -23,17 +23,35 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="9.7102676"
-     inkscape:cx="38.876375"
-     inkscape:cy="283.35985"
-     inkscape:window-width="2560"
-     inkscape:window-height="1376"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:cx="163.22928"
+     inkscape:cy="82.129559"
+     inkscape:window-width="1569"
+     inkscape:window-height="1352"
+     inkscape:window-x="53"
+     inkscape:window-y="48"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg491"
      showguides="true" />
   <defs
      id="defs9">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect1114"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect1092"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
     <inkscape:path-effect
        effect="powermask"
        id="path-effect32270"
@@ -566,13 +584,7 @@
          id="circle27756"
          cx="147"
          cy="576.35999"
-         r="3.5"
-         d="m 150.5,576.35999 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z" />
-      <path
-         id="lpe_path-effect27758"
-         style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:1.55307"
-         class="powerclip"
-         d="m 137,566.35999 h 20 v 20 h -20 z m 13.5,10 a 3.5,3.5 0 0 0 -3.5,-3.5 3.5,3.5 0 0 0 -3.5,3.5 3.5,3.5 0 0 0 3.5,3.5 3.5,3.5 0 0 0 3.5,-3.5 z" />
+         r="3.5" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -664,13 +676,7 @@
          id="circle27912"
          cx="146.99998"
          cy="576.35999"
-         r="3.5"
-         d="m 150.49998,576.35999 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z" />
-      <path
-         id="lpe_path-effect27914"
-         style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:1.55307"
-         class="powerclip"
-         d="m 137,566.35999 h 20 v 20 h -20 z m 13.49998,10 a 3.5,3.5 0 0 0 -3.5,-3.5 3.5,3.5 0 0 0 -3.5,3.5 3.5,3.5 0 0 0 3.5,3.5 3.5,3.5 0 0 0 3.5,-3.5 z" />
+         r="3.5" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -680,13 +686,7 @@
          id="circle27923"
          cx="147"
          cy="576.35999"
-         r="3.5"
-         d="m 150.5,576.35999 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z" />
-      <path
-         id="lpe_path-effect27925"
-         style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:1.55307"
-         class="powerclip"
-         d="m 137,566.35999 h 20 v 20 h -20 z m 13.5,10 a 3.5,3.5 0 0 0 -3.5,-3.5 3.5,3.5 0 0 0 -3.5,3.5 3.5,3.5 0 0 0 3.5,3.5 3.5,3.5 0 0 0 3.5,-3.5 z" />
+         r="3.5" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -754,13 +754,7 @@
          id="circle28537"
          cx="146.99998"
          cy="576.35999"
-         r="3.5"
-         d="m 150.49998,576.35999 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z" />
-      <path
-         id="lpe_path-effect28539"
-         style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:1.55307"
-         class="powerclip"
-         d="m 137,566.35999 h 20 v 20 h -20 z m 13.49998,10 a 3.5,3.5 0 0 0 -3.5,-3.5 3.5,3.5 0 0 0 -3.5,3.5 3.5,3.5 0 0 0 3.5,3.5 3.5,3.5 0 0 0 3.5,-3.5 z" />
+         r="3.5" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -794,13 +788,7 @@
          id="circle28599"
          cx="147"
          cy="576.35999"
-         r="3.5"
-         d="m 150.5,576.35999 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z" />
-      <path
-         id="lpe_path-effect28601"
-         style="display:block;opacity:1;fill:#000000;fill-opacity:1;stroke-width:1.55307"
-         class="powerclip"
-         d="m 137,566.35999 h 20 v 20 h -20 z m 13.5,10 a 3.5,3.5 0 0 0 -3.5,-3.5 3.5,3.5 0 0 0 -3.5,3.5 3.5,3.5 0 0 0 3.5,3.5 3.5,3.5 0 0 0 3.5,-3.5 z" />
+         r="3.5" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -834,13 +822,7 @@
          id="circle28662"
          cx="147"
          cy="576.35999"
-         r="3.5"
-         d="m 150.5,576.35999 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z" />
-      <path
-         id="lpe_path-effect28664"
-         style="display:block;opacity:1;fill:#000000;fill-opacity:1;stroke-width:1.55307"
-         class="powerclip"
-         d="m 137,566.35999 h 20 v 20 h -20 z m 13.5,10 a 3.5,3.5 0 0 0 -3.5,-3.5 3.5,3.5 0 0 0 -3.5,3.5 3.5,3.5 0 0 0 3.5,3.5 3.5,3.5 0 0 0 3.5,-3.5 z" />
+         r="3.5" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -874,13 +856,7 @@
          id="circle28732"
          cx="146.99998"
          cy="576.35999"
-         r="3.5"
-         d="m 150.49998,576.35999 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z" />
-      <path
-         id="lpe_path-effect28734"
-         style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:1.55307"
-         class="powerclip"
-         d="m 137,566.35999 h 20 v 20 h -20 z m 13.49998,10 a 3.5,3.5 0 0 0 -3.5,-3.5 3.5,3.5 0 0 0 -3.5,3.5 3.5,3.5 0 0 0 3.5,3.5 3.5,3.5 0 0 0 3.5,-3.5 z" />
+         r="3.5" />
     </clipPath>
     <inkscape:path-effect
        effect="powerclip"
@@ -899,13 +875,7 @@
          id="circle28789"
          cx="146.99997"
          cy="576.35999"
-         r="3.5"
-         d="m 150.49997,576.35999 a 3.5,3.5 0 0 1 -3.5,3.5 3.5,3.5 0 0 1 -3.5,-3.5 3.5,3.5 0 0 1 3.5,-3.5 3.5,3.5 0 0 1 3.5,3.5 z" />
-      <path
-         id="lpe_path-effect28791"
-         style="display:block;opacity:1;fill:#000000;fill-opacity:1;stroke-width:1.55307"
-         class="powerclip"
-         d="m 137,566.35999 h 20 v 20 h -20 z m 13.49997,10 a 3.5,3.5 0 0 0 -3.5,-3.5 3.5,3.5 0 0 0 -3.5,3.5 3.5,3.5 0 0 0 3.5,3.5 3.5,3.5 0 0 0 3.5,-3.5 z" />
+         r="3.5" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -1830,11 +1800,6 @@
          cx="135"
          cy="103.99999"
          r="6" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-9"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -1942,11 +1907,6 @@
          cx="135"
          cy="103.99999"
          r="6" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-3"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -1956,13 +1916,7 @@
          id="circle1826"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-6"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -1972,8 +1926,7 @@
          id="circle4894-61-12"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
+         r="6" />
       <path
          id="lpe_path-effect3964-7-96-0-8-93"
          style="opacity:1;fill:#000000;fill-opacity:1"
@@ -1998,11 +1951,6 @@
          cx="135"
          cy="103.99999"
          r="6" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-8"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2012,8 +1960,7 @@
          id="circle4894-61-9"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
+         r="6" />
       <path
          id="lpe_path-effect3964-7-96-0-8-6"
          style="opacity:1;fill:#000000;fill-opacity:1"
@@ -2052,8 +1999,7 @@
          id="circle4894-61-98"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
+         r="6" />
       <path
          id="lpe_path-effect3964-7-96-0-8-4"
          style="opacity:1;fill:#000000;fill-opacity:1"
@@ -2132,13 +2078,7 @@
          id="circle1967"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2148,13 +2088,7 @@
          id="circle1967-4"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-8"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <inkscape:path-effect
        effect="powerclip"
@@ -2198,13 +2132,7 @@
          id="circle5246"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-6"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2241,11 +2169,6 @@
          cy="103.99999"
          r="6"
          d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-0"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2280,13 +2203,7 @@
          id="circle5307"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-05"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2296,13 +2213,7 @@
          id="circle5307-9"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-05-2"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <inkscape:path-effect
        effect="powerclip"
@@ -2346,13 +2257,7 @@
          id="circle5384"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-05-4"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2387,13 +2292,7 @@
          id="circle5414"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-05-9"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2428,13 +2327,7 @@
          id="circle5444"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-05-0"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2471,11 +2364,6 @@
          cy="103.99999"
          r="6"
          d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-05-6"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2510,13 +2398,7 @@
          id="circle5505"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-05-28"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2551,13 +2433,7 @@
          id="circle5584"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-05-28-2"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2592,13 +2468,7 @@
          id="circle5636"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-8-1"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2633,13 +2503,7 @@
          id="circle5666"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-8-3"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2674,13 +2538,7 @@
          id="circle5696"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
-      <path
-         id="lpe_path-effect3964-7-96-0-2-31-8-19"
-         style="opacity:1;fill:#000000;fill-opacity:1"
-         class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         r="6" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -2715,13 +2573,43 @@
          id="circle5726"
          cx="135"
          cy="103.99999"
-         r="6"
-         d="m 141,103.99999 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-5.999998 6,6 0 0 1 6,5.999998 z" />
+         r="6" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1110">
       <path
-         id="lpe_path-effect3964-7-96-0-2-31-8-6"
-         style="opacity:1;fill:#000000;fill-opacity:1"
+         id="lpe_path-effect1114"
+         style="fill:#ffffff;stroke-width:0"
          class="powerclip"
-         d="m 123,91.999992 h 24 v 23.999998 h -24 z m 18,11.999998 a 6,6 0 0 0 -6,-5.999998 6,6 0 0 0 -6,5.999998 6,6 0 0 0 6,6 6,6 0 0 0 6,-6 z" />
+         d="m 141,17.000082 h 22 v 22 h -22 z m 16,11 a 5,5 0 0 0 -5,-5 5,5 0 0 0 -5,5 5,5 0 0 0 5,5 5,5 0 0 0 5,-5 z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1110-3">
+      <path
+         id="lpe_path-effect1114-6"
+         style="fill:#ffffff;stroke-width:0"
+         class="powerclip"
+         d="m 141,17.000082 h 22 v 22 h -22 z m 16,11 a 5,5 0 0 0 -5,-5 5,5 0 0 0 -5,5 5,5 0 0 0 5,5 5,5 0 0 0 5,-5 z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1110-5">
+      <path
+         id="lpe_path-effect1114-3"
+         style="fill:#ffffff;stroke-width:0"
+         class="powerclip"
+         d="m 141,17.000082 h 22 v 22 h -22 z m 16,11 a 5,5 0 0 0 -5,-5 5,5 0 0 0 -5,5 5,5 0 0 0 5,5 5,5 0 0 0 5,-5 z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1110-3-0">
+      <path
+         id="lpe_path-effect1114-6-6"
+         style="fill:#ffffff;stroke-width:0"
+         class="powerclip"
+         d="m 141,17.000082 h 22 v 22 h -22 z m 16,11 a 5,5 0 0 0 -5,-5 5,5 0 0 0 -5,5 5,5 0 0 0 5,5 5,5 0 0 0 5,-5 z" />
     </clipPath>
   </defs>
   <use
@@ -3880,99 +3768,31 @@
      id="stick-active"
      inkscape:label="stick-active">
     <g
-       id="g21735">
-      <use
-         id="use4210"
-         transform="translate(133,-547.35997)"
-         width="100%"
-         height="100%"
-         xlink:href="#g4206" />
+       id="g1104">
       <g
-         transform="translate(-4,-544.36)"
-         fill="#adadad"
-         id="g17" />
-      <path
-         d="m 152.0001,35.000015 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-         fill="#cecece"
-         fill-rule="evenodd"
-         id="path163-9-5"
-         style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
-      <path
-         style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-         id="path3952-21-9-106-17-8"
-         clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-0)"
-         transform="translate(17,-75.999977)"
-         d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-         sodipodi:type="arc"
-         sodipodi:ry="7"
-         sodipodi:rx="7"
-         sodipodi:cy="103.99999"
-         sodipodi:cx="135"
-         inkscape:path-effect="#path-effect3964-7-96-0-2-31-8" />
+         id="g21735">
+        <use
+           id="use4210"
+           transform="translate(133,-547.35997)"
+           width="100%"
+           height="100%"
+           xlink:href="#g4206" />
+        <g
+           transform="translate(-4,-544.36)"
+           fill="#adadad"
+           id="g17" />
+      </g>
     </g>
     <path
-       style="opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:1.43606"
-       id="path19661"
-       clip-path="url(#clipPath27754)"
-       transform="translate(5,-548.35999)"
-       inkscape:path-effect="#path-effect27758"
-       sodipodi:type="arc"
-       sodipodi:cx="147"
-       sodipodi:cy="576.35999"
-       sodipodi:rx="5"
-       sodipodi:ry="5"
-       d="m 152,576.35999 a 5,5 0 0 1 -5,5 5,5 0 0 1 -5,-5 5,5 0 0 1 5,-5 5,5 0 0 1 5,5 z" />
-  </g>
-  <g
-     id="stick-pressed"
-     inkscape:label="stick-pressed"
-     transform="translate(29.9997)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210"
-       id="use20"
-       x="0"
-       y="0" />
-    <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26" />
-    <path
-       d="m 181.0004,35.000015 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9"
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-9"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-0)"
-       transform="translate(46.0003,-75.999977)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-0" />
-    <path
-       style="opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:1.43606"
-       id="path19661-4-2"
-       clip-path="url(#clipPath27910)"
-       transform="translate(34.0003,-548.35997)"
-       inkscape:path-effect="#path-effect27914"
-       sodipodi:type="arc"
-       sodipodi:cx="147"
-       sodipodi:cy="576.35999"
-       sodipodi:rx="5"
-       sodipodi:ry="5"
-       d="m 152,576.35999 a 5,5 0 0 1 -5,5 5,5 0 0 1 -5,-5 5,5 0 0 1 5,-5 5,5 0 0 1 5,5 z" />
+       id="path1106"
+       clip-path="url(#clipPath1110)"
+       d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
+       style="fill:#ffffff;stroke-width:0" />
   </g>
   <g
      id="stick-inactive"
      inkscape:label="stick-inactive"
-     transform="translate(34.9997,-547.36)">
+     transform="translate(-25.0003,-547.35999)">
     <g
        transform="translate(194.0004,559.36001)"
        enable-background="new"
@@ -4057,35 +3877,11 @@
          id="g344-8-9" />
     </g>
     <path
-       d="m 206.0004,582.36002 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-2"
-       style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31)"
-       transform="translate(71.0003,471.36003)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31" />
-    <path
-       style="opacity:0.4;fill:#000000;fill-opacity:1;stroke-width:1.43606"
-       id="path19661-4-2-1"
-       clip-path="url(#clipPath28535)"
-       transform="translate(59.0003,-0.99997)"
-       inkscape:path-effect="#path-effect28539"
-       sodipodi:type="arc"
-       sodipodi:cx="147"
-       sodipodi:cy="576.35999"
-       sodipodi:rx="5"
-       sodipodi:ry="5"
-       d="m 152,576.35999 a 5,5 0 0 1 -5,5 5,5 0 0 1 -5,-5 5,5 0 0 1 5,-5 5,5 0 0 1 5,5 z" />
+       id="path1106-7"
+       clip-path="url(#clipPath1110-3)"
+       d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
+       style="fill:#ffffff;stroke-width:0;opacity:0.5"
+       transform="translate(54.0003,547.35991)" />
   </g>
   <g
      id="stick-toggled-active"
@@ -4103,243 +3899,32 @@
          transform="translate(-4,-544.36)"
          fill="#adadad"
          id="g17-0" />
-      <path
-         d="m 152.0001,35.000019 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-         fill="#cecece"
-         fill-rule="evenodd"
-         id="path163-9-5-8"
-         style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
-      <path
-         style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-         id="path3952-21-9-106-17-94-8"
-         clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-05-4)"
-         transform="translate(17,-75.999973)"
-         d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-         sodipodi:type="arc"
-         sodipodi:ry="7"
-         sodipodi:rx="7"
-         sodipodi:cy="103.99999"
-         sodipodi:cx="135"
-         inkscape:path-effect="#path-effect3964-7-96-0-2-31-05-4" />
     </g>
-    <circle
-       style="opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:1"
-       id="path22030"
-       cx="152"
-       cy="28.000027"
-       r="2" />
-    <path
-       style="opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:1.43606"
-       id="path19661-2"
-       clip-path="url(#clipPath28597)"
-       transform="translate(5,-548.35997)"
-       inkscape:path-effect="#path-effect28601"
-       sodipodi:type="arc"
-       sodipodi:cx="147"
-       sodipodi:cy="576.35999"
-       sodipodi:rx="5"
-       sodipodi:ry="5"
-       d="m 152,576.35999 a 5,5 0 0 1 -5,5 5,5 0 0 1 -5,-5 5,5 0 0 1 5,-5 5,5 0 0 1 5,5 z" />
-  </g>
-  <g
-     id="stick-toggled-pressed"
-     inkscape:label="stick-toggled-pressed"
-     transform="translate(29.9997,49.999997)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210-9"
-       id="use20-0"
-       x="0"
-       y="0" />
     <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26-9" />
-    <path
-       d="m 181.0004,35.000019 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
+       transform="translate(-257.0038,-318.99984)"
+       fill="#808080"
        fill-rule="evenodd"
-       id="path163-9-6"
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1" />
+       stroke-linejoin="round"
+       id="g2555"
+       style="fill:#ffffff;fill-opacity:1">
+      <circle
+         cx="409"
+         cy="347"
+         r="2"
+         id="circle2553"
+         style="fill:#ffffff;fill-opacity:1" />
+    </g>
     <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-94"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-05)"
-       transform="translate(46.0003,-75.999973)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-05" />
-    <circle
-       style="opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:1"
-       id="circle23932"
-       cx="181.00031"
-       cy="28.000019"
-       r="2" />
-    <path
-       style="display:inline;opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:1.43606"
-       id="path19661-2-8-0"
-       clip-path="url(#clipPath28730)"
-       transform="translate(34.0003,-548.35996)"
-       inkscape:path-effect="#path-effect28734"
-       sodipodi:type="arc"
-       sodipodi:cx="147"
-       sodipodi:cy="576.35999"
-       sodipodi:rx="5"
-       sodipodi:ry="5"
-       d="m 152,576.35999 a 5,5 0 0 1 -5,5 5,5 0 0 1 -5,-5 5,5 0 0 1 5,-5 5,5 0 0 1 5,5 z" />
-  </g>
-  <g
-     id="stick-prelight"
-     inkscape:label="stick-prelight"
-     transform="translate(-3e-4,-1.5351563e-5)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210"
-       id="use20-5"
-       x="0"
-       y="0" />
-    <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26-4" />
-    <path
-       d="m 181.0004,35.000015 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-0"
-       style="opacity:0.15;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-4"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-6)"
-       transform="translate(46.0003,-75.999977)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-6" />
-    <path
-       style="opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:1.43606"
-       id="path19661-4"
-       clip-path="url(#clipPath27921)"
-       transform="translate(34.0003,-548.35996)"
-       inkscape:path-effect="#path-effect27925"
-       sodipodi:type="arc"
-       sodipodi:cx="147"
-       sodipodi:cy="576.35999"
-       sodipodi:rx="5"
-       sodipodi:ry="5"
-       d="m 152,576.35999 a 5,5 0 0 1 -5,5 5,5 0 0 1 -5,-5 5,5 0 0 1 5,-5 5,5 0 0 1 5,5 z" />
-  </g>
-  <g
-     id="stick-toggled-prelight"
-     inkscape:label="stick-toggled-prelight"
-     transform="translate(-3e-4,49.999981)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210-9"
-       id="use20-0-4"
-       x="0"
-       y="0" />
-    <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26-9-6" />
-    <path
-       d="m 181.0004,35.000019 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-6-9"
-       style="opacity:0.15;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-94-4"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-05-6)"
-       transform="translate(46.0003,-75.999973)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-05-2" />
-    <circle
-       style="opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:1"
-       id="circle23932-2"
-       cx="181.00031"
-       cy="28.000019"
-       r="2" />
-    <path
-       style="display:inline;opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:1.43606"
-       id="path19661-2-8"
-       clip-path="url(#clipPath28660)"
-       transform="translate(34.0003,-548.35996)"
-       inkscape:path-effect="#path-effect28664"
-       sodipodi:type="arc"
-       sodipodi:cx="147"
-       sodipodi:cy="576.35999"
-       sodipodi:rx="5"
-       sodipodi:ry="5"
-       d="m 152,576.35999 a 5,5 0 0 1 -5,5 5,5 0 0 1 -5,-5 5,5 0 0 1 5,-5 5,5 0 0 1 5,5 z" />
+       id="path1106-5"
+       clip-path="url(#clipPath1110-5)"
+       d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
+       style="fill:#ffffff;stroke-width:0"
+       transform="translate(0,-7.9e-5)" />
   </g>
   <g
      id="stick-toggled-inactive"
      inkscape:label="stick-toggled-inactive"
-     transform="translate(34.9997,-497.36001)">
-    <g
-       transform="translate(194.0004,559.36001)"
-       enable-background="new"
-       id="g161-06-5">
-      <g
-         transform="translate(0,-1028.4)"
-         id="g159-1-6">
-        <g
-           id="titlebutton-close-backdrop-5-1"
-           transform="translate(-641,1218)"
-           opacity="0.45">
-          <g
-             transform="translate(-678,-432.64)"
-             opacity="1"
-             id="g154-9-1">
-            <g
-               transform="translate(-103)"
-               opacity="1"
-               id="g146-4-5" />
-            <g
-               transform="translate(1323,246.87)"
-               fill="#ffffff"
-               id="g152-9-9">
-              <g
-                 transform="matrix(0.75,0,0,0.75,2,2.0547)"
-                 fill="#ffffff"
-                 id="g150-0-8">
-                <g
-                   transform="translate(-60,-518)"
-                   fill="#ffffff"
-                   id="g148-9-4" />
-              </g>
-            </g>
-          </g>
-          <rect
-             x="645"
-             y="-185.64"
-             width="16"
-             height="16"
-             fill="none"
-             opacity="1"
-             id="rect156-1-8" />
-        </g>
-      </g>
-    </g>
+     transform="translate(-25.0003,-497.35999)">
     <g
        transform="translate(194.0004,-468.99999)"
        enable-background="new"
@@ -4378,47 +3963,31 @@
          fill-rule="evenodd"
          id="g344-8-9-4" />
     </g>
-    <path
-       d="m 206.0004,582.36002 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
+    <g
+       transform="translate(-203.0035,227.18556)"
+       fill="#808080"
        fill-rule="evenodd"
-       id="path163-9-2-4"
-       style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
+       stroke-linejoin="round"
+       id="g2555-5"
+       style="fill:#ffffff;fill-opacity:1;opacity:0.5">
+      <circle
+         cx="409"
+         cy="348.17459"
+         r="2"
+         id="circle2553-2"
+         style="fill:#ffffff;fill-opacity:1" />
+    </g>
     <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-4"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-5)"
-       transform="translate(71.0003,471.36003)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-8" />
-    <circle
-       style="opacity:0.4;fill:#000000;fill-opacity:1;stroke-width:1"
-       id="circle23935"
-       cx="206.00031"
-       cy="575.35999"
-       r="2" />
-    <path
-       style="display:inline;opacity:0.4;fill:#000000;fill-opacity:1;stroke-width:1.43606"
-       id="path19661-2-8-0-0"
-       clip-path="url(#clipPath28787)"
-       transform="translate(59.0003,-0.999971)"
-       inkscape:path-effect="#path-effect28791"
-       sodipodi:type="arc"
-       sodipodi:cx="147"
-       sodipodi:cy="576.35999"
-       sodipodi:rx="5"
-       sodipodi:ry="5"
-       d="m 152,576.35999 a 5,5 0 0 1 -5,5 5,5 0 0 1 -5,-5 5,5 0 0 1 5,-5 5,5 0 0 1 5,5 z" />
+       id="path1106-7-2"
+       clip-path="url(#clipPath1110-3-0)"
+       d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
+       style="opacity:0.5;fill:#ffffff;stroke-width:0"
+       transform="translate(54.0003,547.35991)" />
   </g>
   <g
      id="shade-active"
      inkscape:label="shade-active"
-     transform="translate(0,99.999995)">
+     transform="translate(0,100)">
     <g
        id="g21735-2">
       <use
@@ -4431,74 +4000,24 @@
          transform="translate(-4,-544.36)"
          fill="#adadad"
          id="g17-2" />
-      <path
-         d="m 152.0001,35.000015 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-         fill="#cecece"
-         fill-rule="evenodd"
-         id="path163-9-5-9"
-         style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
-      <path
-         style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-         id="path3952-21-9-106-17-94-3"
-         clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-05-9)"
-         transform="translate(17,-75.999977)"
-         d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-         sodipodi:type="arc"
-         sodipodi:ry="7"
-         sodipodi:rx="7"
-         sodipodi:cy="103.99999"
-         sodipodi:cx="135"
-         inkscape:path-effect="#path-effect3964-7-96-0-2-31-05-9" />
     </g>
     <path
-       id="rect32504"
-       style="opacity:0.6"
-       d="m 152.0005,25.87852 3.536,3.536 -0.707,0.707 -2.829,-2.82878 -2.829,2.82878 -0.708,-0.707 z"
-       sodipodi:nodetypes="ccccccc" />
-  </g>
-  <g
-     id="shade-pressed"
-     inkscape:label="shade-pressed"
-     transform="translate(29.9997,99.999995)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210-8"
-       id="use20-02"
-       x="0"
-       y="0" />
-    <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26-7" />
-    <path
-       d="m 181.0004,35.000015 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-61"
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-94-46"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-05-6)"
-       transform="translate(46.0003,-75.999977)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-05-6" />
-    <path
-       id="rect32504-5"
-       style="opacity:0.6"
-       d="m 181.0008,25.87852 3.536,3.536 -0.707,0.707 -2.829,-2.82878 -2.829,2.82878 -0.708,-0.707 z"
-       sodipodi:nodetypes="ccccccc" />
+       d="m 147.50588,29.999198 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1"
+       id="path2180" />
   </g>
   <g
      id="shade-inactive"
      inkscape:label="shade-inactive"
-     transform="translate(34.9997,-447.36001)">
+     transform="translate(-25.0003,-447.35999)">
     <g
        transform="translate(194.0004,559.36001)"
        enable-background="new"
@@ -4583,67 +4102,29 @@
          id="g344-8-9-48" />
     </g>
     <path
-       d="m 206.0004,582.36001 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-2-0"
-       style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
+       d="m 201.50534,577.35918 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;opacity:0.5"
+       id="path2180-5" />
     <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-1"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-0)"
-       transform="translate(71.0003,471.36002)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-3" />
-    <path
-       id="rect32504-3"
-       style="opacity:0.4"
-       d="m 206.0008,573.23851 3.536,3.536 -0.707,0.707 -2.829,-2.82878 -2.829,2.82878 -0.708,-0.707 z"
-       sodipodi:nodetypes="ccccccc" />
-  </g>
-  <g
-     id="shade-prelight"
-     inkscape:label="shade-prelight"
-     transform="translate(-3e-4,99.999985)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210-8"
-       id="use20-5-0"
-       x="0"
-       y="0" />
-    <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26-4-2" />
-    <path
-       d="m 181.0004,35.000015 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-0-8"
-       style="opacity:0.15;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-94-5"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-05-0)"
-       transform="translate(46.0003,-75.999977)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-05-0" />
-    <path
-       id="rect32504-8"
-       style="opacity:0.6"
-       d="m 181.0008,25.878515 3.536,3.536 -0.707,0.707 -2.829,-2.82878 -2.829,2.82878 -0.708,-0.707 z"
-       sodipodi:nodetypes="ccccccc" />
+       d="m 201.50534,577.35918 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;opacity:0.5"
+       id="path2389" />
   </g>
   <g
      id="shade-toggled-active"
@@ -4661,74 +4142,24 @@
          transform="translate(-4,-544.36)"
          fill="#adadad"
          id="g17-2-4" />
-      <path
-         d="m 152.0001,35.00001 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-         fill="#cecece"
-         fill-rule="evenodd"
-         id="path163-9-5-9-2"
-         style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
-      <path
-         style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-         id="path3952-21-9-106-17-8-3"
-         clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-8-1)"
-         transform="translate(17,-75.999982)"
-         d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-         sodipodi:type="arc"
-         sodipodi:ry="7"
-         sodipodi:rx="7"
-         sodipodi:cy="103.99999"
-         sodipodi:cx="135"
-         inkscape:path-effect="#path-effect3964-7-96-0-2-31-8-1" />
     </g>
     <path
-       id="rect32504-4"
-       style="opacity:0.6"
-       d="m 152.0005,30.12151 3.536,-3.536 -0.707,-0.707 -2.829,2.82878 -2.829,-2.82878 -0.708,0.707 z"
-       sodipodi:nodetypes="ccccccc" />
-  </g>
-  <g
-     id="shade-toggled-pressed"
-     inkscape:label="shade-toggled-pressed"
-     transform="translate(29.9997,150)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210-8-9"
-       id="use20-02-4"
-       x="0"
-       y="0" />
-    <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26-7-1" />
-    <path
-       d="m 181.0004,35.00001 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-61-2"
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-94-47"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-05-28)"
-       transform="translate(46.0003,-75.999982)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-05-28" />
-    <path
-       id="rect32504-4-0"
-       style="opacity:0.6"
-       d="m 181.0008,30.121515 3.536,-3.536 -0.707,-0.707 -2.829,2.82878 -2.829,-2.82878 -0.708,0.707 z"
-       sodipodi:nodetypes="ccccccc" />
+       d="m 147.50588,25.000025 a 0.5,0.5 0 0 0 -0.37891,0.16797 0.5,0.5 0 0 0 0.041,0.70508 l 4.5,4 a 0.50005,0.50005 0 0 0 0.66406,0 l 4.5,-4 a 0.5,0.5 0 0 0 0.041,-0.70508 0.5,0.5 0 0 0 -0.70508,-0.041 l -4.168,3.7031 -4.168,-3.7031 a 0.5,0.5 0 0 0 -0.32617,-0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1"
+       id="path1874" />
   </g>
   <g
      id="shade-toggled-inactive"
      inkscape:label="shade-toggled-inactive"
-     transform="translate(34.9997,-397.36001)">
+     transform="translate(-25.0003,-397.35999)">
     <g
        transform="translate(194.0004,559.36001)"
        enable-background="new"
@@ -4813,68 +4244,17 @@
          id="g344-8-9-48-4" />
     </g>
     <path
-       d="m 206.0004,582.36001 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-2-0-7"
-       style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-5"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-8)"
-       transform="translate(71.0003,471.36002)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-9" />
-    <path
-       id="rect32504-4-01"
-       style="opacity:0.4"
-       d="m 206.0008,577.48151 3.536,-3.536 -0.707,-0.707 -2.829,2.82878 -2.829,-2.82878 -0.708,0.707 z"
-       sodipodi:nodetypes="ccccccc" />
-  </g>
-  <g
-     id="shade-toggled-prelight"
-     inkscape:label="shade-toggled-prelight"
-     transform="translate(-3e-4,149.99999)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210-8-9"
-       id="use20-5-0-9"
-       x="0"
-       y="0"
-       inkscape:label="use20-5-0-9" />
-    <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26-4-2-0" />
-    <path
-       d="m 181.0004,35.00001 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-0-8-6"
-       style="opacity:0.15;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-94-47-9"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-05-28-2)"
-       transform="translate(46.0003,-75.999982)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-05-28-2" />
-    <path
-       id="rect32504-4-9"
-       style="opacity:0.6"
-       d="m 181.0008,30.121515 3.536,-3.536 -0.707,-0.707 -2.829,2.82878 -2.829,-2.82878 -0.708,0.707 z"
-       sodipodi:nodetypes="ccccccc" />
+       d="m 201.50618,572.36001 a 0.5,0.5 0 0 0 -0.37891,0.16797 0.5,0.5 0 0 0 0.041,0.70508 l 4.5,4 a 0.50005,0.50005 0 0 0 0.66406,0 l 4.5,-4 a 0.5,0.5 0 0 0 0.041,-0.70508 0.5,0.5 0 0 0 -0.70508,-0.041 l -4.168,3.7031 -4.168,-3.7031 a 0.5,0.5 0 0 0 -0.32617,-0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;opacity:0.5"
+       id="path1874-6" />
   </g>
   <g
      id="menu-active"
@@ -4892,76 +4272,18 @@
          transform="translate(-4,-544.36)"
          fill="#adadad"
          id="g17-2-4-7" />
-      <path
-         d="m 152.0001,35.00001 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-         fill="#cecece"
-         fill-rule="evenodd"
-         id="path163-9-5-9-2-3"
-         style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
-      <path
-         style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-         id="path3952-21-9-106-17-8-4"
-         clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-8-3)"
-         transform="translate(17,-75.999982)"
-         d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-         sodipodi:type="arc"
-         sodipodi:ry="7"
-         sodipodi:rx="7"
-         sodipodi:cy="103.99999"
-         sodipodi:cx="135"
-         inkscape:path-effect="#path-effect3964-7-96-0-2-31-8-3" />
     </g>
-    <circle
-       cx="152"
-       cy="28.000015"
-       id="circle5255-3-3"
-       style="display:inline;opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:0.749748"
-       r="3" />
-  </g>
-  <g
-     id="menu-pressed"
-     inkscape:label="menu-pressed"
-     transform="translate(29.9997,200)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210-8-9-3"
-       id="use20-02-4-5"
-       x="0"
-       y="0" />
-    <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26-7-1-2" />
     <path
-       d="m 181.0004,35.00001 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-61-2-6"
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-8-64"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-8-6)"
-       transform="translate(46.0003,-75.999982)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-8-6" />
-    <circle
-       cx="181.00031"
-       cy="28.000015"
-       id="circle5255-3-3-1-5"
-       style="display:inline;opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:0.749748"
-       r="3" />
+       d="m 147,23 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z"
+       fill="#808080"
+       overflow="visible"
+       id="path1085"
+       style="fill:#ffffff;fill-opacity:1" />
   </g>
   <g
      id="menu-inactive"
      inkscape:label="menu-inactive"
-     transform="translate(34.9997,-347.36001)">
+     transform="translate(-25.0003,-347.35999)">
     <g
        transform="translate(194.0004,559.36001)"
        enable-background="new"
@@ -5046,70 +4368,11 @@
          id="g344-8-9-48-4-4" />
     </g>
     <path
-       d="m 206.0004,582.36001 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-2-0-7-7"
-       style="opacity:0.1;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-94"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-6)"
-       transform="translate(71.0003,471.36002)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-6" />
-    <circle
-       cx="206.00031"
-       cy="575.35999"
-       id="circle5255-3-3-1-4"
-       style="display:inline;opacity:0.4;fill:#000000;fill-opacity:1;stroke-width:0.749748"
-       r="3" />
-  </g>
-  <g
-     id="menu-prelight"
-     inkscape:label="menu-prelight"
-     transform="translate(-3e-4,199.99999)">
-    <use
-       transform="translate(29.0003)"
-       width="100%"
-       height="100%"
-       xlink:href="#use4210-8-9-3"
-       id="use20-5-0-9-9"
-       x="0"
-       y="0"
-       inkscape:label="use20-5-0-9" />
-    <g
-       transform="translate(24.7143,-544.35995)"
-       id="g26-4-2-0-2" />
-    <path
-       d="m 181.0004,35.00001 c 3.8659,0 6.9999,-3.134 6.9999,-7 0,-3.866 -3.134,-7 -6.9999,-7 -3.866,0 -7.0001,3.134 -7.0001,7 0,3.866 3.134,7 7.0001,7"
-       fill="#cecece"
-       fill-rule="evenodd"
-       id="path163-9-0-8-6-8"
-       style="opacity:0.15;fill:#ffffff;fill-opacity:1" />
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1"
-       id="path3952-21-9-106-17-8-6"
-       clip-path="url(#clipath_lpe_path-effect3964-7-96-0-2-31-8-19)"
-       transform="translate(46.0003,-75.999982)"
-       d="m 142,103.99999 a 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-6.999998 7,7 0 0 1 7,6.999998 z"
-       sodipodi:type="arc"
-       sodipodi:ry="7"
-       sodipodi:rx="7"
-       sodipodi:cy="103.99999"
-       sodipodi:cx="135"
-       inkscape:path-effect="#path-effect3964-7-96-0-2-31-8-19" />
-    <circle
-       cx="181.00031"
-       cy="28.000015"
-       id="circle5255-3-3-1"
-       style="display:inline;opacity:0.6;fill:#000000;fill-opacity:1;stroke-width:0.749748"
-       r="3" />
+       d="m 201.0003,570.35999 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z"
+       fill="#808080"
+       overflow="visible"
+       id="path1085-3"
+       style="fill:#ffffff;fill-opacity:1;opacity:0.5" />
   </g>
   <g
      id="title-1-inactive"
