@@ -66,3 +66,9 @@ $checked_fg_color: $fg_color;
 $checked_hover_bg_color: scale-color($fg_color, $alpha: -87%);
 $checked_active_bg_color: scale-color($fg_color, $alpha: -81%);
 $osd_checked_hover_bg_color: scale-color($osd_fg_color, $alpha: -87%);
+
+// cards
+$card_bg_color: if($variant == 'light', #ffffff, mix($bg_color, white, 92%));
+$card_hover_bg_color: if($variant == 'light', mix(white, $fg_color, 97%), mix($bg_color, white, 89%));
+$card_active_bg_color: if($variant == 'light', mix(white, $fg_color, 92%), mix($bg_color, white, 84%));
+$card_fg_color: if($variant == 'light', #323232, #ffffff);
