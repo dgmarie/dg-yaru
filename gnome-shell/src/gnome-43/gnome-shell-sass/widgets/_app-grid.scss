@@ -163,7 +163,8 @@ $app_icon_size: 96px;
     border-radius: 99px;
     color: $osd_fg_color;
   }
+  > StIcon { @include button(normal, $osd_fg_color, $flat: true);}
   &:insensitive > StIcon { @include button(undecorated, $osd_fg_color);}
-  &:hover > StIcon { @include button(hover, $osd_fg_color);}
-  &:active > StIcon { @include button(active, $osd_fg_color);}
+  &:hover > StIcon { @include button(hover, $osd_fg_color, $flat: true);}
+  &:active > StIcon { @include button(active, $osd_fg_color, $flat: true);}
 }
