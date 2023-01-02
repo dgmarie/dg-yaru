@@ -8,7 +8,7 @@ $fg_color: if($variant=='light', transparentize(black, 0.2), white);
 
 $selected_fg_color: $accent_fg_color;
 $selected_bg_color: $accent_bg_color;
-$selected_borders_color: transparentize($selected_bg_color, .4);
+$selected_borders_color: transparentize($selected_bg_color, .5);
 
 $button_border: scale-color($fg_color, $alpha: -95%);
 $selected_button_border: scale-color($selected_fg_color, $alpha: -85%);
@@ -77,6 +77,7 @@ $checked_bg_color: scale-color($fg_color, $alpha: -90%);
 $osd_checked_bg_color: scale-color($osd_fg_color, $alpha: -90%);
 $checked_fg_color: $fg_color;
 $checked_hover_bg_color: scale-color($fg_color, $alpha: -87%);
+$osd_checked_hover_bg_color: scale-color($osd_fg_color, $alpha: -87%);
 $checked_active_bg_color: scale-color($fg_color, $alpha: -81%);
 
 // Yaru: color variables imported from Mint's cinnamon theme
