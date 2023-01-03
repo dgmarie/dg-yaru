@@ -4,11 +4,12 @@
 // main list
 .message-list {
   width: 29em;
-  border: solid $borders_color;
+  border: none;
+  margin: 0;
 
-  // padding and margins to account for scrollbar
-  &:ltr {margin-left: 0; margin-right: $base_margin; padding-right: $base_padding; border-right-width: 1px; }
-  &:rtl {margin-right: 0; margin-left: $base_margin; padding-left: $base_padding; border-left-width: 1px; }
+  // padding to account for scrollbar
+  &:ltr {margin-left: 0; padding-right: $base_margin; }
+  &:rtl {margin-right: 0; padding-left: $base_margin; }
 
   .message-list-placeholder { 
     @extend %title_2;
@@ -26,19 +27,24 @@
 .message-list-sections {
   spacing: 0;
   margin: 0;
+  // to account for scrollbar
+  &:ltr {margin-right: $base_margin; }
+  &:rtl {margin-left: $base_margin;}
 }
 
 .message-list-section,
 .message-list-section-list {
-  spacing: $base-margin - 4px;
+  spacing: 0;
   margin-bottom: 0;
 }
 
 // do-not-disturb + clear button
 .message-list-controls {
   // NOTE: remove the padding if notification_bubble could remove margin for drop shadow
-  padding: $base_padding + 4px;
+  padding: $base_margin * 2;
   spacing: $base_padding;
+  &:ltr {margin-right: $base_margin * 2; }
+  &:rtl {margin-left: $base_margin * 2;}
   @extend %heading;
 
   .dnd-button {
@@ -135,29 +141,20 @@
 
 /* Media Controls */
 .message-media-control {
-  padding: 0 $base_padding*3;
-  margin: $base_padding*2 0;
-  border-radius: $base_border_radius;
+  padding: 0 $base_margin * 3 + 1px;
+  margin: $base_margin * 5 1px;
   color: $fg_color;
+  border-radius: 999px;
 
-  // colors are lightened since the media controls are in a card
-  &:hover {
-    background-color: lighten($hover_bg_color, 5%);
-    color: $fg_color;
-  }
+  &:last-child:ltr {margin-right: $base_margin * 3;}
+  &:first-child:rtl {margin-left: $base_margin * 3;}
 
-  &:active { 
-    background-color: $active_bg_color; // Yaru: make play/pause/next buttons active visible
-    color: $fg_color;
-  }
-
-  &:insensitive { color: lighten($insensitive_fg_color, 5%); }
-  
-  // fix margin for last button
-  &:last-child:ltr { margin-right: $base_margin*3; }
-  &:last-child:rtl { margin-left: $base_margin*3; }
-
-  & StIcon { icon-size: $base_icon_size; }
+  @include button(normal, $flat:true);
+  &:focus { @include button(focus, $flat:true);}
+  &:hover { @include button(hover, $flat:true);}
+  &:insensitive { @include button(insensitive, $flat:true);}
+  &:active { @include button(active, $flat:true);}
+  &:checked { @include button(checked, $flat:true);}
 }
 
 // album-art
@@ -167,8 +164,8 @@
 
   // when there is no artwork
   &.fallback {
-    color: darken($fg_color, 17%);
-    background-color: $bg_color;
+    color: $fg_color;
+    background-color: scale-color($fg_color, $alpha: -90%);
     border: 1px solid transparent;
     border-radius: $base_border_radius;
     icon-size: $large_icon_size !important; // 32px

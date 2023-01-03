@@ -277,6 +277,7 @@ $button_border: scale-color($tc, $alpha: -95%);
     background-color: scale-color($tc, $alpha: -95%);
     @if $flat {
       background-color: transparent;
+      border-color: transparent;
     }
   }
 

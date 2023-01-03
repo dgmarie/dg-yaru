@@ -93,28 +93,28 @@ StScrollView {
 }
 
 StScrollBar {
-
-  padding: 8px;
+  padding: 3px;
+  background-color: transparent;
 
   StScrollView & {
-    min-width: 5px;
-    min-height: 5px;
+    min-width: 8px;
+    min-height: 8px;
   }
 
   StBin#trough {
-    background-color: transparentize($base_color, 0.9);
-    border-radius: 99px;
+    background-color: transparent;
+    border-radius: 0;
   }
 
   StButton#vhandle, StButton#hhandle {
     border-radius: 99px;
-    background-color: mix($fg_color, $bg_color, 40%);
+    background-color: scale-color($fg_color, $alpha: -80%);
     border: 0px solid;
-    margin: 0px;
+    margin: 0;
 
-    &:hover { background-color: mix($fg_color, $bg_color, 30%); }
+    &:hover { background-color: scale-color($fg_color, $alpha: -60%); }
 
-    &:active { background-color: $selected_bg_color; }
+    &:active { background-color: scale-color($fg_color, $alpha: -40%); }
   }
 }
 
@@ -269,7 +269,7 @@ StScrollBar {
 .menu {
   color: $fg_color;
   border: 1px solid $borders_edge;
-  border-radius: 18px;
+  border-radius: 14px;
 	background-color: $bg_color;
   box-shadow: 0 1px 16px 6px transparentize(black, .84);
   margin: 3px;
@@ -293,7 +293,7 @@ StScrollBar {
 
 .popup-sub-menu {
   background-color: $base_color;
-  border-radius: 8px;
+  border-radius: 6px;
   margin: 3px;
   box-shadow: inset 0 0 0 1px $button_border;
 
@@ -314,7 +314,7 @@ StScrollBar {
   border-left-width: 0;
   border-right-width: 0;
   transition-duration: 150ms;
-  border-radius: 8px;
+  border-radius: 6px;
   margin: 3px;
 
   &:active {
@@ -338,7 +338,7 @@ StScrollBar {
 .popup-menu {
   color: $fg_color;
   border: 1px solid $borders_edge;
-  border-radius: 18px;
+  border-radius: 12px;
 	background-color: $bg_color;
   box-shadow: 0 1px 16px 6px transparentize(black, .84);
 
@@ -347,7 +347,7 @@ StScrollBar {
   .popup-sub-menu {
     background-color: $base_color;
     box-shadow: none;
-    border-radius: 12px;
+    border-radius: 6px;
     margin: 3px;
 
     .popup-menu-item:ltr { padding-right: 1.75em; }
@@ -365,7 +365,7 @@ StScrollBar {
     spacing: 1em;
     border-left-width: 0;
     border-right-width: 0;
-    border-radius: 8px;
+    border-radius: 6px;
     margin: 3px;
 
     &:active {
@@ -655,7 +655,7 @@ StScrollBar {
 .expo-workspaces-name-entry,
 .expo-workspaces-name-entry#selected {
   height: 1.5em;
-  border-radius: 2px;
+  border-radius: 6px;
   font-size: 1em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
@@ -1086,9 +1086,11 @@ StScrollBar {
   color: $fg_color;
   box-shadow: 0 1px 16px 6px transparentize(black, .84);
 
-  .popup-menu & {
+  .popup-menu &,
+  .menu & {
     color: $fg_color;
-    border-image: url("#{$asset_path}/misc/message.svg") 9 9 9 9;
+    border-image: none;
+    @include card;
 
     .notification-button, .notification-icon-button {
       @extend %button;
@@ -1469,10 +1471,18 @@ StScrollBar {
     &-button { padding: 10px; }
   }
 
-  &-categories-box { padding: 10px 30px 10px 30px; }
+  &-categories-box {
+    margin: 0 0 10px 10px;
+    padding: 10px;
+  }
 
-  &-applications-inner-box,
-  &-applications-outer-box { margin: 10px 10px 10px 10px; }
+  &-applications-inner-box {
+    margin: 0px 10px 10px 0;
+    padding: 10px;
+  }
+  &-applications-outer-box {
+    margin: 10px;
+  }
 
   &-application-button {
     padding: 5px 10px;
@@ -1539,9 +1549,9 @@ StScrollBar {
 
   &-selected-app-description { max-width: 150px; }
 
-  &-search-box:ltr { padding-left: 30px; margin-right: 3px;}
-  &-search-box:rtl { padding-right: 30px; margin-left: 3px;}
-}
+
+  &-search-box:ltr { padding-left: 20px; margin-right: 3px;}
+  &-search-box:rtl { padding-right: 20px; margin-left: 3px;}}
 
 #menu-search-entry {
   width: 250px;
@@ -1549,6 +1559,7 @@ StScrollBar {
   font-weight: normal;
   caret-color: $fg_color;
   margin-top: 3px;
+  margin-bottom: 10px;
 
   @extend %entry;
 }
@@ -2142,7 +2153,7 @@ StScrollBar {
     text-shadow: none;
     transition-duration: 100;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 6px;
     background-color: transparent;
     margin: 3px;
 
