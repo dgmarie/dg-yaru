@@ -5,11 +5,10 @@
 .message-list {
   width: 29em;
   border: none;
-  margin: 0;
-
-  // padding to account for scrollbar
-  &:ltr {margin-left: 0; padding-right: $base_margin; }
-  &:rtl {margin-right: 0; padding-left: $base_margin; }
+  margin: $base_margin 0;
+  border: 0 solid $borders_color; // draw the separator on the scrollbar
+  &:ltr { padding-right: $base_margin + 1px; border-right-width: 1px; }
+  &:rtl { padding-left: $base_margin + 1px; border-left-width: 1px; }
 
   .message-list-placeholder { 
     @extend %title_2;
@@ -25,11 +24,8 @@
 }
 
 .message-list-sections {
-  spacing: 0;
+  spacing: $base_margin;
   margin: 0;
-  // to account for scrollbar
-  &:ltr {margin-right: $base_margin; }
-  &:rtl {margin-left: $base_margin;}
 }
 
 .message-list-section,
@@ -42,10 +38,9 @@
 .message-list-controls {
   // NOTE: remove the padding if notification_bubble could remove margin for drop shadow
   padding: $base_margin * 2;
-  padding-right: $base_margin;
+  padding-bottom: $base_margin;
   spacing: $base_padding;
-  &:ltr {margin-right: $base_margin * 2; }
-  &:rtl {margin-left: $base_margin * 2;}
+  margin: 0;
   @extend %heading;
 
   .dnd-button {
@@ -66,6 +61,10 @@
 // message bubbles
 .message {
   @include card;
+
+  &:first-child {
+    margin-top: $base_margin;
+  }
 
   // icon container
   .message-icon-bin {
@@ -142,20 +141,14 @@
 
 /* Media Controls */
 .message-media-control {
-  padding: 0 $base_margin * 3 + 1px;
-  margin: $base_margin * 5 1px;
+  padding: 0 $base_margin * 3;
+  margin: $base_margin * 5 + 1px 1px;
   color: $fg_color;
   border-radius: 999px;
 
-  &:last-child:ltr {margin-right: $base_margin * 3;}
-  &:first-child:rtl {margin-left: $base_margin * 3;}
-
-  @include button(normal, $flat:true);
-  &:focus { @include button(focus, $flat:true);}
-  &:hover { @include button(hover, $flat:true);}
-  &:insensitive { @include button(insensitive, $flat:true);}
-  &:active { @include button(active, $flat:true);}
-  &:checked { @include button(checked, $flat:true);}
+  &:last-child:ltr {margin-right: $base_margin * 4;}
+  &:first-child:rtl {margin-left: $base_margin * 4;}
+  @extend %button_flat;
 }
 
 // album-art
@@ -167,9 +160,10 @@
   &.fallback {
     color: $fg_color;
     background-color: scale-color($fg_color, $alpha: -90%);
-    border: 1px solid transparent;
+    border: none;
     border-radius: $base_border_radius;
-    icon-size: $large_icon_size !important; // 32px
-    padding: ($base_padding*2 + 2); // 16px
+    icon-size: $base_icon_size * 1.5 !important; // 32px
+    padding: ($base_padding*2); // 12px
+    box-shadow: inset 0 0 0 1px $element_border;
   }
 }

@@ -7,21 +7,15 @@
 
 // Calendar menu side column
 .datemenu-calendar-column {
-  spacing: $base_padding - 4px;
+  spacing: 0;
   .datemenu-displays-box {spacing: 0;}
-  border: solid $borders_color;
-  margin: $base_margin * 2 0;
-
-  // padding to account for scrollbar
-  &:ltr { border-left-width: 1px; }
-  &:rtl { border-right-width: 1px; }
+  margin: 0;
 }
 
 /* today button (the date) */
 .datemenu-today-button {
   color: $fg_color;
   padding: $base_margin * 2;
-  padding-top: 0;
   background-color: transparent;
 
   // weekday label
@@ -46,7 +40,6 @@
   @include card;
   margin-top: 0;
 	padding: $base_padding;
-  &:last-child { margin-bottom: 0; }
 
   // month header
   .calendar-month-header {
@@ -170,7 +163,6 @@
 .events-button {
   @include card;
   padding: $base_padding * 2;
-  &:last-child { margin-bottom: 0; }
 
   .events-box {
     spacing: $base_padding;
@@ -197,7 +189,6 @@
 .world-clocks-button {
   @include card;
   padding: $base_padding * 2;
-  &:last-child { margin-bottom: 0; }
 
   .world-clocks-grid {
     spacing-rows: $base_padding;
@@ -237,7 +228,6 @@
 .weather-button {
   @include card;
   padding: $base_padding * 2;
-  &:last-child { margin-bottom: 0; }
 
   .weather-box {
     spacing: $base_padding + $base_margin;

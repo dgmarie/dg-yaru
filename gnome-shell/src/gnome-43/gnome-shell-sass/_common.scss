@@ -109,6 +109,7 @@ stage {
   &:active { @include button(active);}
   &:checked { @include button(checked);}
 
+  @at-root %button_flat,
   &.flat {
     @include button(normal, $flat:true);
     &:focus { @include button(focus, $flat:true);}
