@@ -13,8 +13,8 @@
 	<constant name="C_titlebar_unfocused" value="#f7f7f7" />
 	<constant name="C_titlebar_border_focused" value="#d8d8d8" />
 	<constant name="C_titlebar_border_unfocused" value="#e8e8e8" />
-	<constant name="C_border_focused" value="#d8d8d8" />
-	<constant name="C_border_unfocused" value="#e8e8e8" />
+	<constant name="C_border_focused" value="#bfbfbf" />
+	<constant name="C_border_unfocused" value="#d0d0d0" />
 	<constant name="C_title_focused" value="#2f2f2f" />
 	<constant name="C_title_unfocused" value="#979797" />
 
@@ -28,8 +28,8 @@
 		<distance name="right_titlebar_edge" value="7" />
 		<distance name="title_vertical_pad" value="1" />
 		<aspect_ratio name="button" value="1" />
-		<border name="title_border" left="5" right="0" top="10" bottom="9" />
-		<border name="button_border" left="3" right="3" top="10" bottom="9" />
+		<border name="title_border" left="5" right="0" top="11" bottom="9" />
+		<border name="button_border" left="3" right="3" top="11" bottom="9" />
 	</frame_geometry>
 	<frame_geometry name="normal_shaded" rounded_bottom_left="true" rounded_bottom_right="true" parent="normal" />
 
