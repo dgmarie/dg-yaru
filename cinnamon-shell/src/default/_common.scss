@@ -1452,7 +1452,7 @@ StScrollBar {
 //
 .menu {
   &-favorites-box {
-    padding: 10px;
+    padding: 8px;
     @include card;
     margin: 3px;
   }
@@ -1479,8 +1479,8 @@ StScrollBar {
   }
 
   &-categories-box {
-    margin: 0 0 10px 10px;
-    padding: 8px;
+    margin: 0 0 10px 6px;
+    padding: 10px;
   }
 
   &-applications-inner-box {
@@ -1557,8 +1557,8 @@ StScrollBar {
   &-selected-app-description { max-width: 150px; }
 
 
-  &-search-box:ltr { padding-left: 20px; margin-right: 3px;}
-  &-search-box:rtl { padding-right: 20px; margin-left: 3px;}}
+  &-search-box:ltr { padding-left: 16px; margin-right: 3px;}
+  &-search-box:rtl { padding-right: 16px; margin-left: 3px;}}
 
 #menu-search-entry {
   width: 250px;
