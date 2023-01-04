@@ -1258,7 +1258,7 @@ StScrollBar {
       padding-top: 0;
       padding-bottom: 0;
       height: 30px;
-      border-radius: 0 !important;
+      border-radius: 6px !important;
 
       @extend %button;
     }
@@ -1590,8 +1590,8 @@ StScrollBar {
   padding: 16px;
   color: $fg_color;
   border: 1px solid $borders_edge;
-  border-radius: 999px;
-  background-color: $bg_color;
+  border-radius: 24px;
+  background-color: transparentize($bg_color, 0.2);
 }
 
 .restart-osd {
@@ -1609,9 +1609,9 @@ StScrollBar {
   padding: 20px;
 
   color: $fg_color;
-  background-color: $bg_color;
+  background-color: transparentize($bg_color, 0.2);
   border: 1px solid $borders_edge;
-  border-radius: 999px;
+  border-radius: 24px;
 
   .osd-monitor-label { font-size: 3em; }
 
