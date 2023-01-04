@@ -23,14 +23,14 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="4.2501839"
-     inkscape:cx="125.87691"
-     inkscape:cy="221.99039"
+     inkscape:cx="173.87483"
+     inkscape:cy="177.75701"
      inkscape:window-width="1569"
      inkscape:window-height="1352"
      inkscape:window-x="53"
      inkscape:window-y="48"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg491"
+     inkscape:current-layer="menu-inactive"
      showguides="true" />
   <defs
      id="defs9">
@@ -4620,8 +4620,8 @@
        x="0"
        y="0"
        xlink:href="#g4206-8"
-       id="use3462"
-       transform="translate(82.20744,40.61792)" />
+       id="use1947"
+       transform="matrix(1,0,0,1.0270356,82.20744,25.549587)" />
     <use
        x="0"
        y="0"
@@ -4651,7 +4651,7 @@
        y="0"
        xlink:href="#g4231"
        id="use4236"
-       transform="translate(-1.1230465e-8,65.999993)" />
+       transform="translate(-10,613.35999)" />
     <use
        x="0"
        y="0"
@@ -4682,7 +4682,7 @@
        y="0"
        xlink:href="#g4231"
        id="use4236-8"
-       transform="translate(-1.1230465e-8,32.999993)" />
+       transform="translate(-10,580.35999)" />
     <use
        x="0"
        y="0"
@@ -4690,327 +4690,318 @@
        id="use8452"
        transform="translate(33)" />
   </g>
+  <use
+     transform="translate(43,-547.36002)"
+     width="100%"
+     height="100%"
+     xlink:href="#g4206"
+     id="use248" />
   <g
-     id="close-prelight"
-     transform="translate(10,-547.36)">
-    <use
-       transform="translate(33,-2.2617e-5)"
-       width="100%"
-       height="100%"
-       xlink:href="#g4206"
-       id="use248" />
+     transform="translate(50,-1016.36)"
+     enable-background="new"
+     id="g273">
     <g
-       transform="translate(40,-469)"
-       enable-background="new"
-       id="g273">
+       id="g4965-7"
+       transform="translate(-5.2577701,3.4802388)" />
+  </g>
+  <g
+     id="g4231"
+     transform="translate(8.4057765,-36.44353)">
+    <circle
+       style="opacity:0.12;fill:#000000;fill-opacity:1;stroke-width:0"
+       id="path3713-6"
+       cx="59.594223"
+       cy="64.443527"
+       r="12" />
+    <path
+       style="opacity:0.04;fill:#000000;fill-opacity:1;stroke-width:0"
+       id="path3713-2-9"
+       clip-path="url(#clipath_lpe_path-effect3800-7-5)"
+       d="M 35,28 A 12,12 0 0 1 23,40 12,12 0 0 1 11,28 12,12 0 0 1 23,16 12,12 0 0 1 35,28 Z"
+       sodipodi:type="arc"
+       sodipodi:ry="12"
+       sodipodi:rx="12"
+       sodipodi:cy="28"
+       sodipodi:cx="23"
+       inkscape:path-effect="#path-effect3800-7-5"
+       transform="translate(36.594224,36.44353)" />
+  </g>
+  <use
+     x="0"
+     y="0"
+     xlink:href="#rect4628"
+     id="use8365"
+     transform="translate(43,-547.36)" />
+  <g
+     id="stick-active"
+     inkscape:label="stick-active"
+     transform="translate(50.000003,-3e-5)">
+    <g
+       id="g1104">
       <g
-         id="g4965-7"
-         transform="translate(-5.2577701,3.4802388)" />
+         id="g21735">
+        <use
+           id="use4210"
+           transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
+           width="100%"
+           height="100%"
+           xlink:href="#g4206" />
+        <g
+           transform="translate(-4,-544.36)"
+           fill="#adadad"
+           id="g17" />
+      </g>
     </g>
-    <g
-       id="g4231"
-       transform="translate(-1.5942235,510.91647)">
-      <circle
-         style="opacity:0.12;fill:#000000;stroke-width:0;fill-opacity:1"
-         id="path3713-6"
-         cx="59.594223"
-         cy="64.443527"
-         r="12" />
-      <path
-         style="opacity:0.04;fill:#000000;stroke-width:0;fill-opacity:1"
-         id="path3713-2-9"
-         clip-path="url(#clipath_lpe_path-effect3800-7-5)"
-         d="M 35,28 A 12,12 0 0 1 23,40 12,12 0 0 1 11,28 12,12 0 0 1 23,16 12,12 0 0 1 35,28 Z"
-         sodipodi:type="arc"
-         sodipodi:ry="12"
-         sodipodi:rx="12"
-         sodipodi:cy="28"
-         sodipodi:cx="23"
-         inkscape:path-effect="#path-effect3800-7-5"
-         transform="translate(36.594224,36.44353)" />
-    </g>
+    <path
+       id="path1106"
+       clip-path="url(#clipPath1110)"
+       d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
+       style="opacity:0.8;fill:#000000;fill-opacity:1;stroke-width:0" />
+  </g>
+  <g
+     id="stick-inactive"
+     inkscape:label="stick-inactive"
+     transform="translate(30.999705,-547.36002)">
     <use
        x="0"
        y="0"
-       xlink:href="#rect4628"
-       id="use8365"
-       transform="translate(33)" />
+       xlink:href="#g4206-8"
+       id="use1947-1"
+       transform="matrix(0.66666942,0,0,1.0270356,123.3333,-15.068582)" />
+    <path
+       id="path1106-7"
+       clip-path="url(#clipPath1110-3)"
+       d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
+       style="opacity:0.4;fill:#000000;fill-opacity:1;stroke-width:0"
+       transform="translate(54.0003,547.35991)" />
+  </g>
+  <g
+     id="stick-toggled-active"
+     inkscape:label="stick-toggled-active"
+     transform="translate(50.000003,49.99996)">
     <g
-       id="stick-active"
-       inkscape:label="stick-active"
-       transform="translate(40.000003,547.35997)">
+       id="g21735-3">
+      <use
+         id="use4210-9"
+         transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
+         width="100%"
+         height="100%"
+         xlink:href="#g4206" />
       <g
-         id="g1104">
-        <g
-           id="g21735">
-          <use
-             id="use4210"
-             transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
-             width="100%"
-             height="100%"
-             xlink:href="#g4206" />
-          <g
-             transform="translate(-4,-544.36)"
-             fill="#adadad"
-             id="g17" />
-        </g>
-      </g>
+         transform="translate(-4,-544.36)"
+         fill="#adadad"
+         id="g17-0" />
+    </g>
+    <g
+       transform="translate(-257.0038,-318.99984)"
+       fill="#808080"
+       fill-rule="evenodd"
+       stroke-linejoin="round"
+       id="g2555"
+       style="fill:#ffffff;fill-opacity:1">
+      <circle
+         cx="409"
+         cy="347"
+         r="2"
+         id="circle2553"
+         style="opacity:0.8;fill:#000000;fill-opacity:1" />
+    </g>
+    <path
+       id="path1106-5"
+       clip-path="url(#clipPath1110-5)"
+       d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
+       style="opacity:0.8;fill:#000000;fill-opacity:1;stroke-width:0"
+       transform="translate(0,-7.9e-5)" />
+  </g>
+  <g
+     id="stick-toggled-inactive"
+     inkscape:label="stick-toggled-inactive"
+     transform="translate(30.999705,-497.36002)">
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4206-8"
+       id="use1947-1-2"
+       transform="matrix(0.66666942,0,0,1.0270356,123.32951,-15.06885)" />
+    <g
+       transform="translate(-203.0035,227.18556)"
+       fill="#808080"
+       fill-rule="evenodd"
+       stroke-linejoin="round"
+       id="g2555-5"
+       style="opacity:0.4;fill:#ffffff;fill-opacity:1">
+      <circle
+         cx="409"
+         cy="348.17459"
+         r="2"
+         id="circle2553-2"
+         style="opacity:1;fill:#000000;fill-opacity:1" />
       <path
-         id="path1106"
-         clip-path="url(#clipPath1110)"
+         id="path1106-7-2"
+         clip-path="url(#clipPath1110-3-0)"
          d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
-         style="fill:#000000;stroke-width:0;fill-opacity:1;opacity:0.8" />
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke-width:0"
+         transform="translate(257.0038,320.17435)" />
     </g>
+  </g>
+  <g
+     id="shade-active"
+     inkscape:label="shade-active"
+     transform="translate(50.000003,99.99997)">
     <g
-       id="stick-inactive"
-       inkscape:label="stick-inactive"
-       transform="translate(20.999705,-2.40564e-5)">
+       id="g21735-2">
       <use
-         x="0"
-         y="0"
-         xlink:href="#g4206-8"
-         id="use3462-36-7"
-         transform="matrix(0.66666942,0,0,1.0000084,123.33341,-0.00545658)"
-         style="fill:#ffffff;fill-opacity:1" />
-      <path
-         id="path1106-7"
-         clip-path="url(#clipPath1110-3)"
-         d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
-         style="opacity:0.4;fill:#000000;stroke-width:0;fill-opacity:1"
-         transform="translate(54.0003,547.35991)" />
-    </g>
-    <g
-       id="stick-toggled-active"
-       inkscape:label="stick-toggled-active"
-       transform="translate(40.000003,597.35996)">
+         id="use4210-8"
+         transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
+         width="100%"
+         height="100%"
+         xlink:href="#g4206" />
       <g
-         id="g21735-3">
-        <use
-           id="use4210-9"
-           transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
-           width="100%"
-           height="100%"
-           xlink:href="#g4206" />
-        <g
-           transform="translate(-4,-544.36)"
-           fill="#adadad"
-           id="g17-0" />
-      </g>
-      <g
-         transform="translate(-257.0038,-318.99984)"
-         fill="#808080"
-         fill-rule="evenodd"
-         stroke-linejoin="round"
-         id="g2555"
-         style="fill:#ffffff;fill-opacity:1">
-        <circle
-           cx="409"
-           cy="347"
-           r="2"
-           id="circle2553"
-           style="fill:#000000;fill-opacity:1;opacity:0.8" />
-      </g>
-      <path
-         id="path1106-5"
-         clip-path="url(#clipPath1110-5)"
-         d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
-         style="fill:#000000;stroke-width:0;fill-opacity:1;opacity:0.8"
-         transform="translate(0,-7.9e-5)" />
+         transform="translate(-4,-544.36)"
+         fill="#adadad"
+         id="g17-2" />
     </g>
+    <path
+       d="m 147.50588,29.999198 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.8;isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1"
+       id="path2180" />
+  </g>
+  <g
+     id="shade-inactive"
+     inkscape:label="shade-inactive"
+     transform="translate(30.999705,-447.36002)">
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4206-8"
+       id="use1947-1-7"
+       transform="matrix(0.66666942,0,0,1.0270356,123.33247,-15.069118)" />
+    <path
+       d="m 201.50534,577.35918 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.5;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1"
+       id="path2180-5" />
+    <path
+       d="m 201.50534,577.35918 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.4;isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1"
+       id="path2389" />
+  </g>
+  <g
+     id="shade-toggled-active"
+     inkscape:label="shade-toggled-active"
+     transform="translate(50.000003,149.99997)">
     <g
-       id="stick-toggled-inactive"
-       inkscape:label="stick-toggled-inactive"
-       transform="translate(20.999705,49.999976)">
+       id="g21735-2-6">
       <use
-         x="0"
-         y="0"
-         xlink:href="#g4206-8"
-         id="use3462-36"
-         transform="matrix(0.66666942,0,0,1.0000084,123.33341,-0.00543)"
-         style="opacity:1;fill:#ffffff;fill-opacity:1" />
+         id="use4210-8-9"
+         transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
+         width="100%"
+         height="100%"
+         xlink:href="#g4206" />
       <g
-         transform="translate(-203.0035,227.18556)"
-         fill="#808080"
-         fill-rule="evenodd"
-         stroke-linejoin="round"
-         id="g2555-5"
-         style="opacity:0.4;fill:#ffffff;fill-opacity:1">
-        <circle
-           cx="409"
-           cy="348.17459"
-           r="2"
-           id="circle2553-2"
-           style="fill:#000000;fill-opacity:1;opacity:1" />
-        <path
-           id="path1106-7-2"
-           clip-path="url(#clipPath1110-3-0)"
-           d="m 158,28.000082 a 6,6 0 0 1 -6,6 6,6 0 0 1 -6,-6 6,6 0 0 1 6,-6 6,6 0 0 1 6,6 z"
-           style="opacity:1;fill:#000000;stroke-width:0;fill-opacity:1"
-           transform="translate(257.0038,320.17435)" />
-      </g>
+         transform="translate(-4,-544.36)"
+         fill="#adadad"
+         id="g17-2-4" />
     </g>
+    <path
+       d="m 147.50588,25.000025 a 0.5,0.5 0 0 0 -0.37891,0.16797 0.5,0.5 0 0 0 0.041,0.70508 l 4.5,4 a 0.50005,0.50005 0 0 0 0.66406,0 l 4.5,-4 a 0.5,0.5 0 0 0 0.041,-0.70508 0.5,0.5 0 0 0 -0.70508,-0.041 l -4.168,3.7031 -4.168,-3.7031 a 0.5,0.5 0 0 0 -0.32617,-0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.8;isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1"
+       id="path1874" />
+  </g>
+  <g
+     id="shade-toggled-inactive"
+     inkscape:label="shade-toggled-inactive"
+     transform="translate(30.999705,-397.36002)">
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4206-8"
+       id="use1947-1-0"
+       transform="matrix(0.66666942,0,0,1.0270356,123.33331,-15.069386)" />
+    <path
+       d="m 201.50618,572.36001 a 0.5,0.5 0 0 0 -0.37891,0.16797 0.5,0.5 0 0 0 0.041,0.70508 l 4.5,4 a 0.50005,0.50005 0 0 0 0.66406,0 l 4.5,-4 a 0.5,0.5 0 0 0 0.041,-0.70508 0.5,0.5 0 0 0 -0.70508,-0.041 l -4.168,3.7031 -4.168,-3.7031 a 0.5,0.5 0 0 0 -0.32617,-0.12695 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#808080"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.4;isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1"
+       id="path1874-6" />
+  </g>
+  <g
+     id="menu-active"
+     inkscape:label="menu-active"
+     transform="translate(50.000003,199.99997)">
     <g
-       id="shade-active"
-       inkscape:label="shade-active"
-       transform="translate(40.000003,647.35997)">
-      <g
-         id="g21735-2">
-        <use
-           id="use4210-8"
-           transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
-           width="100%"
-           height="100%"
-           xlink:href="#g4206" />
-        <g
-           transform="translate(-4,-544.36)"
-           fill="#adadad"
-           id="g17-2" />
-      </g>
-      <path
-         d="m 147.50588,29.999198 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
-         color="#000000"
-         color-rendering="auto"
-         dominant-baseline="auto"
-         fill="#808080"
-         image-rendering="auto"
-         shape-rendering="auto"
-         solid-color="#000000"
-         stop-color="#000000"
-         style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1;opacity:0.8"
-         id="path2180" />
-    </g>
-    <g
-       id="shade-inactive"
-       inkscape:label="shade-inactive"
-       transform="translate(20.999705,99.999976)">
+       id="g21735-2-6-3">
       <use
-         x="0"
-         y="0"
-         xlink:href="#g4206-8"
-         id="use3462-36-7-5"
-         transform="matrix(0.66666942,0,0,1.0000084,123.33341,-0.00545704)"
-         style="fill:#ffffff;fill-opacity:1" />
-      <path
-         d="m 201.50534,577.35918 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
-         color="#000000"
-         color-rendering="auto"
-         dominant-baseline="auto"
-         fill="#808080"
-         image-rendering="auto"
-         shape-rendering="auto"
-         solid-color="#000000"
-         stop-color="#000000"
-         style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.5;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1"
-         id="path2180-5" />
-      <path
-         d="m 201.50534,577.35918 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
-         color="#000000"
-         color-rendering="auto"
-         dominant-baseline="auto"
-         fill="#808080"
-         image-rendering="auto"
-         shape-rendering="auto"
-         solid-color="#000000"
-         stop-color="#000000"
-         style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.4;isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1"
-         id="path2389" />
-    </g>
-    <g
-       id="shade-toggled-active"
-       inkscape:label="shade-toggled-active"
-       transform="translate(40.000003,697.35997)">
+         id="use4210-8-9-3"
+         transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
+         width="100%"
+         height="100%"
+         xlink:href="#g4206" />
       <g
-         id="g21735-2-6">
-        <use
-           id="use4210-8-9"
-           transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
-           width="100%"
-           height="100%"
-           xlink:href="#g4206" />
-        <g
-           transform="translate(-4,-544.36)"
-           fill="#adadad"
-           id="g17-2-4" />
-      </g>
-      <path
-         d="m 147.50588,25.000025 a 0.5,0.5 0 0 0 -0.37891,0.16797 0.5,0.5 0 0 0 0.041,0.70508 l 4.5,4 a 0.50005,0.50005 0 0 0 0.66406,0 l 4.5,-4 a 0.5,0.5 0 0 0 0.041,-0.70508 0.5,0.5 0 0 0 -0.70508,-0.041 l -4.168,3.7031 -4.168,-3.7031 a 0.5,0.5 0 0 0 -0.32617,-0.12695 z"
-         color="#000000"
-         color-rendering="auto"
-         dominant-baseline="auto"
-         fill="#808080"
-         image-rendering="auto"
-         shape-rendering="auto"
-         solid-color="#000000"
-         stop-color="#000000"
-         style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1;opacity:0.8"
-         id="path1874" />
+         transform="translate(-4,-544.36)"
+         fill="#adadad"
+         id="g17-2-4-7" />
     </g>
-    <g
-       id="shade-toggled-inactive"
-       inkscape:label="shade-toggled-inactive"
-       transform="translate(20.999705,149.99998)">
-      <use
-         x="0"
-         y="0"
-         xlink:href="#g4206-8"
-         id="use3462-36-7-3"
-         transform="matrix(0.66666942,0,0,1.0000084,123.33341,-0.00545)"
-         style="fill:#ffffff;fill-opacity:1" />
-      <path
-         d="m 201.50618,572.36001 a 0.5,0.5 0 0 0 -0.37891,0.16797 0.5,0.5 0 0 0 0.041,0.70508 l 4.5,4 a 0.50005,0.50005 0 0 0 0.66406,0 l 4.5,-4 a 0.5,0.5 0 0 0 0.041,-0.70508 0.5,0.5 0 0 0 -0.70508,-0.041 l -4.168,3.7031 -4.168,-3.7031 a 0.5,0.5 0 0 0 -0.32617,-0.12695 z"
-         color="#000000"
-         color-rendering="auto"
-         dominant-baseline="auto"
-         fill="#808080"
-         image-rendering="auto"
-         shape-rendering="auto"
-         solid-color="#000000"
-         stop-color="#000000"
-         style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.4;isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1"
-         id="path1874-6" />
-    </g>
-    <g
-       id="menu-active"
-       inkscape:label="menu-active"
-       transform="translate(40.000003,747.35997)">
-      <g
-         id="g21735-2-6-3">
-        <use
-           id="use4210-8-9-3"
-           transform="matrix(0.66666667,0,0,0.99999999,135.33333,-547.35996)"
-           width="100%"
-           height="100%"
-           xlink:href="#g4206" />
-        <g
-           transform="translate(-4,-544.36)"
-           fill="#adadad"
-           id="g17-2-4-7" />
-      </g>
-      <path
-         d="m 147,23 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z"
-         fill="#808080"
-         overflow="visible"
-         id="path1085"
-         style="fill:#000000;fill-opacity:1;opacity:0.8" />
-    </g>
-    <g
-       id="menu-inactive"
-       inkscape:label="menu-inactive"
-       transform="translate(20.999705,199.99998)">
-      <use
-         x="0"
-         y="0"
-         xlink:href="#g4206-8"
-         id="use3462-36-7-56"
-         transform="matrix(0.66666942,0,0,1.0000084,123.33341,-0.00544296)"
-         style="fill:#ffffff;fill-opacity:1" />
-      <path
-         d="m 201.0003,570.35999 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z"
-         fill="#808080"
-         overflow="visible"
-         id="path1085-3"
-         style="opacity:0.4;fill:#000000;fill-opacity:1" />
-    </g>
+    <path
+       d="m 147,23 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z"
+       fill="#808080"
+       overflow="visible"
+       id="path1085"
+       style="opacity:0.8;fill:#000000;fill-opacity:1" />
+  </g>
+  <g
+     id="menu-inactive"
+     inkscape:label="menu-inactive"
+     transform="translate(30.999705,-347.36002)">
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4206-8"
+       id="use1947-1-9"
+       transform="matrix(0.66666942,0,0,1.0270356,123.33331,-15.069654)" />
+    <path
+       d="m 201.0003,570.35999 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z"
+       fill="#808080"
+       overflow="visible"
+       id="path1085-3"
+       style="opacity:0.4;fill:#000000;fill-opacity:1" />
   </g>
   <g
      id="maximize-active"
@@ -5318,7 +5309,7 @@
        y="0"
        xlink:href="#g4231"
        id="use4236-5"
-       transform="translate(-1.1230465e-8,98.999983)" />
+       transform="translate(-10,646.35998)" />
     <use
        x="0"
        y="0"
@@ -5443,8 +5434,14 @@
        x="0"
        y="0"
        xlink:href="#g4206-8"
-       id="use3462-3"
-       transform="translate(82.20744,-9.38208)" />
+       id="use1947-5"
+       transform="matrix(1,0,0,1.0270356,82.20744,25.5496)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4206-8"
+       id="use1947-7"
+       transform="matrix(1,0,0,1.0270356,82.20744,-24.449902)" />
     <use
        x="0"
        y="0"
@@ -5463,12 +5460,6 @@
      id="maximize-toggled-inactive"
      transform="translate(32.000126,-397.35969)"
      inkscape:label="maximize-toggled-inactive">
-    <use
-       x="0"
-       y="0"
-       xlink:href="#g4206-8"
-       id="use3462-6"
-       transform="translate(1.999974,-7.6345703e-4)" />
     <use
        x="0"
        y="0"
@@ -5491,8 +5482,8 @@
        x="0"
        y="0"
        xlink:href="#g4206-8"
-       id="use3462-60"
-       transform="translate(-120.33453,-405.71977)" />
+       id="use1947-3"
+       transform="matrix(1,0,0,1.0270356,-408.33349,-420.78799)" />
   </g>
   <g
      id="title-2-inactive"
@@ -5502,19 +5493,19 @@
        x="0"
        y="0"
        xlink:href="#g4206-8"
-       id="use3462-93"
-       transform="translate(-127.33453,-405.71977)" />
+       id="use1947-3-5"
+       transform="matrix(1,0,0,1.0270356,-271.33408,-420.78799)" />
   </g>
   <g
      id="title-3-inactive"
      inkscape:label="title-3-inactive"
-     transform="matrix(0.11111157,0,0,1,64.148305,58.359141)">
+     transform="matrix(0.11111157,0,0,1,64.643656,58.359141)">
     <use
        x="0"
        y="0"
        xlink:href="#g4206-8"
-       id="use3462-70"
-       transform="translate(-134.33453,-405.71977)" />
+       id="use1947-3-6"
+       transform="matrix(1,0,0,1.0270356,-138.79282,-420.78799)" />
   </g>
   <g
      id="title-4-inactive"
@@ -5524,8 +5515,8 @@
        x="0"
        y="0"
        xlink:href="#g4206-8"
-       id="use3462-1"
-       transform="translate(-141.33453,-405.71977)" />
+       id="use1947-3-2"
+       transform="matrix(1,0,0,1.0270356,2.6647271,-420.78799)" />
   </g>
   <g
      id="title-5-inactive"
@@ -5535,7 +5526,7 @@
        x="0"
        y="0"
        xlink:href="#g4206-8"
-       id="use3462-2"
-       transform="translate(-148.33453,-405.71977)" />
+       id="use1947-3-9"
+       transform="matrix(1,0,0,1.0270356,139.66413,-420.78799)" />
   </g>
 </svg>
