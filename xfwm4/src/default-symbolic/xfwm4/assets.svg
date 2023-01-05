@@ -23,14 +23,14 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="4.2501839"
-     inkscape:cx="173.87483"
-     inkscape:cy="177.75701"
+     inkscape:cx="145.87604"
+     inkscape:cy="89.760822"
      inkscape:window-width="1569"
      inkscape:window-height="1352"
      inkscape:window-x="53"
      inkscape:window-y="48"
      inkscape:window-maximized="0"
-     inkscape:current-layer="menu-inactive"
+     inkscape:current-layer="svg491"
      showguides="true" />
   <defs
      id="defs9">
@@ -4690,48 +4690,51 @@
        id="use8452"
        transform="translate(33)" />
   </g>
-  <use
-     transform="translate(43,-547.36002)"
-     width="100%"
-     height="100%"
-     xlink:href="#g4206"
-     id="use248" />
   <g
-     transform="translate(50,-1016.36)"
-     enable-background="new"
-     id="g273">
+     id="close-prelight">
+    <use
+       transform="translate(43,-547.36002)"
+       width="100%"
+       height="100%"
+       xlink:href="#g4206"
+       id="use248" />
     <g
-       id="g4965-7"
-       transform="translate(-5.2577701,3.4802388)" />
+       transform="translate(50,-1016.36)"
+       enable-background="new"
+       id="g273">
+      <g
+         id="g4965-7"
+         transform="translate(-5.2577701,3.4802388)" />
+    </g>
+    <g
+       id="g4231"
+       transform="translate(8.4057765,-36.44353)">
+      <circle
+         style="opacity:0.12;fill:#000000;fill-opacity:1;stroke-width:0"
+         id="path3713-6"
+         cx="59.594223"
+         cy="64.443527"
+         r="12" />
+      <path
+         style="opacity:0.04;fill:#000000;fill-opacity:1;stroke-width:0"
+         id="path3713-2-9"
+         clip-path="url(#clipath_lpe_path-effect3800-7-5)"
+         d="M 35,28 A 12,12 0 0 1 23,40 12,12 0 0 1 11,28 12,12 0 0 1 23,16 12,12 0 0 1 35,28 Z"
+         sodipodi:type="arc"
+         sodipodi:ry="12"
+         sodipodi:rx="12"
+         sodipodi:cy="28"
+         sodipodi:cx="23"
+         inkscape:path-effect="#path-effect3800-7-5"
+         transform="translate(36.594224,36.44353)" />
+    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect4628"
+       id="use8365"
+       transform="translate(43,-547.36)" />
   </g>
-  <g
-     id="g4231"
-     transform="translate(8.4057765,-36.44353)">
-    <circle
-       style="opacity:0.12;fill:#000000;fill-opacity:1;stroke-width:0"
-       id="path3713-6"
-       cx="59.594223"
-       cy="64.443527"
-       r="12" />
-    <path
-       style="opacity:0.04;fill:#000000;fill-opacity:1;stroke-width:0"
-       id="path3713-2-9"
-       clip-path="url(#clipath_lpe_path-effect3800-7-5)"
-       d="M 35,28 A 12,12 0 0 1 23,40 12,12 0 0 1 11,28 12,12 0 0 1 23,16 12,12 0 0 1 35,28 Z"
-       sodipodi:type="arc"
-       sodipodi:ry="12"
-       sodipodi:rx="12"
-       sodipodi:cy="28"
-       sodipodi:cx="23"
-       inkscape:path-effect="#path-effect3800-7-5"
-       transform="translate(36.594224,36.44353)" />
-  </g>
-  <use
-     x="0"
-     y="0"
-     xlink:href="#rect4628"
-     id="use8365"
-     transform="translate(43,-547.36)" />
   <g
      id="stick-active"
      inkscape:label="stick-active"

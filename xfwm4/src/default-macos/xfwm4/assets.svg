@@ -22,15 +22,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="14.910439"
-     inkscape:cx="56.504037"
-     inkscape:cy="287.48315"
+     inkscape:zoom="5.6498335"
+     inkscape:cx="89.471663"
+     inkscape:cy="196.20047"
      inkscape:window-width="2560"
      inkscape:window-height="1376"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg491"
+     inkscape:current-layer="shade-inactive"
      showguides="true" />
   <defs
      id="defs9">
@@ -3971,43 +3971,16 @@
        style="opacity:0.8;fill:#000000;fill-opacity:1;stroke-width:0"
        transform="translate(0,-7.9e-5)" />
   </g>
-  <use
-     x="0"
-     y="0"
-     xlink:href="#g4206-8"
-     id="use1632-5"
-     transform="translate(166.0001,-966.36)" />
   <g
      id="stick-toggled-inactive"
      inkscape:label="stick-toggled-inactive"
      transform="translate(-28.0003,-497.36001)">
-    <g
-       transform="translate(194.0004,-468.99999)"
-       enable-background="new"
-       id="g165-7-1">
-      <g
-         id="g4206-8-7-0"
-         transform="translate(-7.0001,469.00001)" />
-      <g
-         transform="translate(-46.026096,25.17981)"
-         enable-background="new"
-         fill-rule="evenodd"
-         id="g344-8-9-4" />
-    </g>
-    <g
-       transform="translate(-203.0035,227.18556)"
-       fill="#808080"
-       fill-rule="evenodd"
-       stroke-linejoin="round"
-       id="g2555-5"
-       style="opacity:0.4;fill:#ffffff;fill-opacity:1">
-      <circle
-         cx="409"
-         cy="348.17459"
-         r="2"
-         id="circle2553-2"
-         style="fill:#000000;fill-opacity:1" />
-    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4206-8"
+       id="use1632-5"
+       transform="translate(194.0004,-468.99999)" />
     <path
        id="path1106-7-2"
        clip-path="url(#clipPath1110-3-0)"
@@ -4045,86 +4018,16 @@
        style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.8;isolation:auto;mix-blend-mode:normal;fill:#000000;fill-opacity:1"
        id="path2180" />
   </g>
-  <use
-     x="0"
-     y="0"
-     xlink:href="#g4206-8"
-     id="use1632-35"
-     transform="translate(165.99926,-916.35999)" />
   <g
      id="shade-inactive"
      inkscape:label="shade-inactive"
      transform="translate(-28.0003,-447.36001)">
-    <g
-       transform="translate(194.0004,559.36001)"
-       enable-background="new"
-       id="g161-06-1">
-      <g
-         transform="translate(0,-1028.4)"
-         id="g159-1-5">
-        <g
-           id="titlebutton-close-backdrop-5-9"
-           transform="translate(-641,1218)"
-           opacity="0.45">
-          <g
-             transform="translate(-678,-432.64)"
-             opacity="1"
-             id="g154-9-9">
-            <g
-               transform="translate(-103)"
-               opacity="1"
-               id="g146-4-1" />
-            <g
-               transform="translate(1323,246.87)"
-               fill="#ffffff"
-               id="g152-9-4">
-              <g
-                 transform="matrix(0.75,0,0,0.75,2,2.0547)"
-                 fill="#ffffff"
-                 id="g150-0-9">
-                <g
-                   transform="translate(-60,-518)"
-                   fill="#ffffff"
-                   id="g148-9-1" />
-              </g>
-            </g>
-          </g>
-          <rect
-             x="645"
-             y="-185.64"
-             width="16"
-             height="16"
-             fill="none"
-             opacity="1"
-             id="rect156-1-0" />
-        </g>
-      </g>
-    </g>
-    <g
-       transform="translate(194.0004,-468.99999)"
-       enable-background="new"
-       id="g165-7-7">
-      <g
-         id="g4206-8-7-5"
-         transform="translate(-7.0001,469.00001)" />
-      <g
-         transform="translate(-46.026096,25.17981)"
-         enable-background="new"
-         fill-rule="evenodd"
-         id="g344-8-9-48" />
-    </g>
-    <path
-       d="m 201.50534,577.35918 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
-       color="#000000"
-       color-rendering="auto"
-       dominant-baseline="auto"
-       fill="#808080"
-       image-rendering="auto"
-       shape-rendering="auto"
-       solid-color="#000000"
-       stop-color="#000000"
-       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:0.5;isolation:auto;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1"
-       id="path2180-5" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4206-8"
+       id="use1632-35"
+       transform="translate(193.99956,-468.99998)" />
     <path
        d="m 201.50534,577.35918 a 0.5,0.5 0 0 1 -0.37891,-0.16797 0.5,0.5 0 0 1 0.041,-0.70508 l 4.5,-4 a 0.50005,0.50005 0 0 1 0.66406,0 l 4.5,4 a 0.5,0.5 0 0 1 0.041,0.70508 0.5,0.5 0 0 1 -0.70508,0.041 l -4.168,-3.7031 -4.168,3.7031 a 0.5,0.5 0 0 1 -0.32617,0.12695 z"
        color="#000000"
@@ -4273,74 +4176,16 @@
        id="path1085"
        style="opacity:0.8;fill:#000000;fill-opacity:1" />
   </g>
-  <use
-     x="0"
-     y="0"
-     xlink:href="#g4206-8"
-     id="use1632-9"
-     transform="translate(166.0001,-816.35997)" />
   <g
      id="menu-inactive"
      inkscape:label="menu-inactive"
      transform="translate(-28.0003,-347.36001)">
-    <g
-       transform="translate(194.0004,559.36001)"
-       enable-background="new"
-       id="g161-06-1-9-7">
-      <g
-         transform="translate(0,-1028.4)"
-         id="g159-1-5-2-9">
-        <g
-           id="titlebutton-close-backdrop-5-9-8-6"
-           transform="translate(-641,1218)"
-           opacity="0.45">
-          <g
-             transform="translate(-678,-432.64)"
-             opacity="1"
-             id="g154-9-9-8-0">
-            <g
-               transform="translate(-103)"
-               opacity="1"
-               id="g146-4-1-8-4" />
-            <g
-               transform="translate(1323,246.87)"
-               fill="#ffffff"
-               id="g152-9-4-6-1">
-              <g
-                 transform="matrix(0.75,0,0,0.75,2,2.0547)"
-                 fill="#ffffff"
-                 id="g150-0-9-8-0">
-                <g
-                   transform="translate(-60,-518)"
-                   fill="#ffffff"
-                   id="g148-9-1-3-4" />
-              </g>
-            </g>
-          </g>
-          <rect
-             x="645"
-             y="-185.64"
-             width="16"
-             height="16"
-             fill="none"
-             opacity="1"
-             id="rect156-1-0-8-8" />
-        </g>
-      </g>
-    </g>
-    <g
-       transform="translate(194.0004,-468.99999)"
-       enable-background="new"
-       id="g165-7-7-3-7">
-      <g
-         id="g4206-8-7-5-3-0"
-         transform="translate(-7.0001,469.00001)" />
-      <g
-         transform="translate(-46.026096,25.17981)"
-         enable-background="new"
-         fill-rule="evenodd"
-         id="g344-8-9-48-4-4" />
-    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g4206-8"
+       id="use1632-9"
+       transform="translate(194.0004,-468.99999)" />
     <path
        d="m 201.0003,570.35999 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z m 0,4 v 1 h 10 v -1 z"
        fill="#808080"
@@ -4348,7 +4193,4 @@
        id="path1085-3"
        style="opacity:0.4;fill:#000000;fill-opacity:1" />
   </g>
-  <g
-     id="g9241"
-     transform="translate(-5,-597.36002)" />
 </svg>
