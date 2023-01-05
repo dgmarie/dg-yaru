@@ -23,8 +23,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="14.910439"
-     inkscape:cx="5.1977006"
-     inkscape:cy="286.1418"
+     inkscape:cx="56.504037"
+     inkscape:cy="287.48315"
      inkscape:window-width="2560"
      inkscape:window-height="1376"
      inkscape:window-x="0"
@@ -3824,35 +3824,13 @@
   </g>
   <g
      id="top-right-inactive"
-     transform="matrix(-1,0,0,1,70.999999,-512.36)"
      inkscape:label="top-right-inactive">
-    <path
-       id="path14533-6-3"
-       clip-path="none"
-       style="fill:#f7f7f7;fill-opacity:1;paint-order:stroke fill markers;opacity:1"
-       d="m 14,178 v 1 h -3 v 1 H 9 v 1 H 8 v 1 H 7 v 1 H 6 v 1 H 5 v 2 H 4 v 2 H 3 v 27 h 1 15 v -36 -1 h -4 z"
-       transform="translate(-5,594.36)" />
-    <rect
-       style="opacity:0.08;fill:#000000;fill-opacity:1;stroke-width:0.635787"
-       id="rect12039"
-       width="16"
-       height="1"
-       x="57"
-       y="296"
-       transform="translate(-59,512.36)" />
-    <path
-       transform="translate(-5,547.36)"
-       d="m 14,225 v 1 h 5 v -1 h -4 z m 0,1 h -3 v 1 h 3 z m -3,1 H 9 v 1 h 2 z m -2,1 H 8 v 1 h 1 z m -1,1 H 7 v 1 h 1 z m -1,1 H 6 v 1 h 1 z m -1,1 H 5 v 2 h 1 v -1 z m -1,2 H 4 v 2 h 1 v -1 z m -1,2 H 3 v 27 h 1 z"
-       fill="#939393"
-       stroke-linecap="round"
-       stroke-linejoin="round"
-       stroke-width="9.2376"
-       style="display:inline;opacity:0.08;fill:#000000;fill-opacity:1;paint-order:stroke fill markers"
-       id="path486-7-5"
-       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccc" />
-    <g
-       id="g1567-1"
-       transform="translate(-5,512.36)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#top-left-inactive"
+       id="use1015"
+       transform="matrix(-1,0,0,1,94,0)" />
   </g>
   <g
      id="stick-active"
