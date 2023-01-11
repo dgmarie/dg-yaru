@@ -46,6 +46,9 @@ $dash_border_radius: $modal_radius + $dash_padding;
   &:ltr:first-child {margin-left: 0;}
   &:rtl:first-child {margin-right: 0;}
 
+  &:ltr:last-child {margin-right: 0;}
+  &:rtl:last-child {margin-left: 0;}
+
   // each app item on the dash
   .app-well-app .overview-icon {
     padding: $base_padding;
