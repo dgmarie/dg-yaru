@@ -30,7 +30,7 @@
 
 .message-list-section,
 .message-list-section-list {
-  spacing: 0;
+  spacing: $base_margin;
   margin-bottom: 0;
 }
 
@@ -62,9 +62,7 @@
 .message {
   @include card;
 
-  &:first-child {
-    margin-top: $base_margin;
-  }
+  margin-top: $base_margin;
 
   // icon container
   .message-icon-bin {

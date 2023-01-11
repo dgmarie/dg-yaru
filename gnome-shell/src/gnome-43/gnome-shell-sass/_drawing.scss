@@ -436,7 +436,7 @@ $button_border: scale-color($tc, $alpha: -95%);
 
 // styling for notifications
 @mixin notification {
-  margin: $base_margin * 2;
+  margin: $base_margin+2px;
   color: $fg_color;
   border-radius: $modal_radius;
   border: 1px solid $borders_edge;
