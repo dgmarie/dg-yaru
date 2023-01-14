@@ -34,17 +34,15 @@
   spacing: $base_padding;
   transition-duration: 150ms;
   background-color: transparent;
-  border: 1px solid transparent;
   box-shadow: none;
   &:ltr {padding-left: $base_padding;}
   &:rtl {padding-right: $base_padding;}
 
-  &:focus,&:hover { border-color: $element_border; background-color: $hover_bg_color !important; color: $hover_fg_color !important;}
+  &:focus,&:hover { box-shadow: inset 0 0 0 1px $element_border; background-color: $hover_bg_color !important; color: $hover_fg_color !important;}
 
   &:checked {
     margin-bottom: 0;
-    border-color: $element_border;
-    box-shadow: none;
+    box-shadow: inset 0 0 0 1px $element_border;
     border-radius: $base_border_radius*1.5 $base_border_radius*1.5 0 0;
     background-color: $checked_bg_color !important;
     color: $checked_fg_color !important;
@@ -52,7 +50,7 @@
     &:active { background-color: $checked_active_bg_color !important;}
   }
 
-  &:active { border-color: $element_border; background-color: $active_bg_color !important; color: $active_fg_color !important;}
+  &:active { box-shadow: inset 0 0 0 1px $element_border; background-color: $active_bg_color !important; color: $active_fg_color !important;}
 
   &:insensitive {color: scale-color($fg_color, $alpha: -50%);}
 
@@ -83,7 +81,8 @@
 .popup-sub-menu {
   background-color: $checked_bg_color;
   border-radius: 0 0 $base_border_radius*1.5 $base_border_radius*1.5;
-  border: none;
+  border: 1px solid $element_border;
+  border-top: none;
 
   .popup-menu-ornament {
     min-width: $base_icon_size !important;
@@ -93,13 +92,10 @@
   .popup-menu-item {
     border-radius: 0;
     margin: 0;
-    border: 1px solid $element_border;
-    border-top: none;
-    border-bottom: none;
+    box-shadow: none;
 
     &:last-child {
       border-radius: 0 0 $base_border_radius*1.5 $base_border_radius*1.5;
-      border-bottom: solid;
     }
 
     &:focus,&:hover { background-color: $hover_bg_color !important;}
