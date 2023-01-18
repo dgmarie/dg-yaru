@@ -128,6 +128,7 @@ system-monitor-app.png gnome-system-monitor.png
 system-monitor-app.png htop.png
 system-monitor-app.png org.gnome.SystemMonitor.png
 system-settings.png gnome-control-center.png
+system-settings.png preferences-desktop.png
 system-settings.png preferences-system.png
 system-settings.png org.gnome.Settings.png
 system-settings.png org.xfce.settings.manager.png
@@ -153,7 +154,6 @@ tweaks-app.png unity-tweak-tool.png
 tweaks-app.png xfce4-settings.png
 tweaks-app.png org.xfce.settings.editor.png
 tweaks-app.png org.gnome.Tweaks.png
-tweaks-app.png preferences-desktop.png
 usage-app.png psensor.png
 usage-app.png org.gnome.Usage.png
 usage-app.png gnome-usage.png
