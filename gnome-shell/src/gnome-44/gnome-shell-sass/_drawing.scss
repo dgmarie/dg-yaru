@@ -1,0 +1,454 @@
+// Drawing mixins
+
+// generic drawing of more complex things
+
+@function draw_widget_edge($c:$borders_edge) {
+// outer highlight "used" on most widgets
+  @return 0 1px $c;
+}
+
+// provide font size in rem, with px fallback
+@mixin fontsize($size: 24, $base: 16) {
+  font-size: round($size) + pt;
+  //font-size: ($size / $base) * 1rem;
+}
+
+@mixin draw_shadows($shadow1, $shadow2:none, $shadow3:none, $shadow4:none) {
+//
+// Helper function to stack up to 4 box-shadows;
+//
+  @if $shadow4!=none { box-shadow: $shadow1, $shadow2, $shadow3, $shadow4; }
+  @else if $shadow3!=none { box-shadow: $shadow1, $shadow2, $shadow3; }
+  @else if $shadow2!=none { box-shadow: $shadow1, $shadow2; }
+  @else { box-shadow: $shadow1; }
+}
+
+// entries
+
+@mixin entry($t, $fc:$selected_borders_color, $c:$fg_color) { // Yaru: we detached focus from selected
+//
+// Entries drawing function
+//
+// $t: entry type
+// $fc: focus color
+// $c: base entry color, derived from fg_color
+//
+// possible $t values:
+// normal, focus, insensitive
+//
+  $entry_border: scale-color($c, $alpha: -95%);
+
+  transition-duration: 150ms;
+  border: 1px solid $entry_border;
+
+  @if $t==normal {
+    background-color: scale-color($c, $alpha: -90%);
+    color: $c;
+  }
+
+  @if $t==focus {
+    background-color: scale-color($c, $alpha: -90%);
+    box-shadow: 0 0 0 2px $fc inset;
+    border-color: transparent;
+  }
+
+  @if $t==hover {
+    background-color: scale-color($c, $alpha: -90%);
+  }
+
+  @if $t==insensitive {
+    background-color: scale-color($c, $alpha: -95%);
+    color: scale-color($c, $alpha: -50%);
+  }
+}
+
+// On-screen Keyboard
+@mixin keyboard_key($t, $c:$osd_bg_color, $tc:$osd_fg_color, $flat: false) {
+// Yaru: FIXME:?! Make keyboard work in both variants
+//
+// Keyboard key drawing function
+//
+// $t:    key type,
+// $c:    base key color for colored* types
+// $tc:   optional text color for colored* types
+//
+// possible $t values:
+// normal, hover, active, insensitive, insensitive-active,
+// backdrop, backdrop-active, backdrop-insensitive, backdrop-insensitive-active,
+// osd, osd-hover, osd-active, osd-insensitive, osd-backdrop, undecorated
+//
+
+  $key_color: scale-color($tc, $alpha: -90%);
+  $key_hover_color: scale-color($tc, $alpha: -85%);
+  $key_active_color: scale-color($tc, $alpha: -70%);
+  $key_checked_color: scale-color($tc, $alpha: -70%);
+  $key_insensitive_color: scale-color($tc, $alpha: -95%);
+  $key_border: scale-color($tc, $alpha: -95%);
+
+  border: 1px solid $key_border;
+
+  // normal key
+  @if $t==normal {
+    color: $tc;
+    background-color: $key_color;
+    @if $flat {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  // focused key
+  @if $t==focus {
+    color: $tc;
+    box-shadow: 0 0 0 2px $selected_borders_color inset;
+    border-color: transparent;
+    &:hover {
+      box-shadow: 0 0 0 2px $selected_borders_color inset;
+      border-color: transparent;
+    }
+    &:active {
+      box-shadow: 0 0 0 2px $selected_borders_color inset;
+      border-color: transparent;
+      border-color: $selected_borders_color;
+    }
+  }
+
+  // hover key
+  @else if $t==hover {
+    color: $tc;
+    background-color: $key_hover_color;
+    @if $flat {
+      background-color: $hover_bg_color;
+    }
+  }
+
+  // active key
+  @else if $t==active {
+    color: $tc;
+    background-color: $key_active_color;
+    @if $flat {
+      background-color: $active_bg_color;
+    }
+  }
+
+  // checked key
+  @else if $t==checked {
+    color: $tc;
+    background-color: $key_checked_color;
+    @if $flat {
+      background-color: $checked_bg_color;
+    }
+  }
+
+  // default key
+  @else if $t==default {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
+    &:focus {
+      box-shadow: 0 0 0 1px $selected_borders_color inset;
+      border-color: $selected_borders_color;
+    }
+    &:hover, &:focus {
+      background-color: lighten($selected_bg_color, 5%);
+      color: $selected_fg_color;
+    }
+    &:active {
+      background-color: lighten($selected_bg_color, 10%);
+      color: $selected_fg_color;
+    }
+    &:insensitive {
+      @include button(insensitive);
+      background-color: transparentize($selected_bg_color, .5);
+      color: transparentize($selected_fg_color, .5);
+    }
+  }
+
+  // insensitive key
+  @else if $t==insensitive {
+    color: $insensitive_fg_color;
+    background-color: $key_insensitive_color;
+    @if $flat {
+      background-color: transparent;
+    }
+  }
+
+  // reset
+  @else if $t==undecorated {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+  }
+}
+
+@mixin button($t, $tc:$fg_color, $flat: false) {
+
+$button_color: scale-color($tc, $alpha: -90%);
+$button_hover_color: scale-color($tc, $alpha: -85%);
+$button_active_color: scale-color($tc, $alpha: -70%);
+$button_checked_color: scale-color($tc, $alpha: -70%);
+$button_checked_hover_color: scale-color($tc, $alpha: -65%);
+$button_checked_active_color: scale-color($tc, $alpha: -60%);
+$button_border: scale-color($tc, $alpha: -95%);
+
+//
+// Button drawing function
+//
+// $t:    button type,
+// $tc:    base button colors, derived from fg_color
+//
+// possible $t values:
+// normal, hover, active, insensitive, insensitive-active,
+// backdrop, backdrop-active, backdrop-insensitive, backdrop-insensitive-active,
+// osd, osd-hover, osd-active, osd-insensitive, osd-backdrop, undecorated
+//
+
+  transition-duration: 150ms;
+
+  border: 1px solid $button_border;
+
+  // normal button
+  @if $t==normal {
+    color: $tc;
+    background-color: $button_color;
+    @if $flat {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  // focused button
+  @if $t==focus {
+    color: $tc;
+    border-color: transparent;
+    box-shadow: 0 0 0 2px $selected_borders_color inset !important;
+    border-color: transparent;
+    &:hover {
+      box-shadow: 0 0 0 2px $selected_borders_color inset !important;
+      border-color: transparent;
+    }
+    &:active {
+      box-shadow: 0 0 0 2px $selected_borders_color inset !important;
+      border-color: transparent;
+    }
+  }
+
+  // hover button
+  @else if $t==hover {
+    color: $tc;
+    background-color: $button_hover_color;
+    @if $flat {
+      background-color: $hover_bg_color;
+    }
+  }
+
+  // active button
+  @else if $t==active {
+    color: $tc;
+    background-color:  $button_active_color;
+    @if $flat {
+      background-color: $active_bg_color;
+    }
+  }
+
+  // checked button
+  @else if $t==checked {
+    color: $tc;
+    background-color: $button_checked_color;
+    @if $flat {
+      background-color: $checked_bg_color;
+    }
+    &:hover {
+      background-color: lighten($button_checked_hover_color, 12%);
+      @if $flat {
+        background-color: $checked_hover_bg_color;
+      }
+    }
+    &:active {
+      background-color: lighten($button_checked_active_color, 15%);
+      @if $flat {
+        background-color: $checked_active_bg_color;
+      }
+    }
+  }
+
+  // insensitive button
+  @else if $t==insensitive {
+    color: scale-color($tc, $alpha: -50%);
+    background-color: scale-color($tc, $alpha: -95%);
+    @if $flat {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  // default/suggested button
+  @else if $t==default {
+    background-color: $selected_bg_color;
+    color: $selected_fg_color;
+    border: 1px solid $selected_element_border;
+    &:focus {
+      box-shadow: 0 0 0 2px $selected_borders_color;
+      border-color: transparent;
+    }
+    &:hover, &:focus { 
+      background-color: lighten($selected_bg_color, 5%);
+      color: $selected_fg_color;
+    }
+    &:active {
+      background-color: lighten($selected_bg_color, 10%);
+      color: $selected_fg_color;
+    }
+    &:insensitive {
+      @include button(insensitive);
+      background-color: transparentize($selected_bg_color, .5);
+      color: transparentize($selected_fg_color, .5);
+    }
+  }
+
+  // reset
+  @else if $t==undecorated {
+    background-color: transparent;
+    background-color: none;
+    border-color: transparent;
+    &:insensitive {
+      @include button(insensitive);
+      background-color: transparent;
+      border-color: transparent;
+      color: transparentize($selected_fg_color, .5);
+    }
+  }
+}
+
+// tile
+@mixin tile_button($color, $flat: true) {
+  @extend %tile;
+  @if $flat {
+    background-color: transparent;
+    box-shadow: none;
+  } @else {
+    background-color: transparentize($color, .92);
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+  }
+  &:hover { background-color: transparentize($color, .89); box-shadow: inset 0 0 0 1px $osd_element_border;}
+  &:active { background-color: transparentize($color, .84); box-shadow: inset 0 0 0 1px $osd_element_border;}
+
+  &:selected, &:focus {
+    background-color: transparentize($color, .89);
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+    &:hover .overview-icon { background-color: transparentize($color, .84);}
+    &:active .overview-icon { background-color: transparentize($color, .8);}
+  }
+  &:outlined, &:checked {
+    background-color: transparentize($color, .89);
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+    &:hover .overview-icon { background-color: transparentize($color, .84);}
+    &:active .overview-icon { background-color: transparentize($color, .8);}
+  }
+  &:drop {
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+    border: 2px solid transparentize($selected_bg_color, .2); //already 2px transparent so no jumping
+    background-color: transparentize($selected_bg_color, .8);
+  }
+}
+
+// overview icon, dash, app grid
+@mixin overview_icon($color, $flat: true) {
+  .overview-icon { @extend %tile; }
+  transition-duration: 150ms;
+  @if $flat {
+    .overview-icon { background-color: transparent; box-shadow: none; }
+  } @else {
+    .overview-icon {
+      background-color: transparentize($color, .92);
+      box-shadow: inset 0 0 0 1px $osd_element_border;
+    }
+  }
+  &:hover .overview-icon { background-color: transparentize($color, .89); box-shadow: inset 0 0 0 1px $osd_element_border;}
+  &:active .overview-icon { background-color: transparentize($color, .84); box-shadow: inset 0 0 0 1px $osd_element_border;}
+
+  &.focused .overview-icon,
+  &:selected .overview-icon,
+  &:focus .overview-icon {
+    background-color: transparentize($color, .89);
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+    &:hover .overview-icon { background-color: transparentize($color, .84);}
+    &:active .overview-icon { background-color: transparentize($color, .8);}
+  }
+  &:outlined .overview-icon,
+  &:checked .overview-icon {
+    background-color: transparentize($color, .89);
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+    &:hover .overview-icon { background-color: transparentize($color, .84);}
+    &:active .overview-icon { background-color: transparentize($color, .8);}
+  }
+  &:drop .overview-icon {
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+    border: 2px solid transparentize($selected_bg_color, .2); //already 2px transparent so no jumping
+    background-color: transparentize($selected_bg_color, .8);
+  }
+}
+
+// styling for elements within popovers that look like notifications
+@mixin card {
+  border-radius: $base_border_radius * 1.5;
+  margin: $base_margin * 2;
+  color: $card_fg_color;
+  background-color: $card_bg_color;
+  box-shadow: 0 1px 4px 0 transparentize(black, .965) !important; // This needs to apply to the calendar as well
+  transition-duration: 150ms;
+  // Border needs to be opaque because it becomes outset when there's a box shadow and idk how to fix it
+  border: 1px solid mix($card_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
+
+  &:focus {
+    box-shadow: 0 0 0 2px $selected_borders_color inset !important;
+    border-color: transparent !important;
+    &:hover {
+      box-shadow: 0 0 0 2px $selected_borders_color inset !important;
+      border-color: transparent !important;
+    }
+    &:active {
+      box-shadow: 0 0 0 2px $selected_borders_color inset !important;
+      border-color: transparent !important;
+    }
+  }
+
+  &:hover {
+    background-color: $card_hover_bg_color;
+    border-color: mix($card_hover_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
+  }
+
+  &:active {
+    background-color: $card_active_bg_color;
+    border-color: mix($card_active_bg_color, $card_fg_color, if($variant=='light', 90%, 95%)) !important;
+  }
+}
+
+@mixin osd_card {
+  $osd_card_bg_color: mix($osd_bg_color, white, 92%);
+  border-radius: $base_border_radius * 1.5;
+  margin: $base_margin * 2;
+  color: $osd_fg_color;
+  background-color: $osd_card_bg_color;
+  box-shadow: 0 1px 3px 0 transparentize(black, .96) !important;
+  transition-duration: 150ms;
+  border: 1px solid mix($osd_card_bg_color, $osd_fg_color, if($variant=='light', 90%, 95%)) !important;
+}
+
+// styling for notifications
+@mixin notification {
+  margin: $base_margin+2px;
+  color: $fg_color;
+  border-radius: $modal_radius;
+  border: 1px solid $borders_edge;
+  background-color: $bg_color;
+  box-shadow: 0 1px 16px 0 transparentize(black, .89) !important;
+  transition-duration: 150ms;
+
+  &:hover {
+    background-color: mix($bg_color, $fg_color, 97%);
+  }
+
+  &:active {
+    background-color: mix($bg_color, $fg_color, 92%);
+  }
+}
