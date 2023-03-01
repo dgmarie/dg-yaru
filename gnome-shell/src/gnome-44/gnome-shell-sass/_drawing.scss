@@ -329,20 +329,21 @@ $button_border: scale-color($tc, $alpha: -95%);
     background-color: transparentize($color, .92);
     box-shadow: inset 0 0 0 1px $osd_element_border;
   }
-  &:hover { background-color: transparentize($color, .89); box-shadow: inset 0 0 0 1px $osd_element_border;}
-  &:active { background-color: transparentize($color, .84); box-shadow: inset 0 0 0 1px $osd_element_border;}
-
-  &:selected, &:focus {
-    background-color: transparentize($color, .89);
+  &:hover {
+    background-color: if($flat, transparentize($color, .93), transparentize($color, .89));
     box-shadow: inset 0 0 0 1px $osd_element_border;
-    &:hover .overview-icon { background-color: transparentize($color, .84);}
-    &:active .overview-icon { background-color: transparentize($color, .8);}
+  }
+  &:active {
+    background-color: if($flat, transparentize($color, .84), transparentize($color, .84));
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+  }
+  &:selected, &:focus {
+    background-color: if($flat, transparentize($color, .90), transparentize($color, .89));
+    box-shadow: inset 0 0 0 1px $osd_element_border;
   }
   &:outlined, &:checked {
-    background-color: transparentize($color, .89);
+    background-color: if($flat, transparentize($color, .90), transparentize($color, .89));
     box-shadow: inset 0 0 0 1px $osd_element_border;
-    &:hover .overview-icon { background-color: transparentize($color, .84);}
-    &:active .overview-icon { background-color: transparentize($color, .8);}
   }
   &:drop {
     box-shadow: inset 0 0 0 1px $osd_element_border;
@@ -363,23 +364,25 @@ $button_border: scale-color($tc, $alpha: -95%);
       box-shadow: inset 0 0 0 1px $osd_element_border;
     }
   }
-  &:hover .overview-icon { background-color: transparentize($color, .89); box-shadow: inset 0 0 0 1px $osd_element_border;}
-  &:active .overview-icon { background-color: transparentize($color, .84); box-shadow: inset 0 0 0 1px $osd_element_border;}
+  &:hover .overview-icon {
+    background-color: if($flat, transparentize($color, .93), transparentize($color, .89));
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+  }
+  &:active .overview-icon {
+    background-color: if($flat, transparentize($color, .84), transparentize($color, .84));
+    box-shadow: inset 0 0 0 1px $osd_element_border;
+  }
 
   &.focused .overview-icon,
   &:selected .overview-icon,
   &:focus .overview-icon {
-    background-color: transparentize($color, .89);
+    background-color: if($flat, transparentize($color, .90), transparentize($color, .89));
     box-shadow: inset 0 0 0 1px $osd_element_border;
-    &:hover .overview-icon { background-color: transparentize($color, .84);}
-    &:active .overview-icon { background-color: transparentize($color, .8);}
   }
   &:outlined .overview-icon,
   &:checked .overview-icon {
-    background-color: transparentize($color, .89);
+    background-color: if($flat, transparentize($color, .90), transparentize($color, .89));
     box-shadow: inset 0 0 0 1px $osd_element_border;
-    &:hover .overview-icon { background-color: transparentize($color, .84);}
-    &:active .overview-icon { background-color: transparentize($color, .8);}
   }
   &:drop .overview-icon {
     box-shadow: inset 0 0 0 1px $osd_element_border;
