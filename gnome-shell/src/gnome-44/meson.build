@@ -69,13 +69,14 @@ source_deps = []
 css_sources_path = meson.current_build_dir()
 foreach src: theme_sources
   out_name = '___'.join('@0@'.format(src).split('/'))
+  message(out_name)
   source_deps += custom_target(out_name,
     input: src,
     output: out_name,
     command: [
       'bash', '-c',
       ';'.join([
-        'output="$1/$(realpath --relative-to="'+ meson.current_source_dir() + '" $0)"',
+        'output="$1/$(realpath -s --relative-to="'+ meson.current_source_dir() + '" $0)"',
         'mkdir -p "$(dirname "$output")"',
         # Can't use proper regex ("s,\(\b\)url\(\s*(\),\1yaru-url-handler\2,g") as per
         # https://github.com/mesonbuild/meson/issues/1564
@@ -84,7 +85,6 @@ foreach src: theme_sources
       '@INPUT@',
       '@OUTDIR@',
     ],
-    install: false,
   )
 endforeach
 
@@ -183,8 +183,7 @@ foreach variant: variants
         'UseGResource': gnomeshell_use_gresource ? 'true' : 'false',
         'HighContrast': high_contrast ? 'true' : 'false',
         'Colors': (high_contrast ? 'high-contrast-' : '') + 'colors',
-        'ColorableAssets': '@0@'.format(colorable_assets_names),
-        'dir': meson.current_source_dir(),
+        'ColorableAssets': '@0@'.format(colorable_assets_names)
       },
     )
 

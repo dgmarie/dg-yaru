@@ -1,0 +1,269 @@
+/* Date/Time Menu */
+
+// overall menu
+#calendarArea {
+	padding: 0;
+}
+
+// Calendar menu side column
+.datemenu-calendar-column {
+  spacing: 0;
+  .datemenu-displays-box {spacing: 0;}
+  margin: 0;
+}
+
+/* today button (the date) */
+.datemenu-today-button {
+  color: $fg_color;
+  padding: $base_margin * 2;
+  background-color: transparent;
+
+  // weekday label
+  .day-label {
+    @extend %heading;
+  }
+
+  // date label
+  .date-label {
+    @extend %title_2;
+  }
+
+  &:insensitive { // Yaru change: fix insensitive state in light theme
+    .day-label, .date-label {
+      color: scale-color($fg_color, $alpha: -50%);
+    }
+  }
+}
+
+/* Calendar */
+.calendar {
+  @include card;
+  margin-top: 0;
+	padding: $base_padding;
+
+  // month header
+  .calendar-month-header {
+
+    // prev/next month icons
+    .calendar-change-month-back StIcon,
+    .calendar-change-month-forward StIcon {
+      icon-size: $base_icon_size;
+    }
+
+    // month label
+    .calendar-month-label {
+      color: lighten($fg_color,5%);
+      @extend %heading;
+      padding: 8px 0;
+    }
+    .pager-button {
+      background-color: transparent;
+      height: 32px;
+      width: 32px;
+      margin: 2px;
+      border-radius: $base_border_radius - 2px;
+      transition-duration: 150ms;
+      &:hover, &:focus {background-color: $hover_bg_color; box-shadow: inset 0 0 0 1px $element_border; }
+      &:active {background-color: $active_bg_color; box-shadow: inset 0 0 0 1px $element_border; }
+    }
+  }
+
+  $calendar_day_size: 3em;
+
+  .calendar-day-base {
+    text-align: center;
+    margin: 2px;
+    padding: 0 !important;
+    height: $calendar_day_size !important;
+    width: $calendar_day_size !important;
+    border-radius: 99px;
+    transition-duration: 150ms;
+    @extend %numeric;
+    @extend %smaller;
+
+    &:hover {background-color: $hover_bg_color; box-shadow: inset 0 0 0 1px $element_border;}
+
+    &:focus {
+      background-color: $card_bg_color; // make it look transparent
+      box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.5);
+      &:hover {background-color: $hover_bg_color;}
+    }
+
+    &:active,&:selected {
+      color: $active_fg_color;
+      background-color: $active_bg_color;
+      box-shadow: inset 0 0 0 1px $element_border;
+      &:focus {
+        background-color: mix($active_bg_color, $selected_bg_color, 80%);
+        box-shadow:inset 0 0 0 2px transparentize($selected_bg_color, 0.5);
+      }
+    }
+
+    // day of week heading
+    &.calendar-day-heading {
+      color: $insensitive_fg_color;
+      padding-top: $base_padding;
+      height: 16px !important; // force heading to be smaller height
+      font-weight: bold;
+      @extend %smaller;
+    }
+  }
+
+  .calendar-day {}
+  .calendar-work-day {}
+  .calendar-nonwork-day {color: $insensitive_fg_color;}
+  .calendar-other-month-day {
+    color: scale-color($fg_color, $alpha: -50%);
+    &.calendar-nonwork-day {
+      color: scale-color($insensitive_fg_color, $alpha: -50%);
+    }
+  }
+
+  // Today
+  .calendar-today {
+    background-color: $selected_bg_color;
+    font-weight: 800;
+    color: $selected_fg_color !important;
+    box-shadow: inset 0 0 0 1px $selected_element_border;
+
+    &:hover,&:focus {
+      background-color:lighten($selected_bg_color, 3%);
+      color: inherit;
+    }
+
+    &:active,&:selected {
+      background-color: $selected_bg_color;
+      color: inherit;
+
+      &:hover,&:focus {
+        background-color:lighten($selected_bg_color, 3%);
+        color: inherit;
+      }
+    }
+  }
+
+  .calendar-day-with-events {
+    background-image: if($variant == 'light', yaru_url_handler("resource:///org/gnome/shell/theme/calendar-today-light.svg"), yaru_url_handler("resource:///org/gnome/shell/theme/calendar-today.svg"));
+    background-size: contain;
+  }
+
+  .calendar-week-number {
+    @include fontsize($base_font_size - 4);
+    font-weight: bold;
+    font-feature-settings: "tnum";
+    margin: 6px;
+    padding: 0 $base_padding;
+    border-radius: 3px;
+    background-color: darken($bg_color, 2%);
+    color: $insensitive_fg_color
+  }
+}
+
+/* Events */
+.events-button {
+  @include card;
+  padding: $base_padding * 2;
+
+  .events-box {
+    spacing: $base_padding;
+  }
+
+  .events-list {
+    spacing: 2 * $base_padding;
+  }
+
+  .events-title {
+    @extend %heading;
+    color: $insensitive_fg_color;
+    margin-bottom: $base_margin;
+  }
+
+  .event-time {
+    @extend %numeric;
+    @extend %caption;
+    color: $insensitive_fg_color;
+  }
+}
+
+/* World clocks */
+.world-clocks-button {
+  @include card;
+  padding: $base_padding * 2;
+
+  .world-clocks-grid {
+    spacing-rows: $base_padding;
+    spacing-columns: $base_padding * 2;
+  }
+
+  // title
+  .world-clocks-header {
+    @extend %heading;
+    color: $insensitive_fg_color;
+  }
+
+  // city label
+  .world-clocks-city {
+    color: $fg_color;
+  }
+
+  // timezone time
+  .world-clocks-time {
+    @extend %heading;
+    @extend %numeric;
+    color: $fg_color;
+
+    &:ltr {text-align: right;}
+    &:rtl {text-align: left;}
+  }
+
+  // timezone offset label
+  .world-clocks-timezone {
+    @extend %numeric;
+    @extend %caption;
+    color: $insensitive_fg_color;
+  }
+}
+
+/* Weather */
+.weather-button {
+  @include card;
+  padding: $base_padding * 2;
+
+  .weather-box {
+    spacing: $base_padding + $base_margin;
+  }
+
+  .weather-header-box {
+    spacing: $base_padding;
+  }
+
+  .weather-header {
+    color: $insensitive_fg_color;
+    @extend %heading;
+
+    &.location {
+      font-weight: normal;
+    }
+  }
+
+  .weather-grid {
+    spacing-rows: $base_padding;
+    spacing-columns: $base_padding * 2;
+  }
+
+  .weather-forecast-time {
+    @extend %numeric;
+    @extend %caption;
+    color: darken($fg_color,30%);
+    padding-top: 0.2em;
+    padding-bottom: 0.4em;
+  }
+
+  .weather-forecast-icon {
+    icon-size: $large_icon_size;
+  }
+
+  .weather-forecast-temp {
+    @extend %heading;
+  }
+}

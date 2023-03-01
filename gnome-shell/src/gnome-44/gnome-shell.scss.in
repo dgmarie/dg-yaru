@@ -55,12 +55,12 @@ $UPSTREAM_VARIANTS: ['dark', 'light'];
 
 @debug 'Generating GNOME Shell ' + $yaru_variant + ' theme (' + $variant +' variant, hc: '+ $high_contrast+')';
 
-@import "@dir@/gnome-shell-sass/_@Colors@";
-@import "@dir@/gnome-shell-sass/_drawing";
-@import "@dir@/gnome-shell-sass/_common";
-@import "@dir@/gnome-shell-sass/_widgets";
-@import "@dir@/gnome-shell-sass/_dock";
-@import "@dir@/gnome-shell-sass/_blur-my-shell";
+@import "gnome-shell-sass/_@Colors@";
+@import "gnome-shell-sass/_drawing";
+@import "gnome-shell-sass/_common";
+@import "gnome-shell-sass/_widgets";
+@import "gnome-shell-sass/_dock";
+@import "gnome-shell-sass/_blur-my-shell";
 
 @if $high_contrast {
     //force symbolic icons

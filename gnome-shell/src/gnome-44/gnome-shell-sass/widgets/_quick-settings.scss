@@ -183,7 +183,8 @@
 .background-apps-quick-toggle {
   min-height: 40px;
   background-color: transparent;
-
+  &:hover { background-color: $hover_bg_color; }
+  &:active { background-color: $active_bg_color; }
   & StIcon { icon-size: $base_icon_size !important; }
 }
 

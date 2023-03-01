@@ -51,7 +51,7 @@ $app_icon_size: 96px;
     }
     // Yaru change: needed for the light theme, otherwise dark text in orange selection, can't set selected-color here
     & .folder-name-entry { border-radius: 99px; width: 300px; background-color: transparentize($osd_fg_color, .9); border-color: $osd_borders_color;}
-    & .folder-name-entry:focus { 
+    & .folder-name-entry:focus {
       box-shadow: 0 0 0 2px $selected_borders_color inset;
       border-color: transparent;
     }
@@ -86,8 +86,8 @@ $app_icon_size: 96px;
 
 .app-folder-dialog-container {
   padding: $base_padding*2;
-  width: 720px;
-  height: 720px;
+  width: 640px;
+  height: 640px;
 }
 
 // Running app indicator (also shown in dash)
@@ -133,6 +133,8 @@ $app_icon_size: 96px;
 }
 
 .page-navigation-hint {
+  width: 300px;
+
   &.dnd {
     background: rgba(255, 255, 255, 0.1);
   }
@@ -156,13 +158,6 @@ $app_icon_size: 96px;
 
 .page-navigation-arrow {
   margin: 6px;
-  padding: 18px;
   width: 24px;
   height: 24px;
-  border-radius: 99px;
-  color: $osd_fg_color;
-  @include button(normal, $osd_fg_color, $flat: true);
-  &:insensitive { @include button(undecorated, $osd_fg_color);}
-  &:hover { @include button(hover, $osd_fg_color, $flat: true);}
-  &:active { @include button(active, $osd_fg_color, $flat: true);}
 }
