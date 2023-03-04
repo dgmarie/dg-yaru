@@ -1,1 +1,1 @@
-../gnome-43/install-shell.sh
+../gnome-44/install-shell.sh
