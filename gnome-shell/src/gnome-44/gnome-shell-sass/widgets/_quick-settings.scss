@@ -21,12 +21,12 @@
 }
 
 .quick-toggle {
-  box-shadow: inset 0 0 0 1px $element_border;
-  border: none !important;
+  box-shadow: none;
+  border: 1px solid $element_border !important;
 
   &:checked {
     @include button(default);
-    box-shadow: inset 0 0 0 1px $selected_element_border;
+    border: 1px solid $selected_element_border !important;
   }
 
   & > StBoxLayout { spacing: $base_padding*1.5; }
@@ -53,12 +53,10 @@
     min-width: auto;
     max-width: auto;
 
-    &:ltr {
-      border-radius: 99px 0 0 99px;
-    }
-    &:rtl {
-      border-radius: 0 99px 99px 0;
-    }
+    &:ltr { border-radius: 99px 0 0 99px; }
+    &:ltr > StBoxLayout { padding-right: $base_padding*1.5; }
+    &:rtl { border-radius: 0 99px 99px 0; }
+    &:rtr > StBoxLayout { padding-left: $base_padding*1.5; }
 
     &:ltr:last-child { border-radius: 99px; }
     &:rtl:last-child { border-radius: 99px; }
@@ -66,21 +64,22 @@
 
   & .quick-toggle-arrow {
     padding: $base_padding $base_padding*1.75;
-
+    margin: 0;
+    border: 0 !important;
     box-shadow: inset 0 0 0 1px $element_border;
-    border: none !important;
+    border-color: transparent !important;
+    border-left-width: 1px !important;
     &:checked {
       @include button(default);
+      border-color: $alt_selected_bg_color !important;
       box-shadow: inset 0 0 0 1px $selected_element_border;
     }
 
     &:ltr {
       border-radius: 0 99px 99px 0;
-      margin-left: 1px;
     }
     &:rtl {
       border-radius: 99px 0 0 99px;
-      margin-right: 1px;
     }
   }
 }
@@ -169,7 +168,7 @@
   .popup-menu-icon { -st-icon-style: symbolic; }
 }
 
-.bt-menu-placeholder {
+.bt-menu-placeholder.popup-menu-item {
   @extend %title_4;
   text-align: center;
 
@@ -183,9 +182,10 @@
 .background-apps-quick-toggle {
   min-height: 40px;
   background-color: transparent;
-  &:hover { background-color: $hover_bg_color; }
-  &:active { background-color: $active_bg_color; }
-  & StIcon { icon-size: $base_icon_size !important; }
+  border-color: transparent !important;
+  &:hover { background-color: $hover_bg_color; border-color: $element_border !important; }
+  &:active { background-color: $active_bg_color; border-color: $element_border !important; }
+  & StIcon { icon-size: $base_icon_size !important; border-color: $element_border !important; }
 }
 
 .background-app-item {
